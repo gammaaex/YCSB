@@ -51,6 +51,7 @@ COMMANDS = {
 }
 
 DATABASES = {
+    "bigchaindb"   : "com.yahoo.ycsb.db.BigchainDBClient",
     "accumulo"     : "com.yahoo.ycsb.db.accumulo.AccumuloClient",
     "accumulo1.6"     : "com.yahoo.ycsb.db.accumulo.AccumuloClient",
     "accumulo1.7"     : "com.yahoo.ycsb.db.accumulo.AccumuloClient",

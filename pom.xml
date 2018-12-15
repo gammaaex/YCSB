@@ -66,6 +66,7 @@ LICENSE file.
     <maven.dependency.version>2.10</maven.dependency.version>
 
     <!-- datastore binding versions, lex sorted -->
+    <bigchaindb.version>2.0.0</bigchaindb.version>
     <accumulo.1.6.version>1.6.6</accumulo.1.6.version>
     <accumulo.1.7.version>1.7.4</accumulo.1.7.version>
     <accumulo.1.8.version>1.9.1</accumulo.1.8.version>
@@ -116,6 +117,7 @@ LICENSE file.
     <module>binding-parent</module>
     <module>distribution</module>
     <!-- all the datastore bindings, lex sorted please -->
+    <module>bigchaindb</module>
     <module>accumulo1.6</module>
     <module>accumulo1.7</module>
     <module>accumulo1.8</module>
