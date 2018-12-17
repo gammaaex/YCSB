@@ -46,7 +46,7 @@ public class BigchainDBClient extends DB {
    * @param key    The record key of the record to read.
    * @param fields The list of fields to read, or null for all of them
    * @param result A HashMap of field/value pairs for the result
-   * @return
+   * @return The result of the operation.
    * @see "http://docs.bigchaindb.com/en/latest/query.html"
    */
   @Override
@@ -64,7 +64,7 @@ public class BigchainDBClient extends DB {
    * @param recordcount The number of records to read
    * @param fields      The list of fields to read, or null for all of them
    * @param result      A Vector of HashMaps, where each HashMap is a set field/value pairs for one record
-   * @return
+   * @return The result of the operation.
    * @see "http://docs.bigchaindb.com/en/latest/query.html"
    */
   @Override
