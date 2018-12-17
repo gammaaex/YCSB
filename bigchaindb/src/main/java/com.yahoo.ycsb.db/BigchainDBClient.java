@@ -266,6 +266,7 @@ public class BigchainDBClient extends DB {
       throw new DBException("Transaction failed");
     } catch (DBException e) {
       e.printStackTrace();
+      System.exit(1);
     }
   }
 }
