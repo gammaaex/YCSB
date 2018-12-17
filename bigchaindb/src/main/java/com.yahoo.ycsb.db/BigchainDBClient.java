@@ -89,12 +89,11 @@ public class BigchainDBClient extends DB {
   public Status update(String table, String key, Map<String, ByteIterator> values) {
     KeyPair keyPair = createKeyPair();
     MetaData metaData = createMetaData(values);
+    FulFill fulfill = new FulFill();
+    fulfill.setTransactionId(key);
+    fulfill.setOutputIndex(String.valueOf(0));
 
     try {
-      FulFill fulfill = new FulFill();
-      fulfill.setTransactionId(key);
-      fulfill.setOutputIndex(String.valueOf(0));
-
       BigchainDbTransactionBuilder
           .init()
           .addInput(null, fulfill, (EdDSAPublicKey) keyPair.getPublic())
@@ -155,16 +154,15 @@ public class BigchainDBClient extends DB {
     KeyPair keyPair = createKeyPair();
     MetaData metaData = new MetaData();
     metaData.setMetaData("status", "BURNED");
-    String burnAddress = "BurnBurnBurnBurnBurnBurnBurnBurnBurnBurnBurn";
     FulFill fulfill = new FulFill();
-    fulfill.setOutputIndex(String.valueOf(0));
     fulfill.setTransactionId(key);
+    fulfill.setOutputIndex(String.valueOf(0));
 
     try {
       BigchainDbTransactionBuilder
           .init()
           .addInput(null, fulfill, (EdDSAPublicKey) keyPair.getPublic())
-          .addOutput(burnAddress)
+          .addOutput("1", (EdDSAPublicKey) keyPair.getPublic())
           .addAssets(TransactionsApi.getTransactionById(key).getAsset().getId(), String.class)
           .addMetaData(metaData)
           .operation(Operations.TRANSFER)
