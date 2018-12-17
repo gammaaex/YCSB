@@ -233,7 +233,7 @@ public class BigchainDBClient extends DB {
     return new GenericCallback() {
       @Override
       public void transactionMalformed(Response response) {
-        onFailure();
+        onFailure(response);
       }
 
       @Override
@@ -243,7 +243,7 @@ public class BigchainDBClient extends DB {
 
       @Override
       public void otherError(Response response) {
-        onFailure();
+        onFailure(response);
       }
     };
   }
@@ -259,12 +259,12 @@ public class BigchainDBClient extends DB {
   /**
    * Stop this program for benchmark.
    */
-  private void onFailure() {
+  private void onFailure(Response response) {
     try {
-      throw new DBException("Transaction failed");
-    } catch (DBException e) {
+      throw new DBException("Transaction failed. Response is : " + response.body().string());
+    } catch (IOException | DBException e) {
       e.printStackTrace();
-      System.exit(1);
     }
+    System.exit(1);
   }
 }
