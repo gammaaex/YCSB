@@ -8,6 +8,7 @@ import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
+import java.io.IOException;
 import java.util.TreeMap;
 import java.util.UUID;
 
@@ -22,7 +23,6 @@ public class BigchainDBClientTest {
   private final String MOCK_TABLE = "'Table' is predetermined by BigchainDB";
   private final String MOCK_KEY = "This is mock key";
   private final String SEARCH_KEY = UUID.randomUUID().toString();
-  private String TRANSACTION_ID = "";
   private final TreeMap<String, ByteIterator> ASSETS = new TreeMap<>();
 
   @Before
@@ -36,15 +36,6 @@ public class BigchainDBClientTest {
     ASSETS.put("key", new StringByteIterator(SEARCH_KEY));
 
     dbClient.init();
-
-    dbClient.insert(
-        MOCK_TABLE,
-        MOCK_KEY,
-        ASSETS
-    );
-
-    Thread.sleep(500); // wait for insert
-    TRANSACTION_ID = AssetsApi.getAssets(SEARCH_KEY).getAssets().get(0).getId();
   }
 
   @After
@@ -74,13 +65,12 @@ public class BigchainDBClientTest {
 
   @Test
   public void testUpdate() {
-    Status status = dbClient.update(
-        MOCK_TABLE,
-        TRANSACTION_ID,
-        ASSETS
-    );
-
-    assertTrue(status.isOk());
+    try {
+      dbClient.update(null, null, null);
+      fail();
+    } catch (UnsupportedOperationException e) {
+      assertThat(e.getMessage(), is("BigchainDB is not support update operation."));
+    }
   }
 
   @Test
@@ -90,17 +80,26 @@ public class BigchainDBClientTest {
         MOCK_KEY,
         ASSETS
     );
+    int assetSize = 0;
 
+    try {
+      Thread.sleep(300); // wait for insert
+      assetSize = AssetsApi.getAssets(SEARCH_KEY).getAssets().size();
+    } catch (InterruptedException | IOException e) {
+      e.printStackTrace();
+    }
+
+    assertThat(Integer.parseInt("1"), is(assetSize));
     assertTrue(status.isOk());
   }
 
   @Test
   public void testDelete() {
-    Status status = dbClient.delete(
-        MOCK_TABLE,
-        TRANSACTION_ID
-    );
-
-    assertTrue(status.isOk());
+    try {
+      dbClient.delete(null, null);
+      fail();
+    } catch (UnsupportedOperationException e) {
+      assertThat(e.getMessage(), is("BigchainDB is not support delete operation."));
+    }
   }
 }

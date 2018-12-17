@@ -1,12 +1,9 @@
 package com.yahoo.ycsb.db;
 
-import com.bigchaindb.api.TransactionsApi;
 import com.bigchaindb.builders.BigchainDbConfigBuilder;
 import com.bigchaindb.builders.BigchainDbTransactionBuilder;
 import com.bigchaindb.constants.Operations;
-import com.bigchaindb.model.FulFill;
 import com.bigchaindb.model.GenericCallback;
-import com.bigchaindb.model.MetaData;
 import com.yahoo.ycsb.ByteIterator;
 import com.yahoo.ycsb.DB;
 import com.yahoo.ycsb.DBException;
@@ -79,37 +76,18 @@ public class BigchainDBClient extends DB {
    * performs TRANSFER operations on CREATED assets.
    * BigchainDB is immutable database. Therefore UPDATE operation is unsupported.
    * So, this is "Append" Operation.
+   * I want to implement as "Append" operation but I encountered a bug of the official driver.
+   * Please read @see link.
    *
    * @param table  The name of the table
    * @param key    The record key of the record to write.
    * @param values A HashMap of field/value pairs to update in the record
    * @return The result of the operation.
+   * @see "https://github.com/authenteq/java-bigchaindb-driver/issues/18"
    */
   @Override
   public Status update(String table, String key, Map<String, ByteIterator> values) {
-    KeyPair keyPair = createKeyPair();
-    MetaData metaData = createMetaData(values);
-    FulFill fulfill = new FulFill();
-    fulfill.setTransactionId(key);
-    fulfill.setOutputIndex(String.valueOf(0));
-
-    try {
-      BigchainDbTransactionBuilder
-          .init()
-          .addInput(null, fulfill, (EdDSAPublicKey) keyPair.getPublic())
-          .addOutput("1", (EdDSAPublicKey) keyPair.getPublic())
-          .addAssets(TransactionsApi.getTransactionById(key).getAsset().getId(), String.class)
-          .addMetaData(metaData)
-          .operation(Operations.TRANSFER)
-          .buildAndSign((EdDSAPublicKey) keyPair.getPublic(), (EdDSAPrivateKey) keyPair.getPrivate())
-          .sendTransaction(handleServerResponse());
-
-      return Status.OK;
-    } catch (IOException e) {
-      e.printStackTrace();
-
-      return Status.ERROR;
-    }
+    throw new UnsupportedOperationException("BigchainDB is not support update operation.");
   }
 
   /**
@@ -144,37 +122,17 @@ public class BigchainDBClient extends DB {
   /**
    * BigchainDB is immutable database. Therefore DELETE operation is unsupported.
    * So, this is "Burn" Operation.
+   * I want to implement as "Burn" operation but I encountered a bug of the official driver.
+   * Please read @see link.
    *
    * @param table The name of the table
    * @param key   The record key of the record to delete.
    * @return The result of the operation.
+   * @see "https://github.com/authenteq/java-bigchaindb-driver/issues/18"
    */
   @Override
   public Status delete(String table, String key) {
-    KeyPair keyPair = createKeyPair();
-    MetaData metaData = new MetaData();
-    metaData.setMetaData("status", "BURNED");
-    FulFill fulfill = new FulFill();
-    fulfill.setTransactionId(key);
-    fulfill.setOutputIndex(String.valueOf(0));
-
-    try {
-      BigchainDbTransactionBuilder
-          .init()
-          .addInput(null, fulfill, (EdDSAPublicKey) keyPair.getPublic())
-          .addOutput("1", (EdDSAPublicKey) keyPair.getPublic())
-          .addAssets(TransactionsApi.getTransactionById(key).getAsset().getId(), String.class)
-          .addMetaData(metaData)
-          .operation(Operations.TRANSFER)
-          .buildAndSign((EdDSAPublicKey) keyPair.getPublic(), (EdDSAPrivateKey) keyPair.getPrivate())
-          .sendTransaction(handleServerResponse());
-
-      return Status.OK;
-    } catch (IOException e) {
-      e.printStackTrace();
-
-      return Status.ERROR;
-    }
+    throw new UnsupportedOperationException("BigchainDB is not support delete operation.");
   }
 
   /**
@@ -205,23 +163,6 @@ public class BigchainDBClient extends DB {
     }
 
     return assets;
-  }
-
-  /**
-   * Create Meta data from Map.
-   * Meta data is the mutable data.
-   *
-   * @param values mutable data
-   * @return meta data
-   */
-  private MetaData createMetaData(Map<String, ByteIterator> values) {
-    MetaData metaData = new MetaData();
-
-    for (Map.Entry<String, ByteIterator> value : values.entrySet()) {
-      metaData.setMetaData(value.getKey(), value.getValue().toString());
-    }
-
-    return metaData;
   }
 
   /**
