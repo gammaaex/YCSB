@@ -1,0 +1,1356 @@
+--------------------------------------------------
+Start: Record number is 1000, count is 1.
+--------------------------------------------------
+Stopping bigchaindb_mongodb_1 ... done
+Removing bigchaindb_mongodb_1 ... done
+Removing network bigchaindb_default
+
+Creating network "bigchaindb_default" with the default driver
+Creating bigchaindb_tendermint_1 ... done
+Creating bigchaindb_mongodb_1    ... done
+Creating bigchaindb_bigchaindb_1 ... done
+./bin/ycsb run mongodb -P z_my/workloads/workload_1000.ini -P z_my/properties/workload_properties_mongodb.dat -s > z_my/results/run_mongodb_1000_1
+[WARN]  Running against a source checkout. In order to get our runtime dependencies we'll have to invoke Maven. Depending on the state of your system, this may take ~30-45 seconds
+[DEBUG]  Running 'mvn -pl com.yahoo.ycsb:mongodb-binding -am package -DskipTests dependency:build-classpath -DincludeScope=compile -Dmdep.outputFilterFile=true'
+java -cp /Users/admin/Documents/Sourcetree/YCSB/mongodb/conf:/Users/admin/Documents/Sourcetree/YCSB/mongodb/target/mongodb-binding-0.16.0-SNAPSHOT.jar:/Users/admin/.m2/repository/org/mongodb/mongo-java-driver/3.8.0/mongo-java-driver-3.8.0.jar:/Users/admin/.m2/repository/org/apache/htrace/htrace-core4/4.1.0-incubating/htrace-core4-4.1.0-incubating.jar:/Users/admin/.m2/repository/org/xerial/snappy/snappy-java/1.1.7.1/snappy-java-1.1.7.1.jar:/Users/admin/Documents/Sourcetree/YCSB/core/target/core-0.16.0-SNAPSHOT.jar:/Users/admin/.m2/repository/org/hdrhistogram/HdrHistogram/2.1.4/HdrHistogram-2.1.4.jar:/Users/admin/.m2/repository/org/codehaus/jackson/jackson-mapper-asl/1.9.4/jackson-mapper-asl-1.9.4.jar:/Users/admin/.m2/repository/org/codehaus/jackson/jackson-core-asl/1.9.4/jackson-core-asl-1.9.4.jar:/Users/admin/.m2/repository/com/allanbank/mongodb-async-driver/2.0.1/mongodb-async-driver-2.0.1.jar com.yahoo.ycsb.Client -db com.yahoo.ycsb.db.MongoDbClient -P z_my/workloads/workload_1000.ini -P z_my/properties/workload_properties_mongodb.dat -s -t
+Command line: -db com.yahoo.ycsb.db.MongoDbClient -P z_my/workloads/workload_1000.ini -P z_my/properties/workload_properties_mongodb.dat -s -t
+YCSB Client 0.16.0-SNAPSHOT
+
+Loading workload...
+Starting test.
+2019-01-11 23:55:42:024 0 sec: 0 operations; est completion in 0 second 
+1 11, 2019 11:55:42 午後 com.mongodb.diagnostics.logging.JULLogger log
+情報: Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+1 11, 2019 11:55:42 午後 com.mongodb.diagnostics.logging.JULLogger log
+情報: Cluster description not yet available. Waiting for 30000 ms before timing out
+1 11, 2019 11:55:42 午後 com.mongodb.diagnostics.logging.JULLogger log
+情報: Opened connection [connectionId{localValue:1, serverValue:7}] to localhost:27017
+1 11, 2019 11:55:42 午後 com.mongodb.diagnostics.logging.JULLogger log
+情報: Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[3, 6, 8]}, minWireVersion=0, maxWireVersion=6, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=6946347}
+1 11, 2019 11:55:42 午後 com.mongodb.diagnostics.logging.JULLogger log
+情報: Opened connection [connectionId{localValue:2, serverValue:8}] to localhost:27017
+1 11, 2019 11:55:44 午後 com.mongodb.diagnostics.logging.JULLogger log
+情報: Closed connection [connectionId{localValue:2, serverValue:8}] to localhost:27017 because the pool has been closed.
+2019-01-11 23:55:44:406 2 sec: 1000 operations; 412.37 current ops/sec; [CLEANUP AverageLatency(us)=3478] [INSERT AverageLatency(us)=1884.41] 
+--------------------------------------------------
+Finish: Record number is 1000, count is 1.
+--------------------------------------------------
+--------------------------------------------------
+Start: Record number is 1000, count is 2.
+--------------------------------------------------
+Stopping bigchaindb_bigchaindb_1 ... done
+Stopping bigchaindb_tendermint_1 ... done
+Stopping bigchaindb_mongodb_1    ... done
+Removing bigchaindb_bigchaindb_1 ... done
+Removing bigchaindb_tendermint_1 ... done
+Removing bigchaindb_mongodb_1    ... done
+Removing network bigchaindb_default
+
+Creating network "bigchaindb_default" with the default driver
+Creating bigchaindb_tendermint_1 ... done
+Creating bigchaindb_mongodb_1    ... done
+Creating bigchaindb_bigchaindb_1 ... done
+./bin/ycsb run mongodb -P z_my/workloads/workload_1000.ini -P z_my/properties/workload_properties_mongodb.dat -s > z_my/results/run_mongodb_1000_2
+[WARN]  Running against a source checkout. In order to get our runtime dependencies we'll have to invoke Maven. Depending on the state of your system, this may take ~30-45 seconds
+[DEBUG]  Running 'mvn -pl com.yahoo.ycsb:mongodb-binding -am package -DskipTests dependency:build-classpath -DincludeScope=compile -Dmdep.outputFilterFile=true'
+java -cp /Users/admin/Documents/Sourcetree/YCSB/mongodb/conf:/Users/admin/Documents/Sourcetree/YCSB/mongodb/target/mongodb-binding-0.16.0-SNAPSHOT.jar:/Users/admin/.m2/repository/org/mongodb/mongo-java-driver/3.8.0/mongo-java-driver-3.8.0.jar:/Users/admin/.m2/repository/org/apache/htrace/htrace-core4/4.1.0-incubating/htrace-core4-4.1.0-incubating.jar:/Users/admin/.m2/repository/org/xerial/snappy/snappy-java/1.1.7.1/snappy-java-1.1.7.1.jar:/Users/admin/Documents/Sourcetree/YCSB/core/target/core-0.16.0-SNAPSHOT.jar:/Users/admin/.m2/repository/org/hdrhistogram/HdrHistogram/2.1.4/HdrHistogram-2.1.4.jar:/Users/admin/.m2/repository/org/codehaus/jackson/jackson-mapper-asl/1.9.4/jackson-mapper-asl-1.9.4.jar:/Users/admin/.m2/repository/org/codehaus/jackson/jackson-core-asl/1.9.4/jackson-core-asl-1.9.4.jar:/Users/admin/.m2/repository/com/allanbank/mongodb-async-driver/2.0.1/mongodb-async-driver-2.0.1.jar com.yahoo.ycsb.Client -db com.yahoo.ycsb.db.MongoDbClient -P z_my/workloads/workload_1000.ini -P z_my/properties/workload_properties_mongodb.dat -s -t
+Command line: -db com.yahoo.ycsb.db.MongoDbClient -P z_my/workloads/workload_1000.ini -P z_my/properties/workload_properties_mongodb.dat -s -t
+YCSB Client 0.16.0-SNAPSHOT
+
+Loading workload...
+Starting test.
+2019-01-11 23:56:30:208 0 sec: 0 operations; est completion in 0 second 
+1 11, 2019 11:56:30 午後 com.mongodb.diagnostics.logging.JULLogger log
+情報: Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+1 11, 2019 11:56:30 午後 com.mongodb.diagnostics.logging.JULLogger log
+情報: Opened connection [connectionId{localValue:1, serverValue:7}] to localhost:27017
+1 11, 2019 11:56:30 午後 com.mongodb.diagnostics.logging.JULLogger log
+情報: Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[3, 6, 8]}, minWireVersion=0, maxWireVersion=6, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=6001601}
+1 11, 2019 11:56:30 午後 com.mongodb.diagnostics.logging.JULLogger log
+情報: Opened connection [connectionId{localValue:2, serverValue:8}] to localhost:27017
+1 11, 2019 11:56:32 午後 com.mongodb.diagnostics.logging.JULLogger log
+情報: Closed connection [connectionId{localValue:2, serverValue:8}] to localhost:27017 because the pool has been closed.
+2019-01-11 23:56:32:725 2 sec: 1000 operations; 392 current ops/sec; [CLEANUP AverageLatency(us)=4931] [INSERT AverageLatency(us)=1944.23] 
+--------------------------------------------------
+Finish: Record number is 1000, count is 2.
+--------------------------------------------------
+--------------------------------------------------
+Start: Record number is 1000, count is 3.
+--------------------------------------------------
+Stopping bigchaindb_bigchaindb_1 ... done
+Stopping bigchaindb_mongodb_1    ... done
+Stopping bigchaindb_tendermint_1 ... done
+Removing bigchaindb_bigchaindb_1 ... done
+Removing bigchaindb_mongodb_1    ... done
+Removing bigchaindb_tendermint_1 ... done
+Removing network bigchaindb_default
+
+Creating network "bigchaindb_default" with the default driver
+Creating bigchaindb_tendermint_1 ... done
+Creating bigchaindb_mongodb_1    ... done
+Creating bigchaindb_bigchaindb_1 ... done
+./bin/ycsb run mongodb -P z_my/workloads/workload_1000.ini -P z_my/properties/workload_properties_mongodb.dat -s > z_my/results/run_mongodb_1000_3
+[WARN]  Running against a source checkout. In order to get our runtime dependencies we'll have to invoke Maven. Depending on the state of your system, this may take ~30-45 seconds
+[DEBUG]  Running 'mvn -pl com.yahoo.ycsb:mongodb-binding -am package -DskipTests dependency:build-classpath -DincludeScope=compile -Dmdep.outputFilterFile=true'
+java -cp /Users/admin/Documents/Sourcetree/YCSB/mongodb/conf:/Users/admin/Documents/Sourcetree/YCSB/mongodb/target/mongodb-binding-0.16.0-SNAPSHOT.jar:/Users/admin/.m2/repository/org/mongodb/mongo-java-driver/3.8.0/mongo-java-driver-3.8.0.jar:/Users/admin/.m2/repository/org/apache/htrace/htrace-core4/4.1.0-incubating/htrace-core4-4.1.0-incubating.jar:/Users/admin/.m2/repository/org/xerial/snappy/snappy-java/1.1.7.1/snappy-java-1.1.7.1.jar:/Users/admin/Documents/Sourcetree/YCSB/core/target/core-0.16.0-SNAPSHOT.jar:/Users/admin/.m2/repository/org/hdrhistogram/HdrHistogram/2.1.4/HdrHistogram-2.1.4.jar:/Users/admin/.m2/repository/org/codehaus/jackson/jackson-mapper-asl/1.9.4/jackson-mapper-asl-1.9.4.jar:/Users/admin/.m2/repository/org/codehaus/jackson/jackson-core-asl/1.9.4/jackson-core-asl-1.9.4.jar:/Users/admin/.m2/repository/com/allanbank/mongodb-async-driver/2.0.1/mongodb-async-driver-2.0.1.jar com.yahoo.ycsb.Client -db com.yahoo.ycsb.db.MongoDbClient -P z_my/workloads/workload_1000.ini -P z_my/properties/workload_properties_mongodb.dat -s -t
+Command line: -db com.yahoo.ycsb.db.MongoDbClient -P z_my/workloads/workload_1000.ini -P z_my/properties/workload_properties_mongodb.dat -s -t
+YCSB Client 0.16.0-SNAPSHOT
+
+Loading workload...
+Starting test.
+2019-01-11 23:57:18:059 0 sec: 0 operations; est completion in 0 second 
+1 11, 2019 11:57:18 午後 com.mongodb.diagnostics.logging.JULLogger log
+情報: Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+1 11, 2019 11:57:18 午後 com.mongodb.diagnostics.logging.JULLogger log
+情報: Cluster description not yet available. Waiting for 30000 ms before timing out
+1 11, 2019 11:57:18 午後 com.mongodb.diagnostics.logging.JULLogger log
+情報: Opened connection [connectionId{localValue:1, serverValue:7}] to localhost:27017
+1 11, 2019 11:57:18 午後 com.mongodb.diagnostics.logging.JULLogger log
+情報: Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[3, 6, 8]}, minWireVersion=0, maxWireVersion=6, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=5386624}
+1 11, 2019 11:57:18 午後 com.mongodb.diagnostics.logging.JULLogger log
+情報: Opened connection [connectionId{localValue:2, serverValue:8}] to localhost:27017
+1 11, 2019 11:57:20 午後 com.mongodb.diagnostics.logging.JULLogger log
+情報: Closed connection [connectionId{localValue:2, serverValue:8}] to localhost:27017 because the pool has been closed.
+2019-01-11 23:57:20:508 2 sec: 1000 operations; 402.58 current ops/sec; [CLEANUP AverageLatency(us)=4202] [INSERT AverageLatency(us)=1941.08] 
+--------------------------------------------------
+Finish: Record number is 1000, count is 3.
+--------------------------------------------------
+--------------------------------------------------
+Start: Record number is 1000, count is 4.
+--------------------------------------------------
+Stopping bigchaindb_bigchaindb_1 ... done
+Stopping bigchaindb_tendermint_1 ... done
+Stopping bigchaindb_mongodb_1    ... done
+Removing bigchaindb_bigchaindb_1 ... done
+Removing bigchaindb_tendermint_1 ... done
+Removing bigchaindb_mongodb_1    ... done
+Removing network bigchaindb_default
+
+Creating network "bigchaindb_default" with the default driver
+Creating bigchaindb_tendermint_1 ... done
+Creating bigchaindb_mongodb_1    ... done
+Creating bigchaindb_bigchaindb_1 ... done
+./bin/ycsb run mongodb -P z_my/workloads/workload_1000.ini -P z_my/properties/workload_properties_mongodb.dat -s > z_my/results/run_mongodb_1000_4
+[WARN]  Running against a source checkout. In order to get our runtime dependencies we'll have to invoke Maven. Depending on the state of your system, this may take ~30-45 seconds
+[DEBUG]  Running 'mvn -pl com.yahoo.ycsb:mongodb-binding -am package -DskipTests dependency:build-classpath -DincludeScope=compile -Dmdep.outputFilterFile=true'
+java -cp /Users/admin/Documents/Sourcetree/YCSB/mongodb/conf:/Users/admin/Documents/Sourcetree/YCSB/mongodb/target/mongodb-binding-0.16.0-SNAPSHOT.jar:/Users/admin/.m2/repository/org/mongodb/mongo-java-driver/3.8.0/mongo-java-driver-3.8.0.jar:/Users/admin/.m2/repository/org/apache/htrace/htrace-core4/4.1.0-incubating/htrace-core4-4.1.0-incubating.jar:/Users/admin/.m2/repository/org/xerial/snappy/snappy-java/1.1.7.1/snappy-java-1.1.7.1.jar:/Users/admin/Documents/Sourcetree/YCSB/core/target/core-0.16.0-SNAPSHOT.jar:/Users/admin/.m2/repository/org/hdrhistogram/HdrHistogram/2.1.4/HdrHistogram-2.1.4.jar:/Users/admin/.m2/repository/org/codehaus/jackson/jackson-mapper-asl/1.9.4/jackson-mapper-asl-1.9.4.jar:/Users/admin/.m2/repository/org/codehaus/jackson/jackson-core-asl/1.9.4/jackson-core-asl-1.9.4.jar:/Users/admin/.m2/repository/com/allanbank/mongodb-async-driver/2.0.1/mongodb-async-driver-2.0.1.jar com.yahoo.ycsb.Client -db com.yahoo.ycsb.db.MongoDbClient -P z_my/workloads/workload_1000.ini -P z_my/properties/workload_properties_mongodb.dat -s -t
+Command line: -db com.yahoo.ycsb.db.MongoDbClient -P z_my/workloads/workload_1000.ini -P z_my/properties/workload_properties_mongodb.dat -s -t
+YCSB Client 0.16.0-SNAPSHOT
+
+Loading workload...
+Starting test.
+2019-01-11 23:58:07:069 0 sec: 0 operations; est completion in 0 second 
+1 11, 2019 11:58:07 午後 com.mongodb.diagnostics.logging.JULLogger log
+情報: Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+1 11, 2019 11:58:07 午後 com.mongodb.diagnostics.logging.JULLogger log
+情報: Opened connection [connectionId{localValue:1, serverValue:7}] to localhost:27017
+1 11, 2019 11:58:07 午後 com.mongodb.diagnostics.logging.JULLogger log
+情報: Cluster description not yet available. Waiting for 30000 ms before timing out
+1 11, 2019 11:58:07 午後 com.mongodb.diagnostics.logging.JULLogger log
+情報: Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[3, 6, 8]}, minWireVersion=0, maxWireVersion=6, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=8332633}
+1 11, 2019 11:58:07 午後 com.mongodb.diagnostics.logging.JULLogger log
+情報: Opened connection [connectionId{localValue:2, serverValue:8}] to localhost:27017
+1 11, 2019 11:58:09 午後 com.mongodb.diagnostics.logging.JULLogger log
+情報: Closed connection [connectionId{localValue:2, serverValue:8}] to localhost:27017 because the pool has been closed.
+2019-01-11 23:58:09:517 2 sec: 1000 operations; 401.28 current ops/sec; [CLEANUP AverageLatency(us)=4388] [INSERT AverageLatency(us)=1869.28] 
+--------------------------------------------------
+Finish: Record number is 1000, count is 4.
+--------------------------------------------------
+--------------------------------------------------
+Start: Record number is 1000, count is 5.
+--------------------------------------------------
+Stopping bigchaindb_bigchaindb_1 ... done
+Stopping bigchaindb_mongodb_1    ... done
+Stopping bigchaindb_tendermint_1 ... done
+Removing bigchaindb_bigchaindb_1 ... done
+Removing bigchaindb_mongodb_1    ... done
+Removing bigchaindb_tendermint_1 ... done
+Removing network bigchaindb_default
+
+Creating network "bigchaindb_default" with the default driver
+Creating bigchaindb_tendermint_1 ... done
+Creating bigchaindb_mongodb_1    ... done
+Creating bigchaindb_bigchaindb_1 ... done
+./bin/ycsb run mongodb -P z_my/workloads/workload_1000.ini -P z_my/properties/workload_properties_mongodb.dat -s > z_my/results/run_mongodb_1000_5
+[WARN]  Running against a source checkout. In order to get our runtime dependencies we'll have to invoke Maven. Depending on the state of your system, this may take ~30-45 seconds
+[DEBUG]  Running 'mvn -pl com.yahoo.ycsb:mongodb-binding -am package -DskipTests dependency:build-classpath -DincludeScope=compile -Dmdep.outputFilterFile=true'
+java -cp /Users/admin/Documents/Sourcetree/YCSB/mongodb/conf:/Users/admin/Documents/Sourcetree/YCSB/mongodb/target/mongodb-binding-0.16.0-SNAPSHOT.jar:/Users/admin/.m2/repository/org/mongodb/mongo-java-driver/3.8.0/mongo-java-driver-3.8.0.jar:/Users/admin/.m2/repository/org/apache/htrace/htrace-core4/4.1.0-incubating/htrace-core4-4.1.0-incubating.jar:/Users/admin/.m2/repository/org/xerial/snappy/snappy-java/1.1.7.1/snappy-java-1.1.7.1.jar:/Users/admin/Documents/Sourcetree/YCSB/core/target/core-0.16.0-SNAPSHOT.jar:/Users/admin/.m2/repository/org/hdrhistogram/HdrHistogram/2.1.4/HdrHistogram-2.1.4.jar:/Users/admin/.m2/repository/org/codehaus/jackson/jackson-mapper-asl/1.9.4/jackson-mapper-asl-1.9.4.jar:/Users/admin/.m2/repository/org/codehaus/jackson/jackson-core-asl/1.9.4/jackson-core-asl-1.9.4.jar:/Users/admin/.m2/repository/com/allanbank/mongodb-async-driver/2.0.1/mongodb-async-driver-2.0.1.jar com.yahoo.ycsb.Client -db com.yahoo.ycsb.db.MongoDbClient -P z_my/workloads/workload_1000.ini -P z_my/properties/workload_properties_mongodb.dat -s -t
+Command line: -db com.yahoo.ycsb.db.MongoDbClient -P z_my/workloads/workload_1000.ini -P z_my/properties/workload_properties_mongodb.dat -s -t
+YCSB Client 0.16.0-SNAPSHOT
+
+Loading workload...
+Starting test.
+2019-01-11 23:58:55:646 0 sec: 0 operations; est completion in 0 second 
+1 11, 2019 11:58:56 午後 com.mongodb.diagnostics.logging.JULLogger log
+情報: Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+1 11, 2019 11:58:56 午後 com.mongodb.diagnostics.logging.JULLogger log
+情報: Opened connection [connectionId{localValue:1, serverValue:7}] to localhost:27017
+1 11, 2019 11:58:56 午後 com.mongodb.diagnostics.logging.JULLogger log
+情報: Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[3, 6, 8]}, minWireVersion=0, maxWireVersion=6, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=10056898}
+1 11, 2019 11:58:56 午後 com.mongodb.diagnostics.logging.JULLogger log
+情報: Opened connection [connectionId{localValue:2, serverValue:8}] to localhost:27017
+1 11, 2019 11:58:58 午後 com.mongodb.diagnostics.logging.JULLogger log
+情報: Closed connection [connectionId{localValue:2, serverValue:8}] to localhost:27017 because the pool has been closed.
+2019-01-11 23:58:58:144 2 sec: 1000 operations; 392.62 current ops/sec; [CLEANUP AverageLatency(us)=4239] [INSERT AverageLatency(us)=1954.88] 
+--------------------------------------------------
+Finish: Record number is 1000, count is 5.
+--------------------------------------------------
+--------------------------------------------------
+Start: Record number is 1000, count is 6.
+--------------------------------------------------
+Stopping bigchaindb_bigchaindb_1 ... done
+Stopping bigchaindb_tendermint_1 ... done
+Stopping bigchaindb_mongodb_1    ... done
+Removing bigchaindb_bigchaindb_1 ... done
+Removing bigchaindb_tendermint_1 ... done
+Removing bigchaindb_mongodb_1    ... done
+Removing network bigchaindb_default
+
+Creating network "bigchaindb_default" with the default driver
+Creating bigchaindb_tendermint_1 ... done
+Creating bigchaindb_mongodb_1    ... done
+Creating bigchaindb_bigchaindb_1 ... done
+./bin/ycsb run mongodb -P z_my/workloads/workload_1000.ini -P z_my/properties/workload_properties_mongodb.dat -s > z_my/results/run_mongodb_1000_6
+[WARN]  Running against a source checkout. In order to get our runtime dependencies we'll have to invoke Maven. Depending on the state of your system, this may take ~30-45 seconds
+[DEBUG]  Running 'mvn -pl com.yahoo.ycsb:mongodb-binding -am package -DskipTests dependency:build-classpath -DincludeScope=compile -Dmdep.outputFilterFile=true'
+java -cp /Users/admin/Documents/Sourcetree/YCSB/mongodb/conf:/Users/admin/Documents/Sourcetree/YCSB/mongodb/target/mongodb-binding-0.16.0-SNAPSHOT.jar:/Users/admin/.m2/repository/org/mongodb/mongo-java-driver/3.8.0/mongo-java-driver-3.8.0.jar:/Users/admin/.m2/repository/org/apache/htrace/htrace-core4/4.1.0-incubating/htrace-core4-4.1.0-incubating.jar:/Users/admin/.m2/repository/org/xerial/snappy/snappy-java/1.1.7.1/snappy-java-1.1.7.1.jar:/Users/admin/Documents/Sourcetree/YCSB/core/target/core-0.16.0-SNAPSHOT.jar:/Users/admin/.m2/repository/org/hdrhistogram/HdrHistogram/2.1.4/HdrHistogram-2.1.4.jar:/Users/admin/.m2/repository/org/codehaus/jackson/jackson-mapper-asl/1.9.4/jackson-mapper-asl-1.9.4.jar:/Users/admin/.m2/repository/org/codehaus/jackson/jackson-core-asl/1.9.4/jackson-core-asl-1.9.4.jar:/Users/admin/.m2/repository/com/allanbank/mongodb-async-driver/2.0.1/mongodb-async-driver-2.0.1.jar com.yahoo.ycsb.Client -db com.yahoo.ycsb.db.MongoDbClient -P z_my/workloads/workload_1000.ini -P z_my/properties/workload_properties_mongodb.dat -s -t
+Command line: -db com.yahoo.ycsb.db.MongoDbClient -P z_my/workloads/workload_1000.ini -P z_my/properties/workload_properties_mongodb.dat -s -t
+YCSB Client 0.16.0-SNAPSHOT
+
+Loading workload...
+Starting test.
+2019-01-11 23:59:43:488 0 sec: 0 operations; est completion in 0 second 
+1 11, 2019 11:59:43 午後 com.mongodb.diagnostics.logging.JULLogger log
+情報: Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+1 11, 2019 11:59:44 午後 com.mongodb.diagnostics.logging.JULLogger log
+情報: Opened connection [connectionId{localValue:1, serverValue:7}] to localhost:27017
+1 11, 2019 11:59:44 午後 com.mongodb.diagnostics.logging.JULLogger log
+情報: Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[3, 6, 8]}, minWireVersion=0, maxWireVersion=6, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=6157758}
+1 11, 2019 11:59:44 午後 com.mongodb.diagnostics.logging.JULLogger log
+情報: Opened connection [connectionId{localValue:2, serverValue:8}] to localhost:27017
+1 11, 2019 11:59:45 午後 com.mongodb.diagnostics.logging.JULLogger log
+情報: Closed connection [connectionId{localValue:2, serverValue:8}] to localhost:27017 because the pool has been closed.
+2019-01-11 23:59:46:000 2 sec: 1000 operations; 390.62 current ops/sec; [CLEANUP AverageLatency(us)=6537] [INSERT AverageLatency(us)=1962.77] 
+--------------------------------------------------
+Finish: Record number is 1000, count is 6.
+--------------------------------------------------
+--------------------------------------------------
+Start: Record number is 1000, count is 7.
+--------------------------------------------------
+Stopping bigchaindb_bigchaindb_1 ... done
+Stopping bigchaindb_mongodb_1    ... done
+Stopping bigchaindb_tendermint_1 ... done
+Removing bigchaindb_bigchaindb_1 ... done
+Removing bigchaindb_mongodb_1    ... done
+Removing bigchaindb_tendermint_1 ... done
+Removing network bigchaindb_default
+
+Creating network "bigchaindb_default" with the default driver
+Creating bigchaindb_tendermint_1 ... done
+Creating bigchaindb_mongodb_1    ... done
+Creating bigchaindb_bigchaindb_1 ... done
+./bin/ycsb run mongodb -P z_my/workloads/workload_1000.ini -P z_my/properties/workload_properties_mongodb.dat -s > z_my/results/run_mongodb_1000_7
+[WARN]  Running against a source checkout. In order to get our runtime dependencies we'll have to invoke Maven. Depending on the state of your system, this may take ~30-45 seconds
+[DEBUG]  Running 'mvn -pl com.yahoo.ycsb:mongodb-binding -am package -DskipTests dependency:build-classpath -DincludeScope=compile -Dmdep.outputFilterFile=true'
+java -cp /Users/admin/Documents/Sourcetree/YCSB/mongodb/conf:/Users/admin/Documents/Sourcetree/YCSB/mongodb/target/mongodb-binding-0.16.0-SNAPSHOT.jar:/Users/admin/.m2/repository/org/mongodb/mongo-java-driver/3.8.0/mongo-java-driver-3.8.0.jar:/Users/admin/.m2/repository/org/apache/htrace/htrace-core4/4.1.0-incubating/htrace-core4-4.1.0-incubating.jar:/Users/admin/.m2/repository/org/xerial/snappy/snappy-java/1.1.7.1/snappy-java-1.1.7.1.jar:/Users/admin/Documents/Sourcetree/YCSB/core/target/core-0.16.0-SNAPSHOT.jar:/Users/admin/.m2/repository/org/hdrhistogram/HdrHistogram/2.1.4/HdrHistogram-2.1.4.jar:/Users/admin/.m2/repository/org/codehaus/jackson/jackson-mapper-asl/1.9.4/jackson-mapper-asl-1.9.4.jar:/Users/admin/.m2/repository/org/codehaus/jackson/jackson-core-asl/1.9.4/jackson-core-asl-1.9.4.jar:/Users/admin/.m2/repository/com/allanbank/mongodb-async-driver/2.0.1/mongodb-async-driver-2.0.1.jar com.yahoo.ycsb.Client -db com.yahoo.ycsb.db.MongoDbClient -P z_my/workloads/workload_1000.ini -P z_my/properties/workload_properties_mongodb.dat -s -t
+Command line: -db com.yahoo.ycsb.db.MongoDbClient -P z_my/workloads/workload_1000.ini -P z_my/properties/workload_properties_mongodb.dat -s -t
+YCSB Client 0.16.0-SNAPSHOT
+
+Loading workload...
+Starting test.
+2019-01-12 00:00:32:382 0 sec: 0 operations; est completion in 0 second 
+1 12, 2019 12:00:32 午前 com.mongodb.diagnostics.logging.JULLogger log
+情報: Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+1 12, 2019 12:00:32 午前 com.mongodb.diagnostics.logging.JULLogger log
+情報: Opened connection [connectionId{localValue:1, serverValue:7}] to localhost:27017
+1 12, 2019 12:00:32 午前 com.mongodb.diagnostics.logging.JULLogger log
+情報: Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[3, 6, 8]}, minWireVersion=0, maxWireVersion=6, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=6116528}
+1 12, 2019 12:00:32 午前 com.mongodb.diagnostics.logging.JULLogger log
+情報: Cluster description not yet available. Waiting for 30000 ms before timing out
+1 12, 2019 12:00:32 午前 com.mongodb.diagnostics.logging.JULLogger log
+情報: Opened connection [connectionId{localValue:2, serverValue:8}] to localhost:27017
+1 12, 2019 12:00:34 午前 com.mongodb.diagnostics.logging.JULLogger log
+情報: Closed connection [connectionId{localValue:2, serverValue:8}] to localhost:27017 because the pool has been closed.
+2019-01-12 00:00:34:959 2 sec: 1000 operations; 382.12 current ops/sec; [CLEANUP AverageLatency(us)=4168] [INSERT AverageLatency(us)=2041.91] 
+--------------------------------------------------
+Finish: Record number is 1000, count is 7.
+--------------------------------------------------
+--------------------------------------------------
+Start: Record number is 1000, count is 8.
+--------------------------------------------------
+Stopping bigchaindb_bigchaindb_1 ... done
+Stopping bigchaindb_tendermint_1 ... done
+Stopping bigchaindb_mongodb_1    ... done
+Removing bigchaindb_bigchaindb_1 ... done
+Removing bigchaindb_tendermint_1 ... done
+Removing bigchaindb_mongodb_1    ... done
+Removing network bigchaindb_default
+
+Creating network "bigchaindb_default" with the default driver
+Creating bigchaindb_tendermint_1 ... done
+Creating bigchaindb_mongodb_1    ... done
+Creating bigchaindb_bigchaindb_1 ... done
+./bin/ycsb run mongodb -P z_my/workloads/workload_1000.ini -P z_my/properties/workload_properties_mongodb.dat -s > z_my/results/run_mongodb_1000_8
+[WARN]  Running against a source checkout. In order to get our runtime dependencies we'll have to invoke Maven. Depending on the state of your system, this may take ~30-45 seconds
+[DEBUG]  Running 'mvn -pl com.yahoo.ycsb:mongodb-binding -am package -DskipTests dependency:build-classpath -DincludeScope=compile -Dmdep.outputFilterFile=true'
+java -cp /Users/admin/Documents/Sourcetree/YCSB/mongodb/conf:/Users/admin/Documents/Sourcetree/YCSB/mongodb/target/mongodb-binding-0.16.0-SNAPSHOT.jar:/Users/admin/.m2/repository/org/mongodb/mongo-java-driver/3.8.0/mongo-java-driver-3.8.0.jar:/Users/admin/.m2/repository/org/apache/htrace/htrace-core4/4.1.0-incubating/htrace-core4-4.1.0-incubating.jar:/Users/admin/.m2/repository/org/xerial/snappy/snappy-java/1.1.7.1/snappy-java-1.1.7.1.jar:/Users/admin/Documents/Sourcetree/YCSB/core/target/core-0.16.0-SNAPSHOT.jar:/Users/admin/.m2/repository/org/hdrhistogram/HdrHistogram/2.1.4/HdrHistogram-2.1.4.jar:/Users/admin/.m2/repository/org/codehaus/jackson/jackson-mapper-asl/1.9.4/jackson-mapper-asl-1.9.4.jar:/Users/admin/.m2/repository/org/codehaus/jackson/jackson-core-asl/1.9.4/jackson-core-asl-1.9.4.jar:/Users/admin/.m2/repository/com/allanbank/mongodb-async-driver/2.0.1/mongodb-async-driver-2.0.1.jar com.yahoo.ycsb.Client -db com.yahoo.ycsb.db.MongoDbClient -P z_my/workloads/workload_1000.ini -P z_my/properties/workload_properties_mongodb.dat -s -t
+Command line: -db com.yahoo.ycsb.db.MongoDbClient -P z_my/workloads/workload_1000.ini -P z_my/properties/workload_properties_mongodb.dat -s -t
+YCSB Client 0.16.0-SNAPSHOT
+
+Loading workload...
+Starting test.
+2019-01-12 00:01:20:549 0 sec: 0 operations; est completion in 0 second 
+1 12, 2019 12:01:20 午前 com.mongodb.diagnostics.logging.JULLogger log
+情報: Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+1 12, 2019 12:01:21 午前 com.mongodb.diagnostics.logging.JULLogger log
+情報: Opened connection [connectionId{localValue:1, serverValue:7}] to localhost:27017
+1 12, 2019 12:01:21 午前 com.mongodb.diagnostics.logging.JULLogger log
+情報: Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[3, 6, 8]}, minWireVersion=0, maxWireVersion=6, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=6169097}
+1 12, 2019 12:01:21 午前 com.mongodb.diagnostics.logging.JULLogger log
+情報: Opened connection [connectionId{localValue:2, serverValue:8}] to localhost:27017
+1 12, 2019 12:01:22 午前 com.mongodb.diagnostics.logging.JULLogger log
+情報: Closed connection [connectionId{localValue:2, serverValue:8}] to localhost:27017 because the pool has been closed.
+2019-01-12 00:01:22:893 2 sec: 1000 operations; 419.46 current ops/sec; [CLEANUP AverageLatency(us)=4077] [INSERT AverageLatency(us)=1814.15] 
+--------------------------------------------------
+Finish: Record number is 1000, count is 8.
+--------------------------------------------------
+--------------------------------------------------
+Start: Record number is 1000, count is 9.
+--------------------------------------------------
+Stopping bigchaindb_bigchaindb_1 ... done
+Stopping bigchaindb_mongodb_1    ... done
+Stopping bigchaindb_tendermint_1 ... done
+Removing bigchaindb_bigchaindb_1 ... done
+Removing bigchaindb_mongodb_1    ... done
+Removing bigchaindb_tendermint_1 ... done
+Removing network bigchaindb_default
+
+Creating network "bigchaindb_default" with the default driver
+Creating bigchaindb_tendermint_1 ... done
+Creating bigchaindb_mongodb_1    ... done
+Creating bigchaindb_bigchaindb_1 ... done
+./bin/ycsb run mongodb -P z_my/workloads/workload_1000.ini -P z_my/properties/workload_properties_mongodb.dat -s > z_my/results/run_mongodb_1000_9
+[WARN]  Running against a source checkout. In order to get our runtime dependencies we'll have to invoke Maven. Depending on the state of your system, this may take ~30-45 seconds
+[DEBUG]  Running 'mvn -pl com.yahoo.ycsb:mongodb-binding -am package -DskipTests dependency:build-classpath -DincludeScope=compile -Dmdep.outputFilterFile=true'
+java -cp /Users/admin/Documents/Sourcetree/YCSB/mongodb/conf:/Users/admin/Documents/Sourcetree/YCSB/mongodb/target/mongodb-binding-0.16.0-SNAPSHOT.jar:/Users/admin/.m2/repository/org/mongodb/mongo-java-driver/3.8.0/mongo-java-driver-3.8.0.jar:/Users/admin/.m2/repository/org/apache/htrace/htrace-core4/4.1.0-incubating/htrace-core4-4.1.0-incubating.jar:/Users/admin/.m2/repository/org/xerial/snappy/snappy-java/1.1.7.1/snappy-java-1.1.7.1.jar:/Users/admin/Documents/Sourcetree/YCSB/core/target/core-0.16.0-SNAPSHOT.jar:/Users/admin/.m2/repository/org/hdrhistogram/HdrHistogram/2.1.4/HdrHistogram-2.1.4.jar:/Users/admin/.m2/repository/org/codehaus/jackson/jackson-mapper-asl/1.9.4/jackson-mapper-asl-1.9.4.jar:/Users/admin/.m2/repository/org/codehaus/jackson/jackson-core-asl/1.9.4/jackson-core-asl-1.9.4.jar:/Users/admin/.m2/repository/com/allanbank/mongodb-async-driver/2.0.1/mongodb-async-driver-2.0.1.jar com.yahoo.ycsb.Client -db com.yahoo.ycsb.db.MongoDbClient -P z_my/workloads/workload_1000.ini -P z_my/properties/workload_properties_mongodb.dat -s -t
+Command line: -db com.yahoo.ycsb.db.MongoDbClient -P z_my/workloads/workload_1000.ini -P z_my/properties/workload_properties_mongodb.dat -s -t
+YCSB Client 0.16.0-SNAPSHOT
+
+Loading workload...
+Starting test.
+2019-01-12 00:02:08:728 0 sec: 0 operations; est completion in 0 second 
+1 12, 2019 12:02:09 午前 com.mongodb.diagnostics.logging.JULLogger log
+情報: Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+1 12, 2019 12:02:09 午前 com.mongodb.diagnostics.logging.JULLogger log
+情報: Opened connection [connectionId{localValue:1, serverValue:7}] to localhost:27017
+1 12, 2019 12:02:09 午前 com.mongodb.diagnostics.logging.JULLogger log
+情報: Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[3, 6, 8]}, minWireVersion=0, maxWireVersion=6, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=5763626}
+1 12, 2019 12:02:09 午前 com.mongodb.diagnostics.logging.JULLogger log
+情報: Opened connection [connectionId{localValue:2, serverValue:8}] to localhost:27017
+1 12, 2019 12:02:11 午前 com.mongodb.diagnostics.logging.JULLogger log
+情報: Closed connection [connectionId{localValue:2, serverValue:8}] to localhost:27017 because the pool has been closed.
+2019-01-12 00:02:11:488 2 sec: 1000 operations; 356.89 current ops/sec; [CLEANUP AverageLatency(us)=4249] [INSERT AverageLatency(us)=2214.2] 
+--------------------------------------------------
+Finish: Record number is 1000, count is 9.
+--------------------------------------------------
+--------------------------------------------------
+Start: Record number is 1000, count is 10.
+--------------------------------------------------
+Stopping bigchaindb_bigchaindb_1 ... done
+Stopping bigchaindb_tendermint_1 ... done
+Stopping bigchaindb_mongodb_1    ... done
+Removing bigchaindb_bigchaindb_1 ... done
+Removing bigchaindb_tendermint_1 ... done
+Removing bigchaindb_mongodb_1    ... done
+Removing network bigchaindb_default
+
+Creating network "bigchaindb_default" with the default driver
+Creating bigchaindb_tendermint_1 ... done
+Creating bigchaindb_mongodb_1    ... done
+Creating bigchaindb_bigchaindb_1 ... done
+./bin/ycsb run mongodb -P z_my/workloads/workload_1000.ini -P z_my/properties/workload_properties_mongodb.dat -s > z_my/results/run_mongodb_1000_10
+[WARN]  Running against a source checkout. In order to get our runtime dependencies we'll have to invoke Maven. Depending on the state of your system, this may take ~30-45 seconds
+[DEBUG]  Running 'mvn -pl com.yahoo.ycsb:mongodb-binding -am package -DskipTests dependency:build-classpath -DincludeScope=compile -Dmdep.outputFilterFile=true'
+java -cp /Users/admin/Documents/Sourcetree/YCSB/mongodb/conf:/Users/admin/Documents/Sourcetree/YCSB/mongodb/target/mongodb-binding-0.16.0-SNAPSHOT.jar:/Users/admin/.m2/repository/org/mongodb/mongo-java-driver/3.8.0/mongo-java-driver-3.8.0.jar:/Users/admin/.m2/repository/org/apache/htrace/htrace-core4/4.1.0-incubating/htrace-core4-4.1.0-incubating.jar:/Users/admin/.m2/repository/org/xerial/snappy/snappy-java/1.1.7.1/snappy-java-1.1.7.1.jar:/Users/admin/Documents/Sourcetree/YCSB/core/target/core-0.16.0-SNAPSHOT.jar:/Users/admin/.m2/repository/org/hdrhistogram/HdrHistogram/2.1.4/HdrHistogram-2.1.4.jar:/Users/admin/.m2/repository/org/codehaus/jackson/jackson-mapper-asl/1.9.4/jackson-mapper-asl-1.9.4.jar:/Users/admin/.m2/repository/org/codehaus/jackson/jackson-core-asl/1.9.4/jackson-core-asl-1.9.4.jar:/Users/admin/.m2/repository/com/allanbank/mongodb-async-driver/2.0.1/mongodb-async-driver-2.0.1.jar com.yahoo.ycsb.Client -db com.yahoo.ycsb.db.MongoDbClient -P z_my/workloads/workload_1000.ini -P z_my/properties/workload_properties_mongodb.dat -s -t
+Command line: -db com.yahoo.ycsb.db.MongoDbClient -P z_my/workloads/workload_1000.ini -P z_my/properties/workload_properties_mongodb.dat -s -t
+YCSB Client 0.16.0-SNAPSHOT
+
+Loading workload...
+Starting test.
+2019-01-12 00:02:58:249 0 sec: 0 operations; est completion in 0 second 
+1 12, 2019 12:02:58 午前 com.mongodb.diagnostics.logging.JULLogger log
+情報: Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+1 12, 2019 12:02:58 午前 com.mongodb.diagnostics.logging.JULLogger log
+情報: Opened connection [connectionId{localValue:1, serverValue:7}] to localhost:27017
+1 12, 2019 12:02:58 午前 com.mongodb.diagnostics.logging.JULLogger log
+情報: Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[3, 6, 8]}, minWireVersion=0, maxWireVersion=6, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=5514821}
+1 12, 2019 12:02:58 午前 com.mongodb.diagnostics.logging.JULLogger log
+情報: Opened connection [connectionId{localValue:2, serverValue:8}] to localhost:27017
+1 12, 2019 12:03:00 午前 com.mongodb.diagnostics.logging.JULLogger log
+情報: Closed connection [connectionId{localValue:2, serverValue:8}] to localhost:27017 because the pool has been closed.
+2019-01-12 00:03:00:957 2 sec: 1000 operations; 364.96 current ops/sec; [CLEANUP AverageLatency(us)=4276] [INSERT AverageLatency(us)=2125.53] 
+--------------------------------------------------
+Finish: Record number is 1000, count is 10.
+--------------------------------------------------
+--------------------------------------------------
+Start: Record number is 10000, count is 1.
+--------------------------------------------------
+Stopping bigchaindb_bigchaindb_1 ... done
+Stopping bigchaindb_tendermint_1 ... done
+Stopping bigchaindb_mongodb_1    ... done
+Removing bigchaindb_bigchaindb_1 ... done
+Removing bigchaindb_tendermint_1 ... done
+Removing bigchaindb_mongodb_1    ... done
+Removing network bigchaindb_default
+
+Creating network "bigchaindb_default" with the default driver
+Creating bigchaindb_mongodb_1    ... done
+Creating bigchaindb_tendermint_1 ... done
+Creating bigchaindb_bigchaindb_1 ... done
+./bin/ycsb run mongodb -P z_my/workloads/workload_10000.ini -P z_my/properties/workload_properties_mongodb.dat -s > z_my/results/run_mongodb_10000_1
+[WARN]  Running against a source checkout. In order to get our runtime dependencies we'll have to invoke Maven. Depending on the state of your system, this may take ~30-45 seconds
+[DEBUG]  Running 'mvn -pl com.yahoo.ycsb:mongodb-binding -am package -DskipTests dependency:build-classpath -DincludeScope=compile -Dmdep.outputFilterFile=true'
+java -cp /Users/admin/Documents/Sourcetree/YCSB/mongodb/conf:/Users/admin/Documents/Sourcetree/YCSB/mongodb/target/mongodb-binding-0.16.0-SNAPSHOT.jar:/Users/admin/.m2/repository/org/mongodb/mongo-java-driver/3.8.0/mongo-java-driver-3.8.0.jar:/Users/admin/.m2/repository/org/apache/htrace/htrace-core4/4.1.0-incubating/htrace-core4-4.1.0-incubating.jar:/Users/admin/.m2/repository/org/xerial/snappy/snappy-java/1.1.7.1/snappy-java-1.1.7.1.jar:/Users/admin/Documents/Sourcetree/YCSB/core/target/core-0.16.0-SNAPSHOT.jar:/Users/admin/.m2/repository/org/hdrhistogram/HdrHistogram/2.1.4/HdrHistogram-2.1.4.jar:/Users/admin/.m2/repository/org/codehaus/jackson/jackson-mapper-asl/1.9.4/jackson-mapper-asl-1.9.4.jar:/Users/admin/.m2/repository/org/codehaus/jackson/jackson-core-asl/1.9.4/jackson-core-asl-1.9.4.jar:/Users/admin/.m2/repository/com/allanbank/mongodb-async-driver/2.0.1/mongodb-async-driver-2.0.1.jar com.yahoo.ycsb.Client -db com.yahoo.ycsb.db.MongoDbClient -P z_my/workloads/workload_10000.ini -P z_my/properties/workload_properties_mongodb.dat -s -t
+Command line: -db com.yahoo.ycsb.db.MongoDbClient -P z_my/workloads/workload_10000.ini -P z_my/properties/workload_properties_mongodb.dat -s -t
+YCSB Client 0.16.0-SNAPSHOT
+
+Loading workload...
+Starting test.
+2019-01-12 00:03:46:305 0 sec: 0 operations; est completion in 0 second 
+1 12, 2019 12:03:46 午前 com.mongodb.diagnostics.logging.JULLogger log
+情報: Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+1 12, 2019 12:03:46 午前 com.mongodb.diagnostics.logging.JULLogger log
+情報: Cluster description not yet available. Waiting for 30000 ms before timing out
+1 12, 2019 12:03:46 午前 com.mongodb.diagnostics.logging.JULLogger log
+情報: Opened connection [connectionId{localValue:1, serverValue:7}] to localhost:27017
+1 12, 2019 12:03:46 午前 com.mongodb.diagnostics.logging.JULLogger log
+情報: Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[3, 6, 8]}, minWireVersion=0, maxWireVersion=6, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=4405606}
+1 12, 2019 12:03:46 午前 com.mongodb.diagnostics.logging.JULLogger log
+情報: Opened connection [connectionId{localValue:2, serverValue:8}] to localhost:27017
+2019-01-12 00:03:56:272 10 sec: 6272 operations; 626.7 current ops/sec; est completion in 6 second [INSERT AverageLatency(us)=1480.86] 
+1 12, 2019 12:04:01 午前 com.mongodb.diagnostics.logging.JULLogger log
+情報: Closed connection [connectionId{localValue:2, serverValue:8}] to localhost:27017 because the pool has been closed.
+2019-01-12 00:04:01:107 14 sec: 10000 operations; 771.04 current ops/sec; [CLEANUP AverageLatency(us)=3633] [INSERT AverageLatency(us)=1281.2] 
+--------------------------------------------------
+Finish: Record number is 10000, count is 1.
+--------------------------------------------------
+--------------------------------------------------
+Start: Record number is 10000, count is 2.
+--------------------------------------------------
+Stopping bigchaindb_bigchaindb_1 ... done
+Stopping bigchaindb_tendermint_1 ... done
+Stopping bigchaindb_mongodb_1    ... done
+Removing bigchaindb_bigchaindb_1 ... done
+Removing bigchaindb_tendermint_1 ... done
+Removing bigchaindb_mongodb_1    ... done
+Removing network bigchaindb_default
+
+Creating network "bigchaindb_default" with the default driver
+Creating bigchaindb_tendermint_1 ... done
+Creating bigchaindb_mongodb_1    ... done
+Creating bigchaindb_bigchaindb_1 ... done
+./bin/ycsb run mongodb -P z_my/workloads/workload_10000.ini -P z_my/properties/workload_properties_mongodb.dat -s > z_my/results/run_mongodb_10000_2
+[WARN]  Running against a source checkout. In order to get our runtime dependencies we'll have to invoke Maven. Depending on the state of your system, this may take ~30-45 seconds
+[DEBUG]  Running 'mvn -pl com.yahoo.ycsb:mongodb-binding -am package -DskipTests dependency:build-classpath -DincludeScope=compile -Dmdep.outputFilterFile=true'
+java -cp /Users/admin/Documents/Sourcetree/YCSB/mongodb/conf:/Users/admin/Documents/Sourcetree/YCSB/mongodb/target/mongodb-binding-0.16.0-SNAPSHOT.jar:/Users/admin/.m2/repository/org/mongodb/mongo-java-driver/3.8.0/mongo-java-driver-3.8.0.jar:/Users/admin/.m2/repository/org/apache/htrace/htrace-core4/4.1.0-incubating/htrace-core4-4.1.0-incubating.jar:/Users/admin/.m2/repository/org/xerial/snappy/snappy-java/1.1.7.1/snappy-java-1.1.7.1.jar:/Users/admin/Documents/Sourcetree/YCSB/core/target/core-0.16.0-SNAPSHOT.jar:/Users/admin/.m2/repository/org/hdrhistogram/HdrHistogram/2.1.4/HdrHistogram-2.1.4.jar:/Users/admin/.m2/repository/org/codehaus/jackson/jackson-mapper-asl/1.9.4/jackson-mapper-asl-1.9.4.jar:/Users/admin/.m2/repository/org/codehaus/jackson/jackson-core-asl/1.9.4/jackson-core-asl-1.9.4.jar:/Users/admin/.m2/repository/com/allanbank/mongodb-async-driver/2.0.1/mongodb-async-driver-2.0.1.jar com.yahoo.ycsb.Client -db com.yahoo.ycsb.db.MongoDbClient -P z_my/workloads/workload_10000.ini -P z_my/properties/workload_properties_mongodb.dat -s -t
+Command line: -db com.yahoo.ycsb.db.MongoDbClient -P z_my/workloads/workload_10000.ini -P z_my/properties/workload_properties_mongodb.dat -s -t
+YCSB Client 0.16.0-SNAPSHOT
+
+Loading workload...
+Starting test.
+2019-01-12 00:04:47:802 0 sec: 0 operations; est completion in 0 second 
+1 12, 2019 12:04:48 午前 com.mongodb.diagnostics.logging.JULLogger log
+情報: Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+1 12, 2019 12:04:48 午前 com.mongodb.diagnostics.logging.JULLogger log
+情報: Cluster description not yet available. Waiting for 30000 ms before timing out
+1 12, 2019 12:04:48 午前 com.mongodb.diagnostics.logging.JULLogger log
+情報: Opened connection [connectionId{localValue:1, serverValue:7}] to localhost:27017
+1 12, 2019 12:04:48 午前 com.mongodb.diagnostics.logging.JULLogger log
+情報: Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[3, 6, 8]}, minWireVersion=0, maxWireVersion=6, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=6862441}
+1 12, 2019 12:04:48 午前 com.mongodb.diagnostics.logging.JULLogger log
+情報: Opened connection [connectionId{localValue:2, serverValue:8}] to localhost:27017
+2019-01-12 00:04:57:765 10 sec: 5494 operations; 549.18 current ops/sec; est completion in 9 second [INSERT AverageLatency(us)=1698.52] 
+1 12, 2019 12:05:03 午前 com.mongodb.diagnostics.logging.JULLogger log
+情報: Closed connection [connectionId{localValue:2, serverValue:8}] to localhost:27017 because the pool has been closed.
+2019-01-12 00:05:03:782 16 sec: 10000 operations; 748.75 current ops/sec; [CLEANUP AverageLatency(us)=3611] [INSERT AverageLatency(us)=1317.44] 
+--------------------------------------------------
+Finish: Record number is 10000, count is 2.
+--------------------------------------------------
+--------------------------------------------------
+Start: Record number is 10000, count is 3.
+--------------------------------------------------
+Stopping bigchaindb_bigchaindb_1 ... done
+Stopping bigchaindb_mongodb_1    ... done
+Stopping bigchaindb_tendermint_1 ... done
+Removing bigchaindb_bigchaindb_1 ... done
+Removing bigchaindb_mongodb_1    ... done
+Removing bigchaindb_tendermint_1 ... done
+Removing network bigchaindb_default
+
+Creating network "bigchaindb_default" with the default driver
+Creating bigchaindb_mongodb_1    ... done
+Creating bigchaindb_tendermint_1 ... done
+Creating bigchaindb_bigchaindb_1 ... done
+./bin/ycsb run mongodb -P z_my/workloads/workload_10000.ini -P z_my/properties/workload_properties_mongodb.dat -s > z_my/results/run_mongodb_10000_3
+[WARN]  Running against a source checkout. In order to get our runtime dependencies we'll have to invoke Maven. Depending on the state of your system, this may take ~30-45 seconds
+[DEBUG]  Running 'mvn -pl com.yahoo.ycsb:mongodb-binding -am package -DskipTests dependency:build-classpath -DincludeScope=compile -Dmdep.outputFilterFile=true'
+java -cp /Users/admin/Documents/Sourcetree/YCSB/mongodb/conf:/Users/admin/Documents/Sourcetree/YCSB/mongodb/target/mongodb-binding-0.16.0-SNAPSHOT.jar:/Users/admin/.m2/repository/org/mongodb/mongo-java-driver/3.8.0/mongo-java-driver-3.8.0.jar:/Users/admin/.m2/repository/org/apache/htrace/htrace-core4/4.1.0-incubating/htrace-core4-4.1.0-incubating.jar:/Users/admin/.m2/repository/org/xerial/snappy/snappy-java/1.1.7.1/snappy-java-1.1.7.1.jar:/Users/admin/Documents/Sourcetree/YCSB/core/target/core-0.16.0-SNAPSHOT.jar:/Users/admin/.m2/repository/org/hdrhistogram/HdrHistogram/2.1.4/HdrHistogram-2.1.4.jar:/Users/admin/.m2/repository/org/codehaus/jackson/jackson-mapper-asl/1.9.4/jackson-mapper-asl-1.9.4.jar:/Users/admin/.m2/repository/org/codehaus/jackson/jackson-core-asl/1.9.4/jackson-core-asl-1.9.4.jar:/Users/admin/.m2/repository/com/allanbank/mongodb-async-driver/2.0.1/mongodb-async-driver-2.0.1.jar com.yahoo.ycsb.Client -db com.yahoo.ycsb.db.MongoDbClient -P z_my/workloads/workload_10000.ini -P z_my/properties/workload_properties_mongodb.dat -s -t
+Command line: -db com.yahoo.ycsb.db.MongoDbClient -P z_my/workloads/workload_10000.ini -P z_my/properties/workload_properties_mongodb.dat -s -t
+YCSB Client 0.16.0-SNAPSHOT
+
+Loading workload...
+Starting test.
+2019-01-12 00:05:49:019 0 sec: 0 operations; est completion in 0 second 
+1 12, 2019 12:05:49 午前 com.mongodb.diagnostics.logging.JULLogger log
+情報: Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+1 12, 2019 12:05:49 午前 com.mongodb.diagnostics.logging.JULLogger log
+情報: Cluster description not yet available. Waiting for 30000 ms before timing out
+1 12, 2019 12:05:49 午前 com.mongodb.diagnostics.logging.JULLogger log
+情報: Opened connection [connectionId{localValue:1, serverValue:7}] to localhost:27017
+1 12, 2019 12:05:49 午前 com.mongodb.diagnostics.logging.JULLogger log
+情報: Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[3, 6, 8]}, minWireVersion=0, maxWireVersion=6, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=7813690}
+1 12, 2019 12:05:49 午前 com.mongodb.diagnostics.logging.JULLogger log
+情報: Opened connection [connectionId{localValue:2, serverValue:8}] to localhost:27017
+2019-01-12 00:05:58:980 10 sec: 6501 operations; 650.1 current ops/sec; est completion in 6 second [INSERT AverageLatency(us)=1437.4] 
+1 12, 2019 12:06:03 午前 com.mongodb.diagnostics.logging.JULLogger log
+情報: Closed connection [connectionId{localValue:2, serverValue:8}] to localhost:27017 because the pool has been closed.
+2019-01-12 00:06:03:334 14 sec: 10000 operations; 802.52 current ops/sec; [CLEANUP AverageLatency(us)=4849] [INSERT AverageLatency(us)=1228.02] 
+--------------------------------------------------
+Finish: Record number is 10000, count is 3.
+--------------------------------------------------
+--------------------------------------------------
+Start: Record number is 10000, count is 4.
+--------------------------------------------------
+Stopping bigchaindb_bigchaindb_1 ... done
+Stopping bigchaindb_mongodb_1    ... done
+Stopping bigchaindb_tendermint_1 ... done
+Removing bigchaindb_bigchaindb_1 ... done
+Removing bigchaindb_mongodb_1    ... done
+Removing bigchaindb_tendermint_1 ... done
+Removing network bigchaindb_default
+
+Creating network "bigchaindb_default" with the default driver
+Creating bigchaindb_mongodb_1    ... done
+Creating bigchaindb_tendermint_1 ... done
+Creating bigchaindb_bigchaindb_1 ... done
+./bin/ycsb run mongodb -P z_my/workloads/workload_10000.ini -P z_my/properties/workload_properties_mongodb.dat -s > z_my/results/run_mongodb_10000_4
+[WARN]  Running against a source checkout. In order to get our runtime dependencies we'll have to invoke Maven. Depending on the state of your system, this may take ~30-45 seconds
+[DEBUG]  Running 'mvn -pl com.yahoo.ycsb:mongodb-binding -am package -DskipTests dependency:build-classpath -DincludeScope=compile -Dmdep.outputFilterFile=true'
+java -cp /Users/admin/Documents/Sourcetree/YCSB/mongodb/conf:/Users/admin/Documents/Sourcetree/YCSB/mongodb/target/mongodb-binding-0.16.0-SNAPSHOT.jar:/Users/admin/.m2/repository/org/mongodb/mongo-java-driver/3.8.0/mongo-java-driver-3.8.0.jar:/Users/admin/.m2/repository/org/apache/htrace/htrace-core4/4.1.0-incubating/htrace-core4-4.1.0-incubating.jar:/Users/admin/.m2/repository/org/xerial/snappy/snappy-java/1.1.7.1/snappy-java-1.1.7.1.jar:/Users/admin/Documents/Sourcetree/YCSB/core/target/core-0.16.0-SNAPSHOT.jar:/Users/admin/.m2/repository/org/hdrhistogram/HdrHistogram/2.1.4/HdrHistogram-2.1.4.jar:/Users/admin/.m2/repository/org/codehaus/jackson/jackson-mapper-asl/1.9.4/jackson-mapper-asl-1.9.4.jar:/Users/admin/.m2/repository/org/codehaus/jackson/jackson-core-asl/1.9.4/jackson-core-asl-1.9.4.jar:/Users/admin/.m2/repository/com/allanbank/mongodb-async-driver/2.0.1/mongodb-async-driver-2.0.1.jar com.yahoo.ycsb.Client -db com.yahoo.ycsb.db.MongoDbClient -P z_my/workloads/workload_10000.ini -P z_my/properties/workload_properties_mongodb.dat -s -t
+Command line: -db com.yahoo.ycsb.db.MongoDbClient -P z_my/workloads/workload_10000.ini -P z_my/properties/workload_properties_mongodb.dat -s -t
+YCSB Client 0.16.0-SNAPSHOT
+
+Loading workload...
+Starting test.
+2019-01-12 00:06:48:909 0 sec: 0 operations; est completion in 0 second 
+1 12, 2019 12:06:49 午前 com.mongodb.diagnostics.logging.JULLogger log
+情報: Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+1 12, 2019 12:06:49 午前 com.mongodb.diagnostics.logging.JULLogger log
+情報: Cluster description not yet available. Waiting for 30000 ms before timing out
+1 12, 2019 12:06:49 午前 com.mongodb.diagnostics.logging.JULLogger log
+情報: Opened connection [connectionId{localValue:1, serverValue:7}] to localhost:27017
+1 12, 2019 12:06:49 午前 com.mongodb.diagnostics.logging.JULLogger log
+情報: Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[3, 6, 8]}, minWireVersion=0, maxWireVersion=6, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=7984403}
+1 12, 2019 12:06:49 午前 com.mongodb.diagnostics.logging.JULLogger log
+情報: Opened connection [connectionId{localValue:2, serverValue:8}] to localhost:27017
+2019-01-12 00:06:58:878 10 sec: 5959 operations; 595.6 current ops/sec; est completion in 7 second [INSERT AverageLatency(us)=1529.77] 
+1 12, 2019 12:07:04 午前 com.mongodb.diagnostics.logging.JULLogger log
+情報: Closed connection [connectionId{localValue:2, serverValue:8}] to localhost:27017 because the pool has been closed.
+2019-01-12 00:07:04:122 15 sec: 10000 operations; 770.59 current ops/sec; [CLEANUP AverageLatency(us)=5353] [INSERT AverageLatency(us)=1332.2] 
+--------------------------------------------------
+Finish: Record number is 10000, count is 4.
+--------------------------------------------------
+--------------------------------------------------
+Start: Record number is 10000, count is 5.
+--------------------------------------------------
+Stopping bigchaindb_bigchaindb_1 ... done
+Stopping bigchaindb_mongodb_1    ... done
+Stopping bigchaindb_tendermint_1 ... done
+Removing bigchaindb_bigchaindb_1 ... done
+Removing bigchaindb_mongodb_1    ... done
+Removing bigchaindb_tendermint_1 ... done
+Removing network bigchaindb_default
+
+Creating network "bigchaindb_default" with the default driver
+Creating bigchaindb_tendermint_1 ... done
+Creating bigchaindb_mongodb_1    ... done
+Creating bigchaindb_bigchaindb_1 ... done
+./bin/ycsb run mongodb -P z_my/workloads/workload_10000.ini -P z_my/properties/workload_properties_mongodb.dat -s > z_my/results/run_mongodb_10000_5
+[WARN]  Running against a source checkout. In order to get our runtime dependencies we'll have to invoke Maven. Depending on the state of your system, this may take ~30-45 seconds
+[DEBUG]  Running 'mvn -pl com.yahoo.ycsb:mongodb-binding -am package -DskipTests dependency:build-classpath -DincludeScope=compile -Dmdep.outputFilterFile=true'
+java -cp /Users/admin/Documents/Sourcetree/YCSB/mongodb/conf:/Users/admin/Documents/Sourcetree/YCSB/mongodb/target/mongodb-binding-0.16.0-SNAPSHOT.jar:/Users/admin/.m2/repository/org/mongodb/mongo-java-driver/3.8.0/mongo-java-driver-3.8.0.jar:/Users/admin/.m2/repository/org/apache/htrace/htrace-core4/4.1.0-incubating/htrace-core4-4.1.0-incubating.jar:/Users/admin/.m2/repository/org/xerial/snappy/snappy-java/1.1.7.1/snappy-java-1.1.7.1.jar:/Users/admin/Documents/Sourcetree/YCSB/core/target/core-0.16.0-SNAPSHOT.jar:/Users/admin/.m2/repository/org/hdrhistogram/HdrHistogram/2.1.4/HdrHistogram-2.1.4.jar:/Users/admin/.m2/repository/org/codehaus/jackson/jackson-mapper-asl/1.9.4/jackson-mapper-asl-1.9.4.jar:/Users/admin/.m2/repository/org/codehaus/jackson/jackson-core-asl/1.9.4/jackson-core-asl-1.9.4.jar:/Users/admin/.m2/repository/com/allanbank/mongodb-async-driver/2.0.1/mongodb-async-driver-2.0.1.jar com.yahoo.ycsb.Client -db com.yahoo.ycsb.db.MongoDbClient -P z_my/workloads/workload_10000.ini -P z_my/properties/workload_properties_mongodb.dat -s -t
+Command line: -db com.yahoo.ycsb.db.MongoDbClient -P z_my/workloads/workload_10000.ini -P z_my/properties/workload_properties_mongodb.dat -s -t
+YCSB Client 0.16.0-SNAPSHOT
+
+Loading workload...
+Starting test.
+2019-01-12 00:07:49:803 0 sec: 0 operations; est completion in 0 second 
+1 12, 2019 12:07:50 午前 com.mongodb.diagnostics.logging.JULLogger log
+情報: Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+1 12, 2019 12:07:50 午前 com.mongodb.diagnostics.logging.JULLogger log
+情報: Cluster description not yet available. Waiting for 30000 ms before timing out
+1 12, 2019 12:07:50 午前 com.mongodb.diagnostics.logging.JULLogger log
+情報: Opened connection [connectionId{localValue:1, serverValue:7}] to localhost:27017
+1 12, 2019 12:07:50 午前 com.mongodb.diagnostics.logging.JULLogger log
+情報: Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[3, 6, 8]}, minWireVersion=0, maxWireVersion=6, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=11164740}
+1 12, 2019 12:07:50 午前 com.mongodb.diagnostics.logging.JULLogger log
+情報: Opened connection [connectionId{localValue:2, serverValue:8}] to localhost:27017
+2019-01-12 00:07:59:763 10 sec: 6057 operations; 605.64 current ops/sec; est completion in 7 second [INSERT AverageLatency(us)=1532.81] 
+1 12, 2019 12:08:06 午前 com.mongodb.diagnostics.logging.JULLogger log
+情報: Closed connection [connectionId{localValue:2, serverValue:8}] to localhost:27017 because the pool has been closed.
+2019-01-12 00:08:06:062 16 sec: 10000 operations; 625.87 current ops/sec; [CLEANUP AverageLatency(us)=3669] [INSERT AverageLatency(us)=1582.27] 
+--------------------------------------------------
+Finish: Record number is 10000, count is 5.
+--------------------------------------------------
+--------------------------------------------------
+Start: Record number is 10000, count is 6.
+--------------------------------------------------
+Stopping bigchaindb_bigchaindb_1 ... done
+Stopping bigchaindb_tendermint_1 ... done
+Stopping bigchaindb_mongodb_1    ... done
+Removing bigchaindb_bigchaindb_1 ... done
+Removing bigchaindb_tendermint_1 ... done
+Removing bigchaindb_mongodb_1    ... done
+Removing network bigchaindb_default
+
+Creating network "bigchaindb_default" with the default driver
+Creating bigchaindb_tendermint_1 ... done
+Creating bigchaindb_mongodb_1    ... done
+Creating bigchaindb_bigchaindb_1 ... done
+./bin/ycsb run mongodb -P z_my/workloads/workload_10000.ini -P z_my/properties/workload_properties_mongodb.dat -s > z_my/results/run_mongodb_10000_6
+[WARN]  Running against a source checkout. In order to get our runtime dependencies we'll have to invoke Maven. Depending on the state of your system, this may take ~30-45 seconds
+[DEBUG]  Running 'mvn -pl com.yahoo.ycsb:mongodb-binding -am package -DskipTests dependency:build-classpath -DincludeScope=compile -Dmdep.outputFilterFile=true'
+java -cp /Users/admin/Documents/Sourcetree/YCSB/mongodb/conf:/Users/admin/Documents/Sourcetree/YCSB/mongodb/target/mongodb-binding-0.16.0-SNAPSHOT.jar:/Users/admin/.m2/repository/org/mongodb/mongo-java-driver/3.8.0/mongo-java-driver-3.8.0.jar:/Users/admin/.m2/repository/org/apache/htrace/htrace-core4/4.1.0-incubating/htrace-core4-4.1.0-incubating.jar:/Users/admin/.m2/repository/org/xerial/snappy/snappy-java/1.1.7.1/snappy-java-1.1.7.1.jar:/Users/admin/Documents/Sourcetree/YCSB/core/target/core-0.16.0-SNAPSHOT.jar:/Users/admin/.m2/repository/org/hdrhistogram/HdrHistogram/2.1.4/HdrHistogram-2.1.4.jar:/Users/admin/.m2/repository/org/codehaus/jackson/jackson-mapper-asl/1.9.4/jackson-mapper-asl-1.9.4.jar:/Users/admin/.m2/repository/org/codehaus/jackson/jackson-core-asl/1.9.4/jackson-core-asl-1.9.4.jar:/Users/admin/.m2/repository/com/allanbank/mongodb-async-driver/2.0.1/mongodb-async-driver-2.0.1.jar com.yahoo.ycsb.Client -db com.yahoo.ycsb.db.MongoDbClient -P z_my/workloads/workload_10000.ini -P z_my/properties/workload_properties_mongodb.dat -s -t
+Command line: -db com.yahoo.ycsb.db.MongoDbClient -P z_my/workloads/workload_10000.ini -P z_my/properties/workload_properties_mongodb.dat -s -t
+YCSB Client 0.16.0-SNAPSHOT
+
+Loading workload...
+Starting test.
+2019-01-12 00:08:51:649 0 sec: 0 operations; est completion in 0 second 
+1 12, 2019 12:08:52 午前 com.mongodb.diagnostics.logging.JULLogger log
+情報: Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+1 12, 2019 12:08:52 午前 com.mongodb.diagnostics.logging.JULLogger log
+情報: Cluster description not yet available. Waiting for 30000 ms before timing out
+1 12, 2019 12:08:52 午前 com.mongodb.diagnostics.logging.JULLogger log
+情報: Opened connection [connectionId{localValue:1, serverValue:7}] to localhost:27017
+1 12, 2019 12:08:52 午前 com.mongodb.diagnostics.logging.JULLogger log
+情報: Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[3, 6, 8]}, minWireVersion=0, maxWireVersion=6, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=5464031}
+1 12, 2019 12:08:52 午前 com.mongodb.diagnostics.logging.JULLogger log
+情報: Opened connection [connectionId{localValue:2, serverValue:8}] to localhost:27017
+2019-01-12 00:09:01:606 10 sec: 6127 operations; 612.64 current ops/sec; est completion in 7 second [INSERT AverageLatency(us)=1519.37] 
+1 12, 2019 12:09:06 午前 com.mongodb.diagnostics.logging.JULLogger log
+情報: Closed connection [connectionId{localValue:2, serverValue:8}] to localhost:27017 because the pool has been closed.
+2019-01-12 00:09:06:889 15 sec: 10000 operations; 733.11 current ops/sec; [CLEANUP AverageLatency(us)=4012] [INSERT AverageLatency(us)=1345.9] 
+--------------------------------------------------
+Finish: Record number is 10000, count is 6.
+--------------------------------------------------
+--------------------------------------------------
+Start: Record number is 10000, count is 7.
+--------------------------------------------------
+Stopping bigchaindb_bigchaindb_1 ... done
+Stopping bigchaindb_tendermint_1 ... done
+Stopping bigchaindb_mongodb_1    ... done
+Removing bigchaindb_bigchaindb_1 ... done
+Removing bigchaindb_tendermint_1 ... done
+Removing bigchaindb_mongodb_1    ... done
+Removing network bigchaindb_default
+
+Creating network "bigchaindb_default" with the default driver
+Creating bigchaindb_tendermint_1 ... done
+Creating bigchaindb_mongodb_1    ... done
+Creating bigchaindb_bigchaindb_1 ... done
+./bin/ycsb run mongodb -P z_my/workloads/workload_10000.ini -P z_my/properties/workload_properties_mongodb.dat -s > z_my/results/run_mongodb_10000_7
+[WARN]  Running against a source checkout. In order to get our runtime dependencies we'll have to invoke Maven. Depending on the state of your system, this may take ~30-45 seconds
+[DEBUG]  Running 'mvn -pl com.yahoo.ycsb:mongodb-binding -am package -DskipTests dependency:build-classpath -DincludeScope=compile -Dmdep.outputFilterFile=true'
+java -cp /Users/admin/Documents/Sourcetree/YCSB/mongodb/conf:/Users/admin/Documents/Sourcetree/YCSB/mongodb/target/mongodb-binding-0.16.0-SNAPSHOT.jar:/Users/admin/.m2/repository/org/mongodb/mongo-java-driver/3.8.0/mongo-java-driver-3.8.0.jar:/Users/admin/.m2/repository/org/apache/htrace/htrace-core4/4.1.0-incubating/htrace-core4-4.1.0-incubating.jar:/Users/admin/.m2/repository/org/xerial/snappy/snappy-java/1.1.7.1/snappy-java-1.1.7.1.jar:/Users/admin/Documents/Sourcetree/YCSB/core/target/core-0.16.0-SNAPSHOT.jar:/Users/admin/.m2/repository/org/hdrhistogram/HdrHistogram/2.1.4/HdrHistogram-2.1.4.jar:/Users/admin/.m2/repository/org/codehaus/jackson/jackson-mapper-asl/1.9.4/jackson-mapper-asl-1.9.4.jar:/Users/admin/.m2/repository/org/codehaus/jackson/jackson-core-asl/1.9.4/jackson-core-asl-1.9.4.jar:/Users/admin/.m2/repository/com/allanbank/mongodb-async-driver/2.0.1/mongodb-async-driver-2.0.1.jar com.yahoo.ycsb.Client -db com.yahoo.ycsb.db.MongoDbClient -P z_my/workloads/workload_10000.ini -P z_my/properties/workload_properties_mongodb.dat -s -t
+Command line: -db com.yahoo.ycsb.db.MongoDbClient -P z_my/workloads/workload_10000.ini -P z_my/properties/workload_properties_mongodb.dat -s -t
+YCSB Client 0.16.0-SNAPSHOT
+
+Loading workload...
+Starting test.
+2019-01-12 00:09:53:143 0 sec: 0 operations; est completion in 0 second 
+1 12, 2019 12:09:53 午前 com.mongodb.diagnostics.logging.JULLogger log
+情報: Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+1 12, 2019 12:09:53 午前 com.mongodb.diagnostics.logging.JULLogger log
+情報: Cluster description not yet available. Waiting for 30000 ms before timing out
+1 12, 2019 12:09:53 午前 com.mongodb.diagnostics.logging.JULLogger log
+情報: Opened connection [connectionId{localValue:1, serverValue:7}] to localhost:27017
+1 12, 2019 12:09:53 午前 com.mongodb.diagnostics.logging.JULLogger log
+情報: Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[3, 6, 8]}, minWireVersion=0, maxWireVersion=6, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=6159423}
+1 12, 2019 12:09:53 午前 com.mongodb.diagnostics.logging.JULLogger log
+情報: Opened connection [connectionId{localValue:2, serverValue:8}] to localhost:27017
+2019-01-12 00:10:03:110 10 sec: 6282 operations; 628.14 current ops/sec; est completion in 6 second [INSERT AverageLatency(us)=1487.15] 
+1 12, 2019 12:10:07 午前 com.mongodb.diagnostics.logging.JULLogger log
+情報: Closed connection [connectionId{localValue:2, serverValue:8}] to localhost:27017 because the pool has been closed.
+2019-01-12 00:10:07:806 14 sec: 10000 operations; 791.91 current ops/sec; [CLEANUP AverageLatency(us)=3103] [INSERT AverageLatency(us)=1249.43] 
+--------------------------------------------------
+Finish: Record number is 10000, count is 7.
+--------------------------------------------------
+--------------------------------------------------
+Start: Record number is 10000, count is 8.
+--------------------------------------------------
+Stopping bigchaindb_bigchaindb_1 ... done
+Stopping bigchaindb_mongodb_1    ... done
+Stopping bigchaindb_tendermint_1 ... done
+Removing bigchaindb_bigchaindb_1 ... done
+Removing bigchaindb_mongodb_1    ... done
+Removing bigchaindb_tendermint_1 ... done
+Removing network bigchaindb_default
+
+Creating network "bigchaindb_default" with the default driver
+Creating bigchaindb_mongodb_1    ... done
+Creating bigchaindb_tendermint_1 ... done
+Creating bigchaindb_bigchaindb_1 ... done
+./bin/ycsb run mongodb -P z_my/workloads/workload_10000.ini -P z_my/properties/workload_properties_mongodb.dat -s > z_my/results/run_mongodb_10000_8
+[WARN]  Running against a source checkout. In order to get our runtime dependencies we'll have to invoke Maven. Depending on the state of your system, this may take ~30-45 seconds
+[DEBUG]  Running 'mvn -pl com.yahoo.ycsb:mongodb-binding -am package -DskipTests dependency:build-classpath -DincludeScope=compile -Dmdep.outputFilterFile=true'
+java -cp /Users/admin/Documents/Sourcetree/YCSB/mongodb/conf:/Users/admin/Documents/Sourcetree/YCSB/mongodb/target/mongodb-binding-0.16.0-SNAPSHOT.jar:/Users/admin/.m2/repository/org/mongodb/mongo-java-driver/3.8.0/mongo-java-driver-3.8.0.jar:/Users/admin/.m2/repository/org/apache/htrace/htrace-core4/4.1.0-incubating/htrace-core4-4.1.0-incubating.jar:/Users/admin/.m2/repository/org/xerial/snappy/snappy-java/1.1.7.1/snappy-java-1.1.7.1.jar:/Users/admin/Documents/Sourcetree/YCSB/core/target/core-0.16.0-SNAPSHOT.jar:/Users/admin/.m2/repository/org/hdrhistogram/HdrHistogram/2.1.4/HdrHistogram-2.1.4.jar:/Users/admin/.m2/repository/org/codehaus/jackson/jackson-mapper-asl/1.9.4/jackson-mapper-asl-1.9.4.jar:/Users/admin/.m2/repository/org/codehaus/jackson/jackson-core-asl/1.9.4/jackson-core-asl-1.9.4.jar:/Users/admin/.m2/repository/com/allanbank/mongodb-async-driver/2.0.1/mongodb-async-driver-2.0.1.jar com.yahoo.ycsb.Client -db com.yahoo.ycsb.db.MongoDbClient -P z_my/workloads/workload_10000.ini -P z_my/properties/workload_properties_mongodb.dat -s -t
+Command line: -db com.yahoo.ycsb.db.MongoDbClient -P z_my/workloads/workload_10000.ini -P z_my/properties/workload_properties_mongodb.dat -s -t
+YCSB Client 0.16.0-SNAPSHOT
+
+Loading workload...
+Starting test.
+2019-01-12 00:10:54:104 0 sec: 0 operations; est completion in 0 second 
+1 12, 2019 12:10:54 午前 com.mongodb.diagnostics.logging.JULLogger log
+情報: Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+1 12, 2019 12:10:54 午前 com.mongodb.diagnostics.logging.JULLogger log
+情報: Cluster description not yet available. Waiting for 30000 ms before timing out
+1 12, 2019 12:10:54 午前 com.mongodb.diagnostics.logging.JULLogger log
+情報: Opened connection [connectionId{localValue:1, serverValue:7}] to localhost:27017
+1 12, 2019 12:10:54 午前 com.mongodb.diagnostics.logging.JULLogger log
+情報: Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[3, 6, 8]}, minWireVersion=0, maxWireVersion=6, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=5974260}
+1 12, 2019 12:10:54 午前 com.mongodb.diagnostics.logging.JULLogger log
+情報: Opened connection [connectionId{localValue:2, serverValue:8}] to localhost:27017
+2019-01-12 00:11:04:069 10 sec: 6258 operations; 625.67 current ops/sec; est completion in 6 second [INSERT AverageLatency(us)=1493.97] 
+1 12, 2019 12:11:08 午前 com.mongodb.diagnostics.logging.JULLogger log
+情報: Closed connection [connectionId{localValue:2, serverValue:8}] to localhost:27017 because the pool has been closed.
+2019-01-12 00:11:08:836 14 sec: 10000 operations; 784.98 current ops/sec; [CLEANUP AverageLatency(us)=4526] [INSERT AverageLatency(us)=1253.16] 
+--------------------------------------------------
+Finish: Record number is 10000, count is 8.
+--------------------------------------------------
+--------------------------------------------------
+Start: Record number is 10000, count is 9.
+--------------------------------------------------
+Stopping bigchaindb_bigchaindb_1 ... done
+Stopping bigchaindb_tendermint_1 ... done
+Stopping bigchaindb_mongodb_1    ... done
+Removing bigchaindb_bigchaindb_1 ... done
+Removing bigchaindb_tendermint_1 ... done
+Removing bigchaindb_mongodb_1    ... done
+Removing network bigchaindb_default
+
+Creating network "bigchaindb_default" with the default driver
+Creating bigchaindb_mongodb_1    ... done
+Creating bigchaindb_tendermint_1 ... done
+Creating bigchaindb_bigchaindb_1 ... done
+./bin/ycsb run mongodb -P z_my/workloads/workload_10000.ini -P z_my/properties/workload_properties_mongodb.dat -s > z_my/results/run_mongodb_10000_9
+[WARN]  Running against a source checkout. In order to get our runtime dependencies we'll have to invoke Maven. Depending on the state of your system, this may take ~30-45 seconds
+[DEBUG]  Running 'mvn -pl com.yahoo.ycsb:mongodb-binding -am package -DskipTests dependency:build-classpath -DincludeScope=compile -Dmdep.outputFilterFile=true'
+java -cp /Users/admin/Documents/Sourcetree/YCSB/mongodb/conf:/Users/admin/Documents/Sourcetree/YCSB/mongodb/target/mongodb-binding-0.16.0-SNAPSHOT.jar:/Users/admin/.m2/repository/org/mongodb/mongo-java-driver/3.8.0/mongo-java-driver-3.8.0.jar:/Users/admin/.m2/repository/org/apache/htrace/htrace-core4/4.1.0-incubating/htrace-core4-4.1.0-incubating.jar:/Users/admin/.m2/repository/org/xerial/snappy/snappy-java/1.1.7.1/snappy-java-1.1.7.1.jar:/Users/admin/Documents/Sourcetree/YCSB/core/target/core-0.16.0-SNAPSHOT.jar:/Users/admin/.m2/repository/org/hdrhistogram/HdrHistogram/2.1.4/HdrHistogram-2.1.4.jar:/Users/admin/.m2/repository/org/codehaus/jackson/jackson-mapper-asl/1.9.4/jackson-mapper-asl-1.9.4.jar:/Users/admin/.m2/repository/org/codehaus/jackson/jackson-core-asl/1.9.4/jackson-core-asl-1.9.4.jar:/Users/admin/.m2/repository/com/allanbank/mongodb-async-driver/2.0.1/mongodb-async-driver-2.0.1.jar com.yahoo.ycsb.Client -db com.yahoo.ycsb.db.MongoDbClient -P z_my/workloads/workload_10000.ini -P z_my/properties/workload_properties_mongodb.dat -s -t
+Command line: -db com.yahoo.ycsb.db.MongoDbClient -P z_my/workloads/workload_10000.ini -P z_my/properties/workload_properties_mongodb.dat -s -t
+YCSB Client 0.16.0-SNAPSHOT
+
+Loading workload...
+Starting test.
+2019-01-12 00:11:54:328 0 sec: 0 operations; est completion in 0 second 
+1 12, 2019 12:11:54 午前 com.mongodb.diagnostics.logging.JULLogger log
+情報: Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+1 12, 2019 12:11:54 午前 com.mongodb.diagnostics.logging.JULLogger log
+情報: Cluster description not yet available. Waiting for 30000 ms before timing out
+1 12, 2019 12:11:54 午前 com.mongodb.diagnostics.logging.JULLogger log
+情報: Opened connection [connectionId{localValue:1, serverValue:7}] to localhost:27017
+1 12, 2019 12:11:54 午前 com.mongodb.diagnostics.logging.JULLogger log
+情報: Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[3, 6, 8]}, minWireVersion=0, maxWireVersion=6, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=9177047}
+1 12, 2019 12:11:54 午前 com.mongodb.diagnostics.logging.JULLogger log
+情報: Opened connection [connectionId{localValue:2, serverValue:8}] to localhost:27017
+2019-01-12 00:12:04:286 10 sec: 5949 operations; 594.84 current ops/sec; est completion in 7 second [INSERT AverageLatency(us)=1567.3] 
+1 12, 2019 12:12:09 午前 com.mongodb.diagnostics.logging.JULLogger log
+情報: Closed connection [connectionId{localValue:2, serverValue:8}] to localhost:27017 because the pool has been closed.
+2019-01-12 00:12:09:746 15 sec: 10000 operations; 741.94 current ops/sec; [CLEANUP AverageLatency(us)=4970] [INSERT AverageLatency(us)=1332.51] 
+--------------------------------------------------
+Finish: Record number is 10000, count is 9.
+--------------------------------------------------
+--------------------------------------------------
+Start: Record number is 10000, count is 10.
+--------------------------------------------------
+Stopping bigchaindb_bigchaindb_1 ... done
+Stopping bigchaindb_tendermint_1 ... done
+Stopping bigchaindb_mongodb_1    ... done
+Removing bigchaindb_bigchaindb_1 ... done
+Removing bigchaindb_tendermint_1 ... done
+Removing bigchaindb_mongodb_1    ... done
+Removing network bigchaindb_default
+
+Creating network "bigchaindb_default" with the default driver
+Creating bigchaindb_tendermint_1 ... done
+Creating bigchaindb_mongodb_1    ... done
+Creating bigchaindb_bigchaindb_1 ... done
+./bin/ycsb run mongodb -P z_my/workloads/workload_10000.ini -P z_my/properties/workload_properties_mongodb.dat -s > z_my/results/run_mongodb_10000_10
+[WARN]  Running against a source checkout. In order to get our runtime dependencies we'll have to invoke Maven. Depending on the state of your system, this may take ~30-45 seconds
+[DEBUG]  Running 'mvn -pl com.yahoo.ycsb:mongodb-binding -am package -DskipTests dependency:build-classpath -DincludeScope=compile -Dmdep.outputFilterFile=true'
+java -cp /Users/admin/Documents/Sourcetree/YCSB/mongodb/conf:/Users/admin/Documents/Sourcetree/YCSB/mongodb/target/mongodb-binding-0.16.0-SNAPSHOT.jar:/Users/admin/.m2/repository/org/mongodb/mongo-java-driver/3.8.0/mongo-java-driver-3.8.0.jar:/Users/admin/.m2/repository/org/apache/htrace/htrace-core4/4.1.0-incubating/htrace-core4-4.1.0-incubating.jar:/Users/admin/.m2/repository/org/xerial/snappy/snappy-java/1.1.7.1/snappy-java-1.1.7.1.jar:/Users/admin/Documents/Sourcetree/YCSB/core/target/core-0.16.0-SNAPSHOT.jar:/Users/admin/.m2/repository/org/hdrhistogram/HdrHistogram/2.1.4/HdrHistogram-2.1.4.jar:/Users/admin/.m2/repository/org/codehaus/jackson/jackson-mapper-asl/1.9.4/jackson-mapper-asl-1.9.4.jar:/Users/admin/.m2/repository/org/codehaus/jackson/jackson-core-asl/1.9.4/jackson-core-asl-1.9.4.jar:/Users/admin/.m2/repository/com/allanbank/mongodb-async-driver/2.0.1/mongodb-async-driver-2.0.1.jar com.yahoo.ycsb.Client -db com.yahoo.ycsb.db.MongoDbClient -P z_my/workloads/workload_10000.ini -P z_my/properties/workload_properties_mongodb.dat -s -t
+Command line: -db com.yahoo.ycsb.db.MongoDbClient -P z_my/workloads/workload_10000.ini -P z_my/properties/workload_properties_mongodb.dat -s -t
+YCSB Client 0.16.0-SNAPSHOT
+
+Loading workload...
+Starting test.
+2019-01-12 00:12:55:075 0 sec: 0 operations; est completion in 0 second 
+1 12, 2019 12:12:55 午前 com.mongodb.diagnostics.logging.JULLogger log
+情報: Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+1 12, 2019 12:12:55 午前 com.mongodb.diagnostics.logging.JULLogger log
+情報: Cluster description not yet available. Waiting for 30000 ms before timing out
+1 12, 2019 12:12:55 午前 com.mongodb.diagnostics.logging.JULLogger log
+情報: Opened connection [connectionId{localValue:1, serverValue:7}] to localhost:27017
+1 12, 2019 12:12:55 午前 com.mongodb.diagnostics.logging.JULLogger log
+情報: Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[3, 6, 8]}, minWireVersion=0, maxWireVersion=6, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=5672216}
+1 12, 2019 12:12:55 午前 com.mongodb.diagnostics.logging.JULLogger log
+情報: Opened connection [connectionId{localValue:2, serverValue:8}] to localhost:27017
+2019-01-12 00:13:05:038 10 sec: 6045 operations; 604.26 current ops/sec; est completion in 7 second [INSERT AverageLatency(us)=1542.49] 
+1 12, 2019 12:13:10 午前 com.mongodb.diagnostics.logging.JULLogger log
+情報: Closed connection [connectionId{localValue:2, serverValue:8}] to localhost:27017 because the pool has been closed.
+2019-01-12 00:13:10:219 15 sec: 10000 operations; 763.37 current ops/sec; [CLEANUP AverageLatency(us)=4968] [INSERT AverageLatency(us)=1291.87] 
+--------------------------------------------------
+Finish: Record number is 10000, count is 10.
+--------------------------------------------------
+--------------------------------------------------
+Start: Record number is 100000, count is 1.
+--------------------------------------------------
+Stopping bigchaindb_bigchaindb_1 ... done
+Stopping bigchaindb_mongodb_1    ... done
+Stopping bigchaindb_tendermint_1 ... done
+Removing bigchaindb_bigchaindb_1 ... done
+Removing bigchaindb_mongodb_1    ... done
+Removing bigchaindb_tendermint_1 ... done
+Removing network bigchaindb_default
+
+Creating network "bigchaindb_default" with the default driver
+Creating bigchaindb_tendermint_1 ... done
+Creating bigchaindb_mongodb_1    ... done
+Creating bigchaindb_bigchaindb_1 ... done
+./bin/ycsb run mongodb -P z_my/workloads/workload_100000.ini -P z_my/properties/workload_properties_mongodb.dat -s > z_my/results/run_mongodb_100000_1
+[WARN]  Running against a source checkout. In order to get our runtime dependencies we'll have to invoke Maven. Depending on the state of your system, this may take ~30-45 seconds
+[DEBUG]  Running 'mvn -pl com.yahoo.ycsb:mongodb-binding -am package -DskipTests dependency:build-classpath -DincludeScope=compile -Dmdep.outputFilterFile=true'
+java -cp /Users/admin/Documents/Sourcetree/YCSB/mongodb/conf:/Users/admin/Documents/Sourcetree/YCSB/mongodb/target/mongodb-binding-0.16.0-SNAPSHOT.jar:/Users/admin/.m2/repository/org/mongodb/mongo-java-driver/3.8.0/mongo-java-driver-3.8.0.jar:/Users/admin/.m2/repository/org/apache/htrace/htrace-core4/4.1.0-incubating/htrace-core4-4.1.0-incubating.jar:/Users/admin/.m2/repository/org/xerial/snappy/snappy-java/1.1.7.1/snappy-java-1.1.7.1.jar:/Users/admin/Documents/Sourcetree/YCSB/core/target/core-0.16.0-SNAPSHOT.jar:/Users/admin/.m2/repository/org/hdrhistogram/HdrHistogram/2.1.4/HdrHistogram-2.1.4.jar:/Users/admin/.m2/repository/org/codehaus/jackson/jackson-mapper-asl/1.9.4/jackson-mapper-asl-1.9.4.jar:/Users/admin/.m2/repository/org/codehaus/jackson/jackson-core-asl/1.9.4/jackson-core-asl-1.9.4.jar:/Users/admin/.m2/repository/com/allanbank/mongodb-async-driver/2.0.1/mongodb-async-driver-2.0.1.jar com.yahoo.ycsb.Client -db com.yahoo.ycsb.db.MongoDbClient -P z_my/workloads/workload_100000.ini -P z_my/properties/workload_properties_mongodb.dat -s -t
+Command line: -db com.yahoo.ycsb.db.MongoDbClient -P z_my/workloads/workload_100000.ini -P z_my/properties/workload_properties_mongodb.dat -s -t
+YCSB Client 0.16.0-SNAPSHOT
+
+Loading workload...
+Starting test.
+2019-01-12 00:13:55:305 0 sec: 0 operations; est completion in 0 second 
+1 12, 2019 12:13:55 午前 com.mongodb.diagnostics.logging.JULLogger log
+情報: Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+1 12, 2019 12:13:55 午前 com.mongodb.diagnostics.logging.JULLogger log
+情報: Opened connection [connectionId{localValue:1, serverValue:7}] to localhost:27017
+1 12, 2019 12:13:55 午前 com.mongodb.diagnostics.logging.JULLogger log
+情報: Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[3, 6, 8]}, minWireVersion=0, maxWireVersion=6, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=5484389}
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+1 12, 2019 12:13:55 午前 com.mongodb.diagnostics.logging.JULLogger log
+情報: Opened connection [connectionId{localValue:2, serverValue:8}] to localhost:27017
+2019-01-12 00:14:05:269 10 sec: 6239 operations; 623.65 current ops/sec; est completion in 2 minutes [INSERT AverageLatency(us)=1480.79] 
+2019-01-12 00:14:15:275 20 sec: 14004 operations; 776.03 current ops/sec; est completion in 2 minutes [INSERT AverageLatency(us)=1230.31] 
+2019-01-12 00:14:25:266 30 sec: 22952 operations; 895.52 current ops/sec; est completion in 1 minute [INSERT AverageLatency(us)=1143.91] 
+2019-01-12 00:14:35:272 40 sec: 31310 operations; 835.3 current ops/sec; est completion in 1 minute [INSERT AverageLatency(us)=1185.8] 
+2019-01-12 00:14:45:266 50 sec: 40059 operations; 875.43 current ops/sec; est completion in 1 minute [INSERT AverageLatency(us)=1131.67] 
+2019-01-12 00:14:55:266 60 sec: 48536 operations; 847.7 current ops/sec; est completion in 1 minute [INSERT AverageLatency(us)=1168.62] 
+2019-01-12 00:15:05:273 70 sec: 56749 operations; 820.73 current ops/sec; est completion in 54 seconds [INSERT AverageLatency(us)=1207] 
+2019-01-12 00:15:15:273 80 sec: 65626 operations; 887.79 current ops/sec; est completion in 42 seconds [INSERT AverageLatency(us)=1117.79] 
+2019-01-12 00:15:25:267 90 sec: 73695 operations; 807.3 current ops/sec; est completion in 33 seconds [INSERT AverageLatency(us)=1228.15] 
+2019-01-12 00:15:35:275 100 sec: 81827 operations; 812.63 current ops/sec; est completion in 23 seconds [INSERT AverageLatency(us)=1222.71] 
+2019-01-12 00:15:45:268 110 sec: 90304 operations; 848.21 current ops/sec; est completion in 12 seconds [INSERT AverageLatency(us)=1171.41] 
+2019-01-12 00:15:55:270 120 sec: 98631 operations; 832.53 current ops/sec; est completion in 2 second [INSERT AverageLatency(us)=1193.44] 
+1 12, 2019 12:15:56 午前 com.mongodb.diagnostics.logging.JULLogger log
+情報: Closed connection [connectionId{localValue:2, serverValue:8}] to localhost:27017 because the pool has been closed.
+2019-01-12 00:15:56:897 121 sec: 100000 operations; 841.43 current ops/sec; [CLEANUP AverageLatency(us)=3911] [INSERT AverageLatency(us)=1177.5] 
+--------------------------------------------------
+Finish: Record number is 100000, count is 1.
+--------------------------------------------------
+--------------------------------------------------
+Start: Record number is 100000, count is 2.
+--------------------------------------------------
+Stopping bigchaindb_bigchaindb_1 ... done
+Stopping bigchaindb_mongodb_1    ... done
+Stopping bigchaindb_tendermint_1 ... done
+Removing bigchaindb_bigchaindb_1 ... done
+Removing bigchaindb_mongodb_1    ... done
+Removing bigchaindb_tendermint_1 ... done
+Removing network bigchaindb_default
+
+Creating network "bigchaindb_default" with the default driver
+Creating bigchaindb_tendermint_1 ... done
+Creating bigchaindb_mongodb_1    ... done
+Creating bigchaindb_bigchaindb_1 ... done
+./bin/ycsb run mongodb -P z_my/workloads/workload_100000.ini -P z_my/properties/workload_properties_mongodb.dat -s > z_my/results/run_mongodb_100000_2
+[WARN]  Running against a source checkout. In order to get our runtime dependencies we'll have to invoke Maven. Depending on the state of your system, this may take ~30-45 seconds
+[DEBUG]  Running 'mvn -pl com.yahoo.ycsb:mongodb-binding -am package -DskipTests dependency:build-classpath -DincludeScope=compile -Dmdep.outputFilterFile=true'
+java -cp /Users/admin/Documents/Sourcetree/YCSB/mongodb/conf:/Users/admin/Documents/Sourcetree/YCSB/mongodb/target/mongodb-binding-0.16.0-SNAPSHOT.jar:/Users/admin/.m2/repository/org/mongodb/mongo-java-driver/3.8.0/mongo-java-driver-3.8.0.jar:/Users/admin/.m2/repository/org/apache/htrace/htrace-core4/4.1.0-incubating/htrace-core4-4.1.0-incubating.jar:/Users/admin/.m2/repository/org/xerial/snappy/snappy-java/1.1.7.1/snappy-java-1.1.7.1.jar:/Users/admin/Documents/Sourcetree/YCSB/core/target/core-0.16.0-SNAPSHOT.jar:/Users/admin/.m2/repository/org/hdrhistogram/HdrHistogram/2.1.4/HdrHistogram-2.1.4.jar:/Users/admin/.m2/repository/org/codehaus/jackson/jackson-mapper-asl/1.9.4/jackson-mapper-asl-1.9.4.jar:/Users/admin/.m2/repository/org/codehaus/jackson/jackson-core-asl/1.9.4/jackson-core-asl-1.9.4.jar:/Users/admin/.m2/repository/com/allanbank/mongodb-async-driver/2.0.1/mongodb-async-driver-2.0.1.jar com.yahoo.ycsb.Client -db com.yahoo.ycsb.db.MongoDbClient -P z_my/workloads/workload_100000.ini -P z_my/properties/workload_properties_mongodb.dat -s -t
+Command line: -db com.yahoo.ycsb.db.MongoDbClient -P z_my/workloads/workload_100000.ini -P z_my/properties/workload_properties_mongodb.dat -s -t
+YCSB Client 0.16.0-SNAPSHOT
+
+Loading workload...
+Starting test.
+2019-01-12 00:16:42:555 0 sec: 0 operations; est completion in 0 second 
+1 12, 2019 12:16:42 午前 com.mongodb.diagnostics.logging.JULLogger log
+情報: Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+1 12, 2019 12:16:43 午前 com.mongodb.diagnostics.logging.JULLogger log
+情報: Cluster description not yet available. Waiting for 30000 ms before timing out
+1 12, 2019 12:16:43 午前 com.mongodb.diagnostics.logging.JULLogger log
+情報: Opened connection [connectionId{localValue:1, serverValue:7}] to localhost:27017
+1 12, 2019 12:16:43 午前 com.mongodb.diagnostics.logging.JULLogger log
+情報: Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[3, 6, 8]}, minWireVersion=0, maxWireVersion=6, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=8806535}
+1 12, 2019 12:16:43 午前 com.mongodb.diagnostics.logging.JULLogger log
+情報: Opened connection [connectionId{localValue:2, serverValue:8}] to localhost:27017
+2019-01-12 00:16:52:521 10 sec: 6097 operations; 609.7 current ops/sec; est completion in 2 minutes [INSERT AverageLatency(us)=1528.06] 
+2019-01-12 00:17:02:521 20 sec: 14143 operations; 804.52 current ops/sec; est completion in 2 minutes [INSERT AverageLatency(us)=1229.23] 
+2019-01-12 00:17:12:522 30 sec: 22528 operations; 838.42 current ops/sec; est completion in 1 minute [INSERT AverageLatency(us)=1180.97] 
+2019-01-12 00:17:22:525 40 sec: 30660 operations; 812.96 current ops/sec; est completion in 1 minute [INSERT AverageLatency(us)=1218.83] 
+2019-01-12 00:17:32:522 50 sec: 39223 operations; 856.56 current ops/sec; est completion in 1 minute [INSERT AverageLatency(us)=1156.18] 
+2019-01-12 00:17:42:523 60 sec: 47138 operations; 791.5 current ops/sec; est completion in 1 minute [INSERT AverageLatency(us)=1251.51] 
+2019-01-12 00:17:52:522 70 sec: 54986 operations; 784.8 current ops/sec; est completion in 58 seconds [INSERT AverageLatency(us)=1262.34] 
+2019-01-12 00:18:02:530 80 sec: 62743 operations; 775.08 current ops/sec; est completion in 48 seconds [INSERT AverageLatency(us)=1278.88] 
+2019-01-12 00:18:12:526 90 sec: 71020 operations; 828.03 current ops/sec; est completion in 37 seconds [INSERT AverageLatency(us)=1198.27] 
+2019-01-12 00:18:22:532 100 sec: 79141 operations; 811.61 current ops/sec; est completion in 27 seconds [INSERT AverageLatency(us)=1223.51] 
+2019-01-12 00:18:32:523 110 sec: 87880 operations; 874.69 current ops/sec; est completion in 16 seconds [INSERT AverageLatency(us)=1136.43] 
+2019-01-12 00:18:42:524 120 sec: 95759 operations; 787.82 current ops/sec; est completion in 6 second [INSERT AverageLatency(us)=1261.9] 
+1 12, 2019 12:18:47 午前 com.mongodb.diagnostics.logging.JULLogger log
+情報: Closed connection [connectionId{localValue:2, serverValue:8}] to localhost:27017 because the pool has been closed.
+2019-01-12 00:18:47:590 125 sec: 100000 operations; 837.15 current ops/sec; [CLEANUP AverageLatency(us)=4230] [INSERT AverageLatency(us)=1186.09] 
+--------------------------------------------------
+Finish: Record number is 100000, count is 2.
+--------------------------------------------------
+--------------------------------------------------
+Start: Record number is 100000, count is 3.
+--------------------------------------------------
+Stopping bigchaindb_bigchaindb_1 ... done
+Stopping bigchaindb_mongodb_1    ... done
+Stopping bigchaindb_tendermint_1 ... done
+Removing bigchaindb_bigchaindb_1 ... done
+Removing bigchaindb_mongodb_1    ... done
+Removing bigchaindb_tendermint_1 ... done
+Removing network bigchaindb_default
+
+Creating network "bigchaindb_default" with the default driver
+Creating bigchaindb_tendermint_1 ... done
+Creating bigchaindb_mongodb_1    ... done
+Creating bigchaindb_bigchaindb_1 ... done
+./bin/ycsb run mongodb -P z_my/workloads/workload_100000.ini -P z_my/properties/workload_properties_mongodb.dat -s > z_my/results/run_mongodb_100000_3
+[WARN]  Running against a source checkout. In order to get our runtime dependencies we'll have to invoke Maven. Depending on the state of your system, this may take ~30-45 seconds
+[DEBUG]  Running 'mvn -pl com.yahoo.ycsb:mongodb-binding -am package -DskipTests dependency:build-classpath -DincludeScope=compile -Dmdep.outputFilterFile=true'
+java -cp /Users/admin/Documents/Sourcetree/YCSB/mongodb/conf:/Users/admin/Documents/Sourcetree/YCSB/mongodb/target/mongodb-binding-0.16.0-SNAPSHOT.jar:/Users/admin/.m2/repository/org/mongodb/mongo-java-driver/3.8.0/mongo-java-driver-3.8.0.jar:/Users/admin/.m2/repository/org/apache/htrace/htrace-core4/4.1.0-incubating/htrace-core4-4.1.0-incubating.jar:/Users/admin/.m2/repository/org/xerial/snappy/snappy-java/1.1.7.1/snappy-java-1.1.7.1.jar:/Users/admin/Documents/Sourcetree/YCSB/core/target/core-0.16.0-SNAPSHOT.jar:/Users/admin/.m2/repository/org/hdrhistogram/HdrHistogram/2.1.4/HdrHistogram-2.1.4.jar:/Users/admin/.m2/repository/org/codehaus/jackson/jackson-mapper-asl/1.9.4/jackson-mapper-asl-1.9.4.jar:/Users/admin/.m2/repository/org/codehaus/jackson/jackson-core-asl/1.9.4/jackson-core-asl-1.9.4.jar:/Users/admin/.m2/repository/com/allanbank/mongodb-async-driver/2.0.1/mongodb-async-driver-2.0.1.jar com.yahoo.ycsb.Client -db com.yahoo.ycsb.db.MongoDbClient -P z_my/workloads/workload_100000.ini -P z_my/properties/workload_properties_mongodb.dat -s -t
+Command line: -db com.yahoo.ycsb.db.MongoDbClient -P z_my/workloads/workload_100000.ini -P z_my/properties/workload_properties_mongodb.dat -s -t
+YCSB Client 0.16.0-SNAPSHOT
+
+Loading workload...
+Starting test.
+2019-01-12 00:19:33:057 0 sec: 0 operations; est completion in 0 second 
+1 12, 2019 12:19:33 午前 com.mongodb.diagnostics.logging.JULLogger log
+情報: Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+1 12, 2019 12:19:33 午前 com.mongodb.diagnostics.logging.JULLogger log
+情報: Opened connection [connectionId{localValue:1, serverValue:7}] to localhost:27017
+1 12, 2019 12:19:33 午前 com.mongodb.diagnostics.logging.JULLogger log
+情報: Cluster description not yet available. Waiting for 30000 ms before timing out
+1 12, 2019 12:19:33 午前 com.mongodb.diagnostics.logging.JULLogger log
+情報: Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[3, 6, 8]}, minWireVersion=0, maxWireVersion=6, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=5260462}
+1 12, 2019 12:19:33 午前 com.mongodb.diagnostics.logging.JULLogger log
+情報: Opened connection [connectionId{localValue:2, serverValue:8}] to localhost:27017
+2019-01-12 00:19:43:011 10 sec: 6296 operations; 629.41 current ops/sec; est completion in 2 minutes [INSERT AverageLatency(us)=1471.85] 
+2019-01-12 00:19:53:012 20 sec: 14386 operations; 808.92 current ops/sec; est completion in 2 minutes [INSERT AverageLatency(us)=1222.17] 
+2019-01-12 00:20:03:011 30 sec: 23350 operations; 896.49 current ops/sec; est completion in 1 minute [INSERT AverageLatency(us)=1104.26] 
+2019-01-12 00:20:13:012 40 sec: 31946 operations; 859.51 current ops/sec; est completion in 1 minute [INSERT AverageLatency(us)=1152.14] 
+2019-01-12 00:20:23:010 50 sec: 40877 operations; 893.28 current ops/sec; est completion in 1 minute [INSERT AverageLatency(us)=1108.41] 
+2019-01-12 00:20:33:015 60 sec: 49299 operations; 841.86 current ops/sec; est completion in 1 minute [INSERT AverageLatency(us)=1176.58] 
+2019-01-12 00:20:43:014 70 sec: 58485 operations; 918.6 current ops/sec; est completion in 50 seconds [INSERT AverageLatency(us)=1078.03] 
+2019-01-12 00:20:53:012 80 sec: 67462 operations; 897.97 current ops/sec; est completion in 39 seconds [INSERT AverageLatency(us)=1105.28] 
+2019-01-12 00:21:03:013 90 sec: 76549 operations; 908.52 current ops/sec; est completion in 28 seconds [INSERT AverageLatency(us)=1093.54] 
+2019-01-12 00:21:13:012 100 sec: 85735 operations; 918.69 current ops/sec; est completion in 17 seconds [INSERT AverageLatency(us)=1081.89] 
+2019-01-12 00:21:23:012 110 sec: 94536 operations; 880.19 current ops/sec; est completion in 7 second [INSERT AverageLatency(us)=1129.18] 
+1 12, 2019 12:21:28 午前 com.mongodb.diagnostics.logging.JULLogger log
+情報: Closed connection [connectionId{localValue:2, serverValue:8}] to localhost:27017 because the pool has been closed.
+2019-01-12 00:21:28:743 115 sec: 100000 operations; 953.24 current ops/sec; [CLEANUP AverageLatency(us)=3708] [INSERT AverageLatency(us)=1041.66] 
+--------------------------------------------------
+Finish: Record number is 100000, count is 3.
+--------------------------------------------------
+--------------------------------------------------
+Start: Record number is 100000, count is 4.
+--------------------------------------------------
+Stopping bigchaindb_bigchaindb_1 ... done
+Stopping bigchaindb_tendermint_1 ... done
+Stopping bigchaindb_mongodb_1    ... done
+Removing bigchaindb_bigchaindb_1 ... done
+Removing bigchaindb_tendermint_1 ... done
+Removing bigchaindb_mongodb_1    ... done
+Removing network bigchaindb_default
+
+Creating network "bigchaindb_default" with the default driver
+Creating bigchaindb_tendermint_1 ... done
+Creating bigchaindb_mongodb_1    ... done
+Creating bigchaindb_bigchaindb_1 ... done
+./bin/ycsb run mongodb -P z_my/workloads/workload_100000.ini -P z_my/properties/workload_properties_mongodb.dat -s > z_my/results/run_mongodb_100000_4
+[WARN]  Running against a source checkout. In order to get our runtime dependencies we'll have to invoke Maven. Depending on the state of your system, this may take ~30-45 seconds
+[DEBUG]  Running 'mvn -pl com.yahoo.ycsb:mongodb-binding -am package -DskipTests dependency:build-classpath -DincludeScope=compile -Dmdep.outputFilterFile=true'
+java -cp /Users/admin/Documents/Sourcetree/YCSB/mongodb/conf:/Users/admin/Documents/Sourcetree/YCSB/mongodb/target/mongodb-binding-0.16.0-SNAPSHOT.jar:/Users/admin/.m2/repository/org/mongodb/mongo-java-driver/3.8.0/mongo-java-driver-3.8.0.jar:/Users/admin/.m2/repository/org/apache/htrace/htrace-core4/4.1.0-incubating/htrace-core4-4.1.0-incubating.jar:/Users/admin/.m2/repository/org/xerial/snappy/snappy-java/1.1.7.1/snappy-java-1.1.7.1.jar:/Users/admin/Documents/Sourcetree/YCSB/core/target/core-0.16.0-SNAPSHOT.jar:/Users/admin/.m2/repository/org/hdrhistogram/HdrHistogram/2.1.4/HdrHistogram-2.1.4.jar:/Users/admin/.m2/repository/org/codehaus/jackson/jackson-mapper-asl/1.9.4/jackson-mapper-asl-1.9.4.jar:/Users/admin/.m2/repository/org/codehaus/jackson/jackson-core-asl/1.9.4/jackson-core-asl-1.9.4.jar:/Users/admin/.m2/repository/com/allanbank/mongodb-async-driver/2.0.1/mongodb-async-driver-2.0.1.jar com.yahoo.ycsb.Client -db com.yahoo.ycsb.db.MongoDbClient -P z_my/workloads/workload_100000.ini -P z_my/properties/workload_properties_mongodb.dat -s -t
+Command line: -db com.yahoo.ycsb.db.MongoDbClient -P z_my/workloads/workload_100000.ini -P z_my/properties/workload_properties_mongodb.dat -s -t
+YCSB Client 0.16.0-SNAPSHOT
+
+Loading workload...
+Starting test.
+2019-01-12 00:22:14:343 0 sec: 0 operations; est completion in 0 second 
+1 12, 2019 12:22:14 午前 com.mongodb.diagnostics.logging.JULLogger log
+情報: Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+1 12, 2019 12:22:14 午前 com.mongodb.diagnostics.logging.JULLogger log
+情報: Cluster description not yet available. Waiting for 30000 ms before timing out
+1 12, 2019 12:22:14 午前 com.mongodb.diagnostics.logging.JULLogger log
+情報: Opened connection [connectionId{localValue:1, serverValue:7}] to localhost:27017
+1 12, 2019 12:22:14 午前 com.mongodb.diagnostics.logging.JULLogger log
+情報: Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[3, 6, 8]}, minWireVersion=0, maxWireVersion=6, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=10347634}
+1 12, 2019 12:22:14 午前 com.mongodb.diagnostics.logging.JULLogger log
+情報: Opened connection [connectionId{localValue:2, serverValue:8}] to localhost:27017
+2019-01-12 00:22:24:301 10 sec: 5892 operations; 589.02 current ops/sec; est completion in 2 minutes [INSERT AverageLatency(us)=1584.87] 
+2019-01-12 00:22:34:302 20 sec: 14364 operations; 847.12 current ops/sec; est completion in 2 minutes [INSERT AverageLatency(us)=1167.28] 
+2019-01-12 00:22:44:300 30 sec: 23296 operations; 893.38 current ops/sec; est completion in 1 minute [INSERT AverageLatency(us)=1108.04] 
+2019-01-12 00:22:54:300 40 sec: 32150 operations; 885.4 current ops/sec; est completion in 1 minute [INSERT AverageLatency(us)=1118.54] 
+2019-01-12 00:23:04:302 50 sec: 39916 operations; 776.44 current ops/sec; est completion in 1 minute [INSERT AverageLatency(us)=1275.4] 
+2019-01-12 00:23:14:301 60 sec: 48794 operations; 887.98 current ops/sec; est completion in 1 minute [INSERT AverageLatency(us)=1115.04] 
+2019-01-12 00:23:24:301 70 sec: 57470 operations; 867.6 current ops/sec; est completion in 52 seconds [INSERT AverageLatency(us)=1141.58] 
+2019-01-12 00:23:34:302 80 sec: 65924 operations; 845.32 current ops/sec; est completion in 42 seconds [INSERT AverageLatency(us)=1173.74] 
+2019-01-12 00:23:44:303 90 sec: 74440 operations; 851.43 current ops/sec; est completion in 31 seconds [INSERT AverageLatency(us)=1167.08] 
+2019-01-12 00:23:54:306 100 sec: 83460 operations; 901.73 current ops/sec; est completion in 20 seconds [INSERT AverageLatency(us)=1102.06] 
+2019-01-12 00:24:04:308 110 sec: 91817 operations; 835.53 current ops/sec; est completion in 10 seconds [INSERT AverageLatency(us)=1189.37] 
+1 12, 2019 12:24:13 午前 com.mongodb.diagnostics.logging.JULLogger log
+情報: Closed connection [connectionId{localValue:2, serverValue:8}] to localhost:27017 because the pool has been closed.
+2019-01-12 00:24:13:193 118 sec: 100000 operations; 921.2 current ops/sec; [CLEANUP AverageLatency(us)=3464] [INSERT AverageLatency(us)=1078.44] 
+--------------------------------------------------
+Finish: Record number is 100000, count is 4.
+--------------------------------------------------
+--------------------------------------------------
+Start: Record number is 100000, count is 5.
+--------------------------------------------------
+Stopping bigchaindb_bigchaindb_1 ... done
+Stopping bigchaindb_tendermint_1 ... done
+Stopping bigchaindb_mongodb_1    ... done
+Removing bigchaindb_bigchaindb_1 ... done
+Removing bigchaindb_tendermint_1 ... done
+Removing bigchaindb_mongodb_1    ... done
+Removing network bigchaindb_default
+
+Creating network "bigchaindb_default" with the default driver
+Creating bigchaindb_tendermint_1 ... done
+Creating bigchaindb_mongodb_1    ... done
+Creating bigchaindb_bigchaindb_1 ... done
+./bin/ycsb run mongodb -P z_my/workloads/workload_100000.ini -P z_my/properties/workload_properties_mongodb.dat -s > z_my/results/run_mongodb_100000_5
+[WARN]  Running against a source checkout. In order to get our runtime dependencies we'll have to invoke Maven. Depending on the state of your system, this may take ~30-45 seconds
+[DEBUG]  Running 'mvn -pl com.yahoo.ycsb:mongodb-binding -am package -DskipTests dependency:build-classpath -DincludeScope=compile -Dmdep.outputFilterFile=true'
+java -cp /Users/admin/Documents/Sourcetree/YCSB/mongodb/conf:/Users/admin/Documents/Sourcetree/YCSB/mongodb/target/mongodb-binding-0.16.0-SNAPSHOT.jar:/Users/admin/.m2/repository/org/mongodb/mongo-java-driver/3.8.0/mongo-java-driver-3.8.0.jar:/Users/admin/.m2/repository/org/apache/htrace/htrace-core4/4.1.0-incubating/htrace-core4-4.1.0-incubating.jar:/Users/admin/.m2/repository/org/xerial/snappy/snappy-java/1.1.7.1/snappy-java-1.1.7.1.jar:/Users/admin/Documents/Sourcetree/YCSB/core/target/core-0.16.0-SNAPSHOT.jar:/Users/admin/.m2/repository/org/hdrhistogram/HdrHistogram/2.1.4/HdrHistogram-2.1.4.jar:/Users/admin/.m2/repository/org/codehaus/jackson/jackson-mapper-asl/1.9.4/jackson-mapper-asl-1.9.4.jar:/Users/admin/.m2/repository/org/codehaus/jackson/jackson-core-asl/1.9.4/jackson-core-asl-1.9.4.jar:/Users/admin/.m2/repository/com/allanbank/mongodb-async-driver/2.0.1/mongodb-async-driver-2.0.1.jar com.yahoo.ycsb.Client -db com.yahoo.ycsb.db.MongoDbClient -P z_my/workloads/workload_100000.ini -P z_my/properties/workload_properties_mongodb.dat -s -t
+Command line: -db com.yahoo.ycsb.db.MongoDbClient -P z_my/workloads/workload_100000.ini -P z_my/properties/workload_properties_mongodb.dat -s -t
+YCSB Client 0.16.0-SNAPSHOT
+
+Loading workload...
+Starting test.
+2019-01-12 00:24:59:382 0 sec: 0 operations; est completion in 0 second 
+1 12, 2019 12:24:59 午前 com.mongodb.diagnostics.logging.JULLogger log
+情報: Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+1 12, 2019 12:24:59 午前 com.mongodb.diagnostics.logging.JULLogger log
+情報: Opened connection [connectionId{localValue:1, serverValue:1}] to localhost:27017
+1 12, 2019 12:24:59 午前 com.mongodb.diagnostics.logging.JULLogger log
+情報: Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[3, 6, 8]}, minWireVersion=0, maxWireVersion=6, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=8243347}
+1 12, 2019 12:24:59 午前 com.mongodb.diagnostics.logging.JULLogger log
+情報: Opened connection [connectionId{localValue:2, serverValue:2}] to localhost:27017
+2019-01-12 00:25:09:350 10 sec: 6728 operations; 672.26 current ops/sec; est completion in 2 minutes [INSERT AverageLatency(us)=1379.55] 
+2019-01-12 00:25:19:349 20 sec: 15512 operations; 878.49 current ops/sec; est completion in 1 minute [INSERT AverageLatency(us)=1126.99] 
+2019-01-12 00:25:29:343 30 sec: 24535 operations; 902.84 current ops/sec; est completion in 1 minute [INSERT AverageLatency(us)=1097.33] 
+2019-01-12 00:25:39:344 40 sec: 33380 operations; 884.41 current ops/sec; est completion in 1 minute [INSERT AverageLatency(us)=1120.33] 
+2019-01-12 00:25:49:349 50 sec: 42251 operations; 886.75 current ops/sec; est completion in 1 minute [INSERT AverageLatency(us)=1117.55] 
+2019-01-12 00:25:59:349 60 sec: 51148 operations; 889.61 current ops/sec; est completion in 58 seconds [INSERT AverageLatency(us)=1113.55] 
+2019-01-12 00:26:09:346 70 sec: 59793 operations; 864.76 current ops/sec; est completion in 48 seconds [INSERT AverageLatency(us)=1145.73] 
+2019-01-12 00:26:19:351 80 sec: 68538 operations; 874.06 current ops/sec; est completion in 37 seconds [INSERT AverageLatency(us)=1136.5] 
+2019-01-12 00:26:29:345 90 sec: 77815 operations; 928.35 current ops/sec; est completion in 26 seconds [INSERT AverageLatency(us)=1070.79] 
+2019-01-12 00:26:39:350 100 sec: 86637 operations; 881.76 current ops/sec; est completion in 16 seconds [INSERT AverageLatency(us)=1127.27] 
+2019-01-12 00:26:49:350 110 sec: 95957 operations; 931.91 current ops/sec; est completion in 5 second [INSERT AverageLatency(us)=1066.54] 
+1 12, 2019 12:26:53 午前 com.mongodb.diagnostics.logging.JULLogger log
+情報: Closed connection [connectionId{localValue:2, serverValue:2}] to localhost:27017 because the pool has been closed.
+2019-01-12 00:26:53:943 114 sec: 100000 operations; 880.25 current ops/sec; [CLEANUP AverageLatency(us)=4262] [INSERT AverageLatency(us)=1128.1] 
+--------------------------------------------------
+Finish: Record number is 100000, count is 5.
+--------------------------------------------------
+--------------------------------------------------
+Start: Record number is 100000, count is 6.
+--------------------------------------------------
+Stopping bigchaindb_tendermint_1 ... done
+Stopping bigchaindb_mongodb_1    ... done
+Removing bigchaindb_bigchaindb_1 ... done
+Removing bigchaindb_tendermint_1 ... done
+Removing bigchaindb_mongodb_1    ... done
+Removing network bigchaindb_default
+
+Creating network "bigchaindb_default" with the default driver
+Creating bigchaindb_tendermint_1 ... done
+Creating bigchaindb_mongodb_1    ... done
+Creating bigchaindb_bigchaindb_1 ... done
+./bin/ycsb run mongodb -P z_my/workloads/workload_100000.ini -P z_my/properties/workload_properties_mongodb.dat -s > z_my/results/run_mongodb_100000_6
+[WARN]  Running against a source checkout. In order to get our runtime dependencies we'll have to invoke Maven. Depending on the state of your system, this may take ~30-45 seconds
+[DEBUG]  Running 'mvn -pl com.yahoo.ycsb:mongodb-binding -am package -DskipTests dependency:build-classpath -DincludeScope=compile -Dmdep.outputFilterFile=true'
+java -cp /Users/admin/Documents/Sourcetree/YCSB/mongodb/conf:/Users/admin/Documents/Sourcetree/YCSB/mongodb/target/mongodb-binding-0.16.0-SNAPSHOT.jar:/Users/admin/.m2/repository/org/mongodb/mongo-java-driver/3.8.0/mongo-java-driver-3.8.0.jar:/Users/admin/.m2/repository/org/apache/htrace/htrace-core4/4.1.0-incubating/htrace-core4-4.1.0-incubating.jar:/Users/admin/.m2/repository/org/xerial/snappy/snappy-java/1.1.7.1/snappy-java-1.1.7.1.jar:/Users/admin/Documents/Sourcetree/YCSB/core/target/core-0.16.0-SNAPSHOT.jar:/Users/admin/.m2/repository/org/hdrhistogram/HdrHistogram/2.1.4/HdrHistogram-2.1.4.jar:/Users/admin/.m2/repository/org/codehaus/jackson/jackson-mapper-asl/1.9.4/jackson-mapper-asl-1.9.4.jar:/Users/admin/.m2/repository/org/codehaus/jackson/jackson-core-asl/1.9.4/jackson-core-asl-1.9.4.jar:/Users/admin/.m2/repository/com/allanbank/mongodb-async-driver/2.0.1/mongodb-async-driver-2.0.1.jar com.yahoo.ycsb.Client -db com.yahoo.ycsb.db.MongoDbClient -P z_my/workloads/workload_100000.ini -P z_my/properties/workload_properties_mongodb.dat -s -t
+Command line: -db com.yahoo.ycsb.db.MongoDbClient -P z_my/workloads/workload_100000.ini -P z_my/properties/workload_properties_mongodb.dat -s -t
+YCSB Client 0.16.0-SNAPSHOT
+
+Loading workload...
+Starting test.
+2019-01-12 00:27:28:515 0 sec: 0 operations; est completion in 0 second 
+1 12, 2019 12:27:28 午前 com.mongodb.diagnostics.logging.JULLogger log
+情報: Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+1 12, 2019 12:27:29 午前 com.mongodb.diagnostics.logging.JULLogger log
+情報: Cluster description not yet available. Waiting for 30000 ms before timing out
+1 12, 2019 12:27:29 午前 com.mongodb.diagnostics.logging.JULLogger log
+情報: Opened connection [connectionId{localValue:1, serverValue:7}] to localhost:27017
+1 12, 2019 12:27:29 午前 com.mongodb.diagnostics.logging.JULLogger log
+情報: Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[3, 6, 8]}, minWireVersion=0, maxWireVersion=6, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=9479922}
+1 12, 2019 12:27:29 午前 com.mongodb.diagnostics.logging.JULLogger log
+情報: Opened connection [connectionId{localValue:2, serverValue:8}] to localhost:27017
+2019-01-12 00:27:38:481 10 sec: 6620 operations; 662 current ops/sec; est completion in 2 minutes [INSERT AverageLatency(us)=1404.81] 
+2019-01-12 00:27:48:482 20 sec: 14754 operations; 813.24 current ops/sec; est completion in 1 minute [INSERT AverageLatency(us)=1215.65] 
+2019-01-12 00:27:58:481 30 sec: 24110 operations; 935.69 current ops/sec; est completion in 1 minute [INSERT AverageLatency(us)=1058.72] 
+2019-01-12 00:28:08:484 40 sec: 32765 operations; 865.33 current ops/sec; est completion in 1 minute [INSERT AverageLatency(us)=1144.78] 
+2019-01-12 00:28:18:487 50 sec: 42042 operations; 927.33 current ops/sec; est completion in 1 minute [INSERT AverageLatency(us)=1068.33] 
+2019-01-12 00:28:28:482 60 sec: 51146 operations; 910.86 current ops/sec; est completion in 58 seconds [INSERT AverageLatency(us)=1087.4] 
+2019-01-12 00:28:38:483 70 sec: 59829 operations; 868.21 current ops/sec; est completion in 48 seconds [INSERT AverageLatency(us)=1141.02] 
+2019-01-12 00:28:48:487 80 sec: 68955 operations; 912.24 current ops/sec; est completion in 37 seconds [INSERT AverageLatency(us)=1089.18] 
+2019-01-12 00:28:58:483 90 sec: 77632 operations; 868.05 current ops/sec; est completion in 26 seconds [INSERT AverageLatency(us)=1145.31] 
+2019-01-12 00:29:08:488 100 sec: 86197 operations; 856.07 current ops/sec; est completion in 17 seconds [INSERT AverageLatency(us)=1160.9] 
+2019-01-12 00:29:18:483 110 sec: 95165 operations; 897.25 current ops/sec; est completion in 6 second [INSERT AverageLatency(us)=1107.47] 
+1 12, 2019 12:29:23 午前 com.mongodb.diagnostics.logging.JULLogger log
+情報: Closed connection [connectionId{localValue:2, serverValue:8}] to localhost:27017 because the pool has been closed.
+2019-01-12 00:29:23:945 115 sec: 100000 operations; 885.21 current ops/sec; [CLEANUP AverageLatency(us)=4165] [INSERT AverageLatency(us)=1122.02] 
+--------------------------------------------------
+Finish: Record number is 100000, count is 6.
+--------------------------------------------------
+--------------------------------------------------
+Start: Record number is 100000, count is 7.
+--------------------------------------------------
+Stopping bigchaindb_bigchaindb_1 ... done
+Stopping bigchaindb_mongodb_1    ... done
+Stopping bigchaindb_tendermint_1 ... done
+Removing bigchaindb_bigchaindb_1 ... done
+Removing bigchaindb_mongodb_1    ... done
+Removing bigchaindb_tendermint_1 ... done
+Removing network bigchaindb_default
+
+Creating network "bigchaindb_default" with the default driver
+Creating bigchaindb_mongodb_1    ... done
+Creating bigchaindb_tendermint_1 ... done
+Creating bigchaindb_bigchaindb_1 ... done
+./bin/ycsb run mongodb -P z_my/workloads/workload_100000.ini -P z_my/properties/workload_properties_mongodb.dat -s > z_my/results/run_mongodb_100000_7
+[WARN]  Running against a source checkout. In order to get our runtime dependencies we'll have to invoke Maven. Depending on the state of your system, this may take ~30-45 seconds
+[DEBUG]  Running 'mvn -pl com.yahoo.ycsb:mongodb-binding -am package -DskipTests dependency:build-classpath -DincludeScope=compile -Dmdep.outputFilterFile=true'
+java -cp /Users/admin/Documents/Sourcetree/YCSB/mongodb/conf:/Users/admin/Documents/Sourcetree/YCSB/mongodb/target/mongodb-binding-0.16.0-SNAPSHOT.jar:/Users/admin/.m2/repository/org/mongodb/mongo-java-driver/3.8.0/mongo-java-driver-3.8.0.jar:/Users/admin/.m2/repository/org/apache/htrace/htrace-core4/4.1.0-incubating/htrace-core4-4.1.0-incubating.jar:/Users/admin/.m2/repository/org/xerial/snappy/snappy-java/1.1.7.1/snappy-java-1.1.7.1.jar:/Users/admin/Documents/Sourcetree/YCSB/core/target/core-0.16.0-SNAPSHOT.jar:/Users/admin/.m2/repository/org/hdrhistogram/HdrHistogram/2.1.4/HdrHistogram-2.1.4.jar:/Users/admin/.m2/repository/org/codehaus/jackson/jackson-mapper-asl/1.9.4/jackson-mapper-asl-1.9.4.jar:/Users/admin/.m2/repository/org/codehaus/jackson/jackson-core-asl/1.9.4/jackson-core-asl-1.9.4.jar:/Users/admin/.m2/repository/com/allanbank/mongodb-async-driver/2.0.1/mongodb-async-driver-2.0.1.jar com.yahoo.ycsb.Client -db com.yahoo.ycsb.db.MongoDbClient -P z_my/workloads/workload_100000.ini -P z_my/properties/workload_properties_mongodb.dat -s -t
+Command line: -db com.yahoo.ycsb.db.MongoDbClient -P z_my/workloads/workload_100000.ini -P z_my/properties/workload_properties_mongodb.dat -s -t
+YCSB Client 0.16.0-SNAPSHOT
+
+Loading workload...
+Starting test.
+2019-01-12 00:30:09:578 0 sec: 0 operations; est completion in 0 second 
+1 12, 2019 12:30:10 午前 com.mongodb.diagnostics.logging.JULLogger log
+情報: Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+1 12, 2019 12:30:10 午前 com.mongodb.diagnostics.logging.JULLogger log
+情報: Opened connection [connectionId{localValue:1, serverValue:7}] to localhost:27017
+1 12, 2019 12:30:10 午前 com.mongodb.diagnostics.logging.JULLogger log
+情報: Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[3, 6, 8]}, minWireVersion=0, maxWireVersion=6, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=10954070}
+1 12, 2019 12:30:10 午前 com.mongodb.diagnostics.logging.JULLogger log
+情報: Opened connection [connectionId{localValue:2, serverValue:8}] to localhost:27017
+2019-01-12 00:30:19:541 10 sec: 5644 operations; 564.29 current ops/sec; est completion in 2 minutes [INSERT AverageLatency(us)=1642.13] 
+2019-01-12 00:30:29:541 20 sec: 14159 operations; 851.5 current ops/sec; est completion in 2 minutes [INSERT AverageLatency(us)=1160.84] 
+2019-01-12 00:30:39:545 30 sec: 23186 operations; 902.34 current ops/sec; est completion in 1 minute [INSERT AverageLatency(us)=1097.3] 
+2019-01-12 00:30:49:543 40 sec: 32342 operations; 915.78 current ops/sec; est completion in 1 minute [INSERT AverageLatency(us)=1081.63] 
+2019-01-12 00:30:59:543 50 sec: 41091 operations; 874.99 current ops/sec; est completion in 1 minute [INSERT AverageLatency(us)=1131.7] 
+2019-01-12 00:31:09:543 60 sec: 49827 operations; 873.51 current ops/sec; est completion in 1 minute [INSERT AverageLatency(us)=1133.47] 
+2019-01-12 00:31:19:551 70 sec: 58548 operations; 871.49 current ops/sec; est completion in 50 seconds [INSERT AverageLatency(us)=1135.95] 
+2019-01-12 00:31:29:544 80 sec: 67800 operations; 925.85 current ops/sec; est completion in 38 seconds [INSERT AverageLatency(us)=1072.07] 
+2019-01-12 00:31:39:547 90 sec: 76591 operations; 878.84 current ops/sec; est completion in 28 seconds [INSERT AverageLatency(us)=1130.48] 
+2019-01-12 00:31:49:551 100 sec: 85735 operations; 913.94 current ops/sec; est completion in 17 seconds [INSERT AverageLatency(us)=1087.11] 
+2019-01-12 00:31:59:551 110 sec: 94630 operations; 889.5 current ops/sec; est completion in 7 second [INSERT AverageLatency(us)=1117] 
+1 12, 2019 12:32:05 午前 com.mongodb.diagnostics.logging.JULLogger log
+情報: Closed connection [connectionId{localValue:2, serverValue:8}] to localhost:27017 because the pool has been closed.
+2019-01-12 00:32:05:662 116 sec: 100000 operations; 878.74 current ops/sec; [CLEANUP AverageLatency(us)=3536] [INSERT AverageLatency(us)=1129.76] 
+--------------------------------------------------
+Finish: Record number is 100000, count is 7.
+--------------------------------------------------
+--------------------------------------------------
+Start: Record number is 100000, count is 8.
+--------------------------------------------------
+Stopping bigchaindb_bigchaindb_1 ... done
+Stopping bigchaindb_tendermint_1 ... done
+Stopping bigchaindb_mongodb_1    ... done
+Removing bigchaindb_bigchaindb_1 ... done
+Removing bigchaindb_tendermint_1 ... done
+Removing bigchaindb_mongodb_1    ... done
+Removing network bigchaindb_default
+
+Creating network "bigchaindb_default" with the default driver
+Creating bigchaindb_tendermint_1 ... done
+Creating bigchaindb_mongodb_1    ... done
+Creating bigchaindb_bigchaindb_1 ... done
+./bin/ycsb run mongodb -P z_my/workloads/workload_100000.ini -P z_my/properties/workload_properties_mongodb.dat -s > z_my/results/run_mongodb_100000_8
+[WARN]  Running against a source checkout. In order to get our runtime dependencies we'll have to invoke Maven. Depending on the state of your system, this may take ~30-45 seconds
+[DEBUG]  Running 'mvn -pl com.yahoo.ycsb:mongodb-binding -am package -DskipTests dependency:build-classpath -DincludeScope=compile -Dmdep.outputFilterFile=true'
+java -cp /Users/admin/Documents/Sourcetree/YCSB/mongodb/conf:/Users/admin/Documents/Sourcetree/YCSB/mongodb/target/mongodb-binding-0.16.0-SNAPSHOT.jar:/Users/admin/.m2/repository/org/mongodb/mongo-java-driver/3.8.0/mongo-java-driver-3.8.0.jar:/Users/admin/.m2/repository/org/apache/htrace/htrace-core4/4.1.0-incubating/htrace-core4-4.1.0-incubating.jar:/Users/admin/.m2/repository/org/xerial/snappy/snappy-java/1.1.7.1/snappy-java-1.1.7.1.jar:/Users/admin/Documents/Sourcetree/YCSB/core/target/core-0.16.0-SNAPSHOT.jar:/Users/admin/.m2/repository/org/hdrhistogram/HdrHistogram/2.1.4/HdrHistogram-2.1.4.jar:/Users/admin/.m2/repository/org/codehaus/jackson/jackson-mapper-asl/1.9.4/jackson-mapper-asl-1.9.4.jar:/Users/admin/.m2/repository/org/codehaus/jackson/jackson-core-asl/1.9.4/jackson-core-asl-1.9.4.jar:/Users/admin/.m2/repository/com/allanbank/mongodb-async-driver/2.0.1/mongodb-async-driver-2.0.1.jar com.yahoo.ycsb.Client -db com.yahoo.ycsb.db.MongoDbClient -P z_my/workloads/workload_100000.ini -P z_my/properties/workload_properties_mongodb.dat -s -t
+Command line: -db com.yahoo.ycsb.db.MongoDbClient -P z_my/workloads/workload_100000.ini -P z_my/properties/workload_properties_mongodb.dat -s -t
+YCSB Client 0.16.0-SNAPSHOT
+
+Loading workload...
+Starting test.
+2019-01-12 00:32:51:736 0 sec: 0 operations; est completion in 0 second 
+1 12, 2019 12:32:52 午前 com.mongodb.diagnostics.logging.JULLogger log
+情報: Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+1 12, 2019 12:32:52 午前 com.mongodb.diagnostics.logging.JULLogger log
+情報: Opened connection [connectionId{localValue:1, serverValue:7}] to localhost:27017
+1 12, 2019 12:32:52 午前 com.mongodb.diagnostics.logging.JULLogger log
+情報: Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[3, 6, 8]}, minWireVersion=0, maxWireVersion=6, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=5418172}
+1 12, 2019 12:32:52 午前 com.mongodb.diagnostics.logging.JULLogger log
+情報: Opened connection [connectionId{localValue:2, serverValue:8}] to localhost:27017
+2019-01-12 00:33:01:706 10 sec: 6067 operations; 606.22 current ops/sec; est completion in 2 minutes [INSERT AverageLatency(us)=1532.44] 
+2019-01-12 00:33:11:709 20 sec: 13649 operations; 757.97 current ops/sec; est completion in 2 minutes [INSERT AverageLatency(us)=1289.96] 
+2019-01-12 00:33:21:700 30 sec: 22660 operations; 901.91 current ops/sec; est completion in 1 minute [INSERT AverageLatency(us)=1111.3] 
+2019-01-12 00:33:31:707 40 sec: 30433 operations; 776.76 current ops/sec; est completion in 1 minute [INSERT AverageLatency(us)=1276.69] 
+2019-01-12 00:33:41:706 50 sec: 38747 operations; 831.48 current ops/sec; est completion in 1 minute [INSERT AverageLatency(us)=1191.96] 
+2019-01-12 00:33:51:704 60 sec: 47200 operations; 845.55 current ops/sec; est completion in 1 minute [INSERT AverageLatency(us)=1171.8] 
+2019-01-12 00:34:01:705 70 sec: 55617 operations; 841.53 current ops/sec; est completion in 56 seconds [INSERT AverageLatency(us)=1177.17] 
+2019-01-12 00:34:11:702 80 sec: 64315 operations; 870.15 current ops/sec; est completion in 45 seconds [INSERT AverageLatency(us)=1139.95] 
+2019-01-12 00:34:21:701 90 sec: 72913 operations; 859.8 current ops/sec; est completion in 34 seconds [INSERT AverageLatency(us)=1155.71] 
+2019-01-12 00:34:31:702 100 sec: 81292 operations; 837.9 current ops/sec; est completion in 24 seconds [INSERT AverageLatency(us)=1186.27] 
+2019-01-12 00:34:41:708 110 sec: 89475 operations; 817.81 current ops/sec; est completion in 13 seconds [INSERT AverageLatency(us)=1215.45] 
+2019-01-12 00:34:51:710 120 sec: 98242 operations; 876.44 current ops/sec; est completion in 3 second [INSERT AverageLatency(us)=1134.19] 
+1 12, 2019 12:34:53 午前 com.mongodb.diagnostics.logging.JULLogger log
+情報: Closed connection [connectionId{localValue:2, serverValue:8}] to localhost:27017 because the pool has been closed.
+2019-01-12 00:34:53:542 121 sec: 100000 operations; 960.13 current ops/sec; [CLEANUP AverageLatency(us)=3761] [INSERT AverageLatency(us)=1032.83] 
+--------------------------------------------------
+Finish: Record number is 100000, count is 8.
+--------------------------------------------------
+--------------------------------------------------
+Start: Record number is 100000, count is 9.
+--------------------------------------------------
+Stopping bigchaindb_bigchaindb_1 ... done
+Stopping bigchaindb_mongodb_1    ... done
+Stopping bigchaindb_tendermint_1 ... done
+Removing bigchaindb_bigchaindb_1 ... done
+Removing bigchaindb_mongodb_1    ... done
+Removing bigchaindb_tendermint_1 ... done
+Removing network bigchaindb_default
+
+Creating network "bigchaindb_default" with the default driver
+Creating bigchaindb_tendermint_1 ... done
+Creating bigchaindb_mongodb_1    ... done
+Creating bigchaindb_bigchaindb_1 ... done
+./bin/ycsb run mongodb -P z_my/workloads/workload_100000.ini -P z_my/properties/workload_properties_mongodb.dat -s > z_my/results/run_mongodb_100000_9
+[WARN]  Running against a source checkout. In order to get our runtime dependencies we'll have to invoke Maven. Depending on the state of your system, this may take ~30-45 seconds
+[DEBUG]  Running 'mvn -pl com.yahoo.ycsb:mongodb-binding -am package -DskipTests dependency:build-classpath -DincludeScope=compile -Dmdep.outputFilterFile=true'
+java -cp /Users/admin/Documents/Sourcetree/YCSB/mongodb/conf:/Users/admin/Documents/Sourcetree/YCSB/mongodb/target/mongodb-binding-0.16.0-SNAPSHOT.jar:/Users/admin/.m2/repository/org/mongodb/mongo-java-driver/3.8.0/mongo-java-driver-3.8.0.jar:/Users/admin/.m2/repository/org/apache/htrace/htrace-core4/4.1.0-incubating/htrace-core4-4.1.0-incubating.jar:/Users/admin/.m2/repository/org/xerial/snappy/snappy-java/1.1.7.1/snappy-java-1.1.7.1.jar:/Users/admin/Documents/Sourcetree/YCSB/core/target/core-0.16.0-SNAPSHOT.jar:/Users/admin/.m2/repository/org/hdrhistogram/HdrHistogram/2.1.4/HdrHistogram-2.1.4.jar:/Users/admin/.m2/repository/org/codehaus/jackson/jackson-mapper-asl/1.9.4/jackson-mapper-asl-1.9.4.jar:/Users/admin/.m2/repository/org/codehaus/jackson/jackson-core-asl/1.9.4/jackson-core-asl-1.9.4.jar:/Users/admin/.m2/repository/com/allanbank/mongodb-async-driver/2.0.1/mongodb-async-driver-2.0.1.jar com.yahoo.ycsb.Client -db com.yahoo.ycsb.db.MongoDbClient -P z_my/workloads/workload_100000.ini -P z_my/properties/workload_properties_mongodb.dat -s -t
+Command line: -db com.yahoo.ycsb.db.MongoDbClient -P z_my/workloads/workload_100000.ini -P z_my/properties/workload_properties_mongodb.dat -s -t
+YCSB Client 0.16.0-SNAPSHOT
+
+Loading workload...
+Starting test.
+2019-01-12 00:35:38:883 0 sec: 0 operations; est completion in 0 second 
+1 12, 2019 12:35:39 午前 com.mongodb.diagnostics.logging.JULLogger log
+情報: Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+1 12, 2019 12:35:39 午前 com.mongodb.diagnostics.logging.JULLogger log
+情報: Cluster description not yet available. Waiting for 30000 ms before timing out
+1 12, 2019 12:35:39 午前 com.mongodb.diagnostics.logging.JULLogger log
+情報: Opened connection [connectionId{localValue:1, serverValue:7}] to localhost:27017
+1 12, 2019 12:35:39 午前 com.mongodb.diagnostics.logging.JULLogger log
+情報: Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[3, 6, 8]}, minWireVersion=0, maxWireVersion=6, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=8600180}
+1 12, 2019 12:35:39 午前 com.mongodb.diagnostics.logging.JULLogger log
+情報: Opened connection [connectionId{localValue:2, serverValue:8}] to localhost:27017
+2019-01-12 00:35:48:863 10 sec: 6466 operations; 646.28 current ops/sec; est completion in 2 minutes [INSERT AverageLatency(us)=1443.19] 
+2019-01-12 00:35:58:852 20 sec: 14987 operations; 852.44 current ops/sec; est completion in 1 minute [INSERT AverageLatency(us)=1159.83] 
+2019-01-12 00:36:08:851 30 sec: 24056 operations; 906.9 current ops/sec; est completion in 1 minute [INSERT AverageLatency(us)=1092] 
+2019-01-12 00:36:18:859 40 sec: 33250 operations; 918.67 current ops/sec; est completion in 1 minute [INSERT AverageLatency(us)=1078.14] 
+2019-01-12 00:36:28:852 50 sec: 42398 operations; 915.44 current ops/sec; est completion in 1 minute [INSERT AverageLatency(us)=1081.3] 
+2019-01-12 00:36:38:858 60 sec: 51288 operations; 888.47 current ops/sec; est completion in 57 seconds [INSERT AverageLatency(us)=1114.53] 
+2019-01-12 00:36:48:853 70 sec: 60753 operations; 947.07 current ops/sec; est completion in 46 seconds [INSERT AverageLatency(us)=1046.1] 
+2019-01-12 00:36:58:854 80 sec: 69759 operations; 900.42 current ops/sec; est completion in 35 seconds [INSERT AverageLatency(us)=1103.6] 
+2019-01-12 00:37:08:860 90 sec: 78276 operations; 851.27 current ops/sec; est completion in 25 seconds [INSERT AverageLatency(us)=1168.04] 
+2019-01-12 00:37:18:854 100 sec: 87223 operations; 895.15 current ops/sec; est completion in 15 seconds [INSERT AverageLatency(us)=1110.71] 
+2019-01-12 00:37:28:857 110 sec: 95965 operations; 873.94 current ops/sec; est completion in 5 second [INSERT AverageLatency(us)=1137.53] 
+1 12, 2019 12:37:33 午前 com.mongodb.diagnostics.logging.JULLogger log
+情報: Closed connection [connectionId{localValue:2, serverValue:8}] to localhost:27017 because the pool has been closed.
+2019-01-12 00:37:33:287 114 sec: 100000 operations; 910.84 current ops/sec; [CLEANUP AverageLatency(us)=3282] [INSERT AverageLatency(us)=1090.76] 
+--------------------------------------------------
+Finish: Record number is 100000, count is 9.
+--------------------------------------------------
+--------------------------------------------------
+Start: Record number is 100000, count is 10.
+--------------------------------------------------
+Stopping bigchaindb_bigchaindb_1 ... done
+Stopping bigchaindb_tendermint_1 ... done
+Stopping bigchaindb_mongodb_1    ... done
+Removing bigchaindb_bigchaindb_1 ... done
+Removing bigchaindb_tendermint_1 ... done
+Removing bigchaindb_mongodb_1    ... done
+Removing network bigchaindb_default
+
+Creating network "bigchaindb_default" with the default driver
+Creating bigchaindb_mongodb_1    ... done
+Creating bigchaindb_tendermint_1 ... done
+Creating bigchaindb_bigchaindb_1 ... done
+./bin/ycsb run mongodb -P z_my/workloads/workload_100000.ini -P z_my/properties/workload_properties_mongodb.dat -s > z_my/results/run_mongodb_100000_10
+[WARN]  Running against a source checkout. In order to get our runtime dependencies we'll have to invoke Maven. Depending on the state of your system, this may take ~30-45 seconds
+[DEBUG]  Running 'mvn -pl com.yahoo.ycsb:mongodb-binding -am package -DskipTests dependency:build-classpath -DincludeScope=compile -Dmdep.outputFilterFile=true'
+java -cp /Users/admin/Documents/Sourcetree/YCSB/mongodb/conf:/Users/admin/Documents/Sourcetree/YCSB/mongodb/target/mongodb-binding-0.16.0-SNAPSHOT.jar:/Users/admin/.m2/repository/org/mongodb/mongo-java-driver/3.8.0/mongo-java-driver-3.8.0.jar:/Users/admin/.m2/repository/org/apache/htrace/htrace-core4/4.1.0-incubating/htrace-core4-4.1.0-incubating.jar:/Users/admin/.m2/repository/org/xerial/snappy/snappy-java/1.1.7.1/snappy-java-1.1.7.1.jar:/Users/admin/Documents/Sourcetree/YCSB/core/target/core-0.16.0-SNAPSHOT.jar:/Users/admin/.m2/repository/org/hdrhistogram/HdrHistogram/2.1.4/HdrHistogram-2.1.4.jar:/Users/admin/.m2/repository/org/codehaus/jackson/jackson-mapper-asl/1.9.4/jackson-mapper-asl-1.9.4.jar:/Users/admin/.m2/repository/org/codehaus/jackson/jackson-core-asl/1.9.4/jackson-core-asl-1.9.4.jar:/Users/admin/.m2/repository/com/allanbank/mongodb-async-driver/2.0.1/mongodb-async-driver-2.0.1.jar com.yahoo.ycsb.Client -db com.yahoo.ycsb.db.MongoDbClient -P z_my/workloads/workload_100000.ini -P z_my/properties/workload_properties_mongodb.dat -s -t
+Command line: -db com.yahoo.ycsb.db.MongoDbClient -P z_my/workloads/workload_100000.ini -P z_my/properties/workload_properties_mongodb.dat -s -t
+YCSB Client 0.16.0-SNAPSHOT
+
+Loading workload...
+Starting test.
+2019-01-12 00:38:19:931 0 sec: 0 operations; est completion in 0 second 
+1 12, 2019 12:38:20 午前 com.mongodb.diagnostics.logging.JULLogger log
+情報: Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+1 12, 2019 12:38:20 午前 com.mongodb.diagnostics.logging.JULLogger log
+情報: Opened connection [connectionId{localValue:1, serverValue:7}] to localhost:27017
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+1 12, 2019 12:38:20 午前 com.mongodb.diagnostics.logging.JULLogger log
+情報: Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[3, 6, 8]}, minWireVersion=0, maxWireVersion=6, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=5441189}
+1 12, 2019 12:38:20 午前 com.mongodb.diagnostics.logging.JULLogger log
+情報: Opened connection [connectionId{localValue:2, serverValue:8}] to localhost:27017
+2019-01-12 00:38:29:897 10 sec: 6031 operations; 602.62 current ops/sec; est completion in 2 minutes [INSERT AverageLatency(us)=1533.92] 
+2019-01-12 00:38:39:895 20 sec: 14975 operations; 894.67 current ops/sec; est completion in 1 minute [INSERT AverageLatency(us)=1106.98] 
+2019-01-12 00:38:49:891 30 sec: 24159 operations; 918.77 current ops/sec; est completion in 1 minute [INSERT AverageLatency(us)=1078.45] 
+2019-01-12 00:38:59:892 40 sec: 33509 operations; 934.81 current ops/sec; est completion in 1 minute [INSERT AverageLatency(us)=1059.47] 
+2019-01-12 00:39:09:891 50 sec: 42995 operations; 948.69 current ops/sec; est completion in 1 minute [INSERT AverageLatency(us)=1043.95] 
+2019-01-12 00:39:19:892 60 sec: 51901 operations; 890.6 current ops/sec; est completion in 56 seconds [INSERT AverageLatency(us)=1112.36] 
+2019-01-12 00:39:29:892 70 sec: 60915 operations; 901.31 current ops/sec; est completion in 45 seconds [INSERT AverageLatency(us)=1098.98] 
+2019-01-12 00:39:39:893 80 sec: 70182 operations; 926.7 current ops/sec; est completion in 34 seconds [INSERT AverageLatency(us)=1072.36] 
+2019-01-12 00:39:49:893 90 sec: 79316 operations; 913.31 current ops/sec; est completion in 24 seconds [INSERT AverageLatency(us)=1088.08] 
+2019-01-12 00:39:59:895 100 sec: 87633 operations; 831.53 current ops/sec; est completion in 15 seconds [INSERT AverageLatency(us)=1195.72] 
+2019-01-12 00:40:09:893 110 sec: 96994 operations; 936.29 current ops/sec; est completion in 4 second [INSERT AverageLatency(us)=1061.44] 
+1 12, 2019 12:40:13 午前 com.mongodb.diagnostics.logging.JULLogger log
+情報: Closed connection [connectionId{localValue:2, serverValue:8}] to localhost:27017 because the pool has been closed.
+2019-01-12 00:40:13:086 113 sec: 100000 operations; 941.73 current ops/sec; [CLEANUP AverageLatency(us)=3655] [INSERT AverageLatency(us)=1054.24] 
+--------------------------------------------------
+Finish: Record number is 100000, count is 10.
+--------------------------------------------------

@@ -1,0 +1,1252 @@
+{\rtf1\ansi\ansicpg932\cocoartf1671\cocoasubrtf200
+{\fonttbl\f0\fnil\fcharset0 Menlo-Regular;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;\red47\green180\blue29;}
+{\*\expandedcolortbl;;\csgray\c0;\cssrgb\c20238\c73898\c14947;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f0\fs22 \cf2 \CocoaLigature0 --------------------------------------------------\
+Start: Record number is 1000, count is 1.\
+--------------------------------------------------\
+Stopping bigchaindb_bigchaindb_1    ... \cf3 done\cf2 \
+Stopping bigchaindb_mongo-express_1 ... \cf3 done\cf2 \
+Stopping bigchaindb_tendermint_1    ... \cf3 done\cf2 \
+Stopping bigchaindb_mongodb_1       ... \cf3 done\cf2 \
+Removing bigchaindb_bigchaindb_1    ... \cf3 done\cf2 \
+Removing bigchaindb_mongo-express_1 ... \cf3 done\cf2 \
+Removing bigchaindb_tendermint_1    ... \cf3 done\cf2 \
+Removing bigchaindb_mongodb_1       ... \cf3 done\cf2 \
+Removing network bigchaindb_default\
+\
+Creating network "bigchaindb_default" with the default driver\
+Creating bigchaindb_mongodb_1    ... \cf3 done\cf2 \
+Creating bigchaindb_tendermint_1 ... \cf3 done\cf2 \
+Creating bigchaindb_bigchaindb_1 ... \cf3 done\cf2 \
+./bin/ycsb run bigchaindb -P z_my/workloads/workload_1000.ini -P z_my/properties/workload_properties_bigchaindb.dat -s > z_my/results/bigchaindb_1000_1.csv\
+[WARN]  Running against a source checkout. In order to get our runtime dependencies we'll have to invoke Maven. Depending on the state of your system, this may take ~30-45 seconds\
+[DEBUG]  Running 'mvn -pl com.yahoo.ycsb:bigchaindb-binding -am package -DskipTests dependency:build-classpath -DincludeScope=compile -Dmdep.outputFilterFile=true'\
+java -cp /Users/admin/Downloads/YCSB/bigchaindb/conf:/Users/admin/Downloads/YCSB/bigchaindb/target/bigchaindb-binding-0.16.0-SNAPSHOT.jar:/Users/admin/.m2/repository/com/squareup/okio/okio/1.13.0/okio-1.13.0.jar:/Users/admin/.m2/repository/com/google/oauth-client/google-oauth-client/1.23.0/google-oauth-client-1.23.0.jar:/Users/admin/.m2/repository/org/hdrhistogram/HdrHistogram/2.1.4/HdrHistogram-2.1.4.jar:/Users/admin/.m2/repository/com/google/code/findbugs/jsr305/1.3.9/jsr305-1.3.9.jar:/Users/admin/.m2/repository/org/codehaus/jackson/jackson-core-asl/1.9.4/jackson-core-asl-1.9.4.jar:/Users/admin/.m2/repository/commons-codec/commons-codec/1.3/commons-codec-1.3.jar:/Users/admin/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.1.3/jackson-core-2.1.3.jar:/Users/admin/Downloads/YCSB/core/target/core-0.16.0-SNAPSHOT.jar:/Users/admin/.m2/repository/org/bouncycastle/bcprov-jdk15on/1.54/bcprov-jdk15on-1.54.jar:/Users/admin/.m2/repository/com/google/api-client/google-api-client/1.23.0/google-api-client-1.23.0.jar:/Users/admin/.m2/repository/com/bigchaindb/cryptoconditions/1.0/cryptoconditions-1.0.jar:/Users/admin/.m2/repository/org/codehaus/jackson/jackson-mapper-asl/1.9.4/jackson-mapper-asl-1.9.4.jar:/Users/admin/.m2/repository/com/google/code/gson/gson/2.8.2/gson-2.8.2.jar:/Users/admin/.m2/repository/org/apache/htrace/htrace-core4/4.1.0-incubating/htrace-core4-4.1.0-incubating.jar:/Users/admin/.m2/repository/com/bigchaindb/bigchaindb-driver/1.0/bigchaindb-driver-1.0.jar:/Users/admin/.m2/repository/com/squareup/okhttp3/okhttp/3.9.0/okhttp-3.9.0.jar:/Users/admin/.m2/repository/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1.jar:/Users/admin/.m2/repository/com/google/guava/guava-jdk5/17.0/guava-jdk5-17.0.jar:/Users/admin/.m2/repository/org/slf4j/slf4j-api/1.7.25/slf4j-api-1.7.25.jar:/Users/admin/.m2/repository/net/i2p/crypto/eddsa/0.2.0/eddsa-0.2.0.jar:/Users/admin/.m2/repository/org/apache/httpcomponents/httpcore/4.0.1/httpcore-4.0.1.jar:/Users/admin/.m2/repository/com/google/http-client/google-http-client/1.23.0/google-http-client-1.23.0.jar:/Users/admin/.m2/repository/org/glassfish/tyrus/bundles/tyrus-standalone-client/1.9/tyrus-standalone-client-1.9.jar:/Users/admin/.m2/repository/org/apache/httpcomponents/httpclient/4.0.1/httpclient-4.0.1.jar:/Users/admin/.m2/repository/com/google/http-client/google-http-client-jackson2/1.23.0/google-http-client-jackson2-1.23.0.jar com.yahoo.ycsb.Client -db com.yahoo.ycsb.db.BigchainDBClient -P z_my/workloads/workload_1000.ini -P z_my/properties/workload_properties_bigchaindb.dat -s -t\
+Command line: -db com.yahoo.ycsb.db.BigchainDBClient -P z_my/workloads/workload_1000.ini -P z_my/properties/workload_properties_bigchaindb.dat -s -t\
+YCSB Client 0.16.0-SNAPSHOT\
+\
+Loading workload...\
+Starting test.\
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".\
+SLF4J: Defaulting to no-operation (NOP) logger implementation\
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.\
+2019-01-16 16:02:02:632 0 sec: 0 operations; est completion in 0 second \
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []\
+2019-01-16 16:02:06:330 3 sec: 1000 operations; 267.45 current ops/sec; [CLEANUP AverageLatency(us)=1] [INSERT AverageLatency(us)=3043.63] \
+--------------------------------------------------\
+Finish: Record number is 1000, count is 1.\
+--------------------------------------------------\
+--------------------------------------------------\
+Start: Record number is 1000, count is 2.\
+--------------------------------------------------\
+Stopping bigchaindb_bigchaindb_1 ... \cf3 done\cf2 \
+Stopping bigchaindb_tendermint_1 ... \cf3 done\cf2 \
+Stopping bigchaindb_mongodb_1    ... \cf3 done\cf2 \
+Removing bigchaindb_bigchaindb_1 ... \cf3 done\cf2 \
+Removing bigchaindb_tendermint_1 ... \cf3 done\cf2 \
+Removing bigchaindb_mongodb_1    ... \cf3 done\cf2 \
+Removing network bigchaindb_default\
+\
+Creating network "bigchaindb_default" with the default driver\
+Creating bigchaindb_mongodb_1    ... \cf3 done\cf2 \
+Creating bigchaindb_tendermint_1 ... \cf3 done\cf2 \
+Creating bigchaindb_bigchaindb_1 ... \cf3 done\cf2 \
+./bin/ycsb run bigchaindb -P z_my/workloads/workload_1000.ini -P z_my/properties/workload_properties_bigchaindb.dat -s > z_my/results/bigchaindb_1000_2.csv\
+[WARN]  Running against a source checkout. In order to get our runtime dependencies we'll have to invoke Maven. Depending on the state of your system, this may take ~30-45 seconds\
+[DEBUG]  Running 'mvn -pl com.yahoo.ycsb:bigchaindb-binding -am package -DskipTests dependency:build-classpath -DincludeScope=compile -Dmdep.outputFilterFile=true'\
+java -cp /Users/admin/Downloads/YCSB/bigchaindb/conf:/Users/admin/Downloads/YCSB/bigchaindb/target/bigchaindb-binding-0.16.0-SNAPSHOT.jar:/Users/admin/.m2/repository/com/squareup/okio/okio/1.13.0/okio-1.13.0.jar:/Users/admin/.m2/repository/com/google/oauth-client/google-oauth-client/1.23.0/google-oauth-client-1.23.0.jar:/Users/admin/.m2/repository/org/hdrhistogram/HdrHistogram/2.1.4/HdrHistogram-2.1.4.jar:/Users/admin/.m2/repository/com/google/code/findbugs/jsr305/1.3.9/jsr305-1.3.9.jar:/Users/admin/.m2/repository/org/codehaus/jackson/jackson-core-asl/1.9.4/jackson-core-asl-1.9.4.jar:/Users/admin/.m2/repository/commons-codec/commons-codec/1.3/commons-codec-1.3.jar:/Users/admin/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.1.3/jackson-core-2.1.3.jar:/Users/admin/Downloads/YCSB/core/target/core-0.16.0-SNAPSHOT.jar:/Users/admin/.m2/repository/org/bouncycastle/bcprov-jdk15on/1.54/bcprov-jdk15on-1.54.jar:/Users/admin/.m2/repository/com/google/api-client/google-api-client/1.23.0/google-api-client-1.23.0.jar:/Users/admin/.m2/repository/com/bigchaindb/cryptoconditions/1.0/cryptoconditions-1.0.jar:/Users/admin/.m2/repository/org/codehaus/jackson/jackson-mapper-asl/1.9.4/jackson-mapper-asl-1.9.4.jar:/Users/admin/.m2/repository/com/google/code/gson/gson/2.8.2/gson-2.8.2.jar:/Users/admin/.m2/repository/org/apache/htrace/htrace-core4/4.1.0-incubating/htrace-core4-4.1.0-incubating.jar:/Users/admin/.m2/repository/com/bigchaindb/bigchaindb-driver/1.0/bigchaindb-driver-1.0.jar:/Users/admin/.m2/repository/com/squareup/okhttp3/okhttp/3.9.0/okhttp-3.9.0.jar:/Users/admin/.m2/repository/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1.jar:/Users/admin/.m2/repository/com/google/guava/guava-jdk5/17.0/guava-jdk5-17.0.jar:/Users/admin/.m2/repository/org/slf4j/slf4j-api/1.7.25/slf4j-api-1.7.25.jar:/Users/admin/.m2/repository/net/i2p/crypto/eddsa/0.2.0/eddsa-0.2.0.jar:/Users/admin/.m2/repository/org/apache/httpcomponents/httpcore/4.0.1/httpcore-4.0.1.jar:/Users/admin/.m2/repository/com/google/http-client/google-http-client/1.23.0/google-http-client-1.23.0.jar:/Users/admin/.m2/repository/org/glassfish/tyrus/bundles/tyrus-standalone-client/1.9/tyrus-standalone-client-1.9.jar:/Users/admin/.m2/repository/org/apache/httpcomponents/httpclient/4.0.1/httpclient-4.0.1.jar:/Users/admin/.m2/repository/com/google/http-client/google-http-client-jackson2/1.23.0/google-http-client-jackson2-1.23.0.jar com.yahoo.ycsb.Client -db com.yahoo.ycsb.db.BigchainDBClient -P z_my/workloads/workload_1000.ini -P z_my/properties/workload_properties_bigchaindb.dat -s -t\
+Command line: -db com.yahoo.ycsb.db.BigchainDBClient -P z_my/workloads/workload_1000.ini -P z_my/properties/workload_properties_bigchaindb.dat -s -t\
+YCSB Client 0.16.0-SNAPSHOT\
+\
+Loading workload...\
+Starting test.\
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".\
+SLF4J: Defaulting to no-operation (NOP) logger implementation\
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.\
+2019-01-16 16:02:52:383 0 sec: 0 operations; est completion in 0 second \
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []\
+2019-01-16 16:02:56:140 3 sec: 1000 operations; 263.23 current ops/sec; [CLEANUP AverageLatency(us)=1] [INSERT AverageLatency(us)=3105.78] \
+--------------------------------------------------\
+Finish: Record number is 1000, count is 2.\
+--------------------------------------------------\
+--------------------------------------------------\
+Start: Record number is 1000, count is 3.\
+--------------------------------------------------\
+Stopping bigchaindb_bigchaindb_1 ... \cf3 done\cf2 \
+Stopping bigchaindb_mongodb_1    ... \cf3 done\cf2 \
+Stopping bigchaindb_tendermint_1 ... \cf3 done\cf2 \
+Removing bigchaindb_bigchaindb_1 ... \cf3 done\cf2 \
+Removing bigchaindb_mongodb_1    ... \cf3 done\cf2 \
+Removing bigchaindb_tendermint_1 ... \cf3 done\cf2 \
+Removing network bigchaindb_default\
+\
+Creating network "bigchaindb_default" with the default driver\
+Creating bigchaindb_mongodb_1    ... \cf3 done\cf2 \
+Creating bigchaindb_tendermint_1 ... \cf3 done\cf2 \
+Creating bigchaindb_bigchaindb_1 ... \cf3 done\cf2 \
+./bin/ycsb run bigchaindb -P z_my/workloads/workload_1000.ini -P z_my/properties/workload_properties_bigchaindb.dat -s > z_my/results/bigchaindb_1000_3.csv\
+[WARN]  Running against a source checkout. In order to get our runtime dependencies we'll have to invoke Maven. Depending on the state of your system, this may take ~30-45 seconds\
+[DEBUG]  Running 'mvn -pl com.yahoo.ycsb:bigchaindb-binding -am package -DskipTests dependency:build-classpath -DincludeScope=compile -Dmdep.outputFilterFile=true'\
+java -cp /Users/admin/Downloads/YCSB/bigchaindb/conf:/Users/admin/Downloads/YCSB/bigchaindb/target/bigchaindb-binding-0.16.0-SNAPSHOT.jar:/Users/admin/.m2/repository/com/squareup/okio/okio/1.13.0/okio-1.13.0.jar:/Users/admin/.m2/repository/com/google/oauth-client/google-oauth-client/1.23.0/google-oauth-client-1.23.0.jar:/Users/admin/.m2/repository/org/hdrhistogram/HdrHistogram/2.1.4/HdrHistogram-2.1.4.jar:/Users/admin/.m2/repository/com/google/code/findbugs/jsr305/1.3.9/jsr305-1.3.9.jar:/Users/admin/.m2/repository/org/codehaus/jackson/jackson-core-asl/1.9.4/jackson-core-asl-1.9.4.jar:/Users/admin/.m2/repository/commons-codec/commons-codec/1.3/commons-codec-1.3.jar:/Users/admin/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.1.3/jackson-core-2.1.3.jar:/Users/admin/Downloads/YCSB/core/target/core-0.16.0-SNAPSHOT.jar:/Users/admin/.m2/repository/org/bouncycastle/bcprov-jdk15on/1.54/bcprov-jdk15on-1.54.jar:/Users/admin/.m2/repository/com/google/api-client/google-api-client/1.23.0/google-api-client-1.23.0.jar:/Users/admin/.m2/repository/com/bigchaindb/cryptoconditions/1.0/cryptoconditions-1.0.jar:/Users/admin/.m2/repository/org/codehaus/jackson/jackson-mapper-asl/1.9.4/jackson-mapper-asl-1.9.4.jar:/Users/admin/.m2/repository/com/google/code/gson/gson/2.8.2/gson-2.8.2.jar:/Users/admin/.m2/repository/org/apache/htrace/htrace-core4/4.1.0-incubating/htrace-core4-4.1.0-incubating.jar:/Users/admin/.m2/repository/com/bigchaindb/bigchaindb-driver/1.0/bigchaindb-driver-1.0.jar:/Users/admin/.m2/repository/com/squareup/okhttp3/okhttp/3.9.0/okhttp-3.9.0.jar:/Users/admin/.m2/repository/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1.jar:/Users/admin/.m2/repository/com/google/guava/guava-jdk5/17.0/guava-jdk5-17.0.jar:/Users/admin/.m2/repository/org/slf4j/slf4j-api/1.7.25/slf4j-api-1.7.25.jar:/Users/admin/.m2/repository/net/i2p/crypto/eddsa/0.2.0/eddsa-0.2.0.jar:/Users/admin/.m2/repository/org/apache/httpcomponents/httpcore/4.0.1/httpcore-4.0.1.jar:/Users/admin/.m2/repository/com/google/http-client/google-http-client/1.23.0/google-http-client-1.23.0.jar:/Users/admin/.m2/repository/org/glassfish/tyrus/bundles/tyrus-standalone-client/1.9/tyrus-standalone-client-1.9.jar:/Users/admin/.m2/repository/org/apache/httpcomponents/httpclient/4.0.1/httpclient-4.0.1.jar:/Users/admin/.m2/repository/com/google/http-client/google-http-client-jackson2/1.23.0/google-http-client-jackson2-1.23.0.jar com.yahoo.ycsb.Client -db com.yahoo.ycsb.db.BigchainDBClient -P z_my/workloads/workload_1000.ini -P z_my/properties/workload_properties_bigchaindb.dat -s -t\
+Command line: -db com.yahoo.ycsb.db.BigchainDBClient -P z_my/workloads/workload_1000.ini -P z_my/properties/workload_properties_bigchaindb.dat -s -t\
+YCSB Client 0.16.0-SNAPSHOT\
+\
+Loading workload...\
+Starting test.\
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".\
+SLF4J: Defaulting to no-operation (NOP) logger implementation\
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.\
+2019-01-16 16:03:38:860 0 sec: 0 operations; est completion in 0 second \
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []\
+2019-01-16 16:03:42:373 3 sec: 1000 operations; 281.21 current ops/sec; [CLEANUP AverageLatency(us)=1] [INSERT AverageLatency(us)=3143.71] \
+--------------------------------------------------\
+Finish: Record number is 1000, count is 3.\
+--------------------------------------------------\
+--------------------------------------------------\
+Start: Record number is 1000, count is 4.\
+--------------------------------------------------\
+Stopping bigchaindb_bigchaindb_1 ... \cf3 done\cf2 \
+Stopping bigchaindb_mongodb_1    ... \cf3 done\cf2 \
+Stopping bigchaindb_tendermint_1 ... \cf3 done\cf2 \
+Removing bigchaindb_bigchaindb_1 ... \cf3 done\cf2 \
+Removing bigchaindb_mongodb_1    ... \cf3 done\cf2 \
+Removing bigchaindb_tendermint_1 ... \cf3 done\cf2 \
+Removing network bigchaindb_default\
+\
+Creating network "bigchaindb_default" with the default driver\
+Creating bigchaindb_tendermint_1 ... \cf3 done\cf2 \
+Creating bigchaindb_mongodb_1    ... \cf3 done\cf2 \
+Creating bigchaindb_bigchaindb_1 ... \cf3 done\cf2 \
+./bin/ycsb run bigchaindb -P z_my/workloads/workload_1000.ini -P z_my/properties/workload_properties_bigchaindb.dat -s > z_my/results/bigchaindb_1000_4.csv\
+[WARN]  Running against a source checkout. In order to get our runtime dependencies we'll have to invoke Maven. Depending on the state of your system, this may take ~30-45 seconds\
+[DEBUG]  Running 'mvn -pl com.yahoo.ycsb:bigchaindb-binding -am package -DskipTests dependency:build-classpath -DincludeScope=compile -Dmdep.outputFilterFile=true'\
+java -cp /Users/admin/Downloads/YCSB/bigchaindb/conf:/Users/admin/Downloads/YCSB/bigchaindb/target/bigchaindb-binding-0.16.0-SNAPSHOT.jar:/Users/admin/.m2/repository/com/squareup/okio/okio/1.13.0/okio-1.13.0.jar:/Users/admin/.m2/repository/com/google/oauth-client/google-oauth-client/1.23.0/google-oauth-client-1.23.0.jar:/Users/admin/.m2/repository/org/hdrhistogram/HdrHistogram/2.1.4/HdrHistogram-2.1.4.jar:/Users/admin/.m2/repository/com/google/code/findbugs/jsr305/1.3.9/jsr305-1.3.9.jar:/Users/admin/.m2/repository/org/codehaus/jackson/jackson-core-asl/1.9.4/jackson-core-asl-1.9.4.jar:/Users/admin/.m2/repository/commons-codec/commons-codec/1.3/commons-codec-1.3.jar:/Users/admin/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.1.3/jackson-core-2.1.3.jar:/Users/admin/Downloads/YCSB/core/target/core-0.16.0-SNAPSHOT.jar:/Users/admin/.m2/repository/org/bouncycastle/bcprov-jdk15on/1.54/bcprov-jdk15on-1.54.jar:/Users/admin/.m2/repository/com/google/api-client/google-api-client/1.23.0/google-api-client-1.23.0.jar:/Users/admin/.m2/repository/com/bigchaindb/cryptoconditions/1.0/cryptoconditions-1.0.jar:/Users/admin/.m2/repository/org/codehaus/jackson/jackson-mapper-asl/1.9.4/jackson-mapper-asl-1.9.4.jar:/Users/admin/.m2/repository/com/google/code/gson/gson/2.8.2/gson-2.8.2.jar:/Users/admin/.m2/repository/org/apache/htrace/htrace-core4/4.1.0-incubating/htrace-core4-4.1.0-incubating.jar:/Users/admin/.m2/repository/com/bigchaindb/bigchaindb-driver/1.0/bigchaindb-driver-1.0.jar:/Users/admin/.m2/repository/com/squareup/okhttp3/okhttp/3.9.0/okhttp-3.9.0.jar:/Users/admin/.m2/repository/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1.jar:/Users/admin/.m2/repository/com/google/guava/guava-jdk5/17.0/guava-jdk5-17.0.jar:/Users/admin/.m2/repository/org/slf4j/slf4j-api/1.7.25/slf4j-api-1.7.25.jar:/Users/admin/.m2/repository/net/i2p/crypto/eddsa/0.2.0/eddsa-0.2.0.jar:/Users/admin/.m2/repository/org/apache/httpcomponents/httpcore/4.0.1/httpcore-4.0.1.jar:/Users/admin/.m2/repository/com/google/http-client/google-http-client/1.23.0/google-http-client-1.23.0.jar:/Users/admin/.m2/repository/org/glassfish/tyrus/bundles/tyrus-standalone-client/1.9/tyrus-standalone-client-1.9.jar:/Users/admin/.m2/repository/org/apache/httpcomponents/httpclient/4.0.1/httpclient-4.0.1.jar:/Users/admin/.m2/repository/com/google/http-client/google-http-client-jackson2/1.23.0/google-http-client-jackson2-1.23.0.jar com.yahoo.ycsb.Client -db com.yahoo.ycsb.db.BigchainDBClient -P z_my/workloads/workload_1000.ini -P z_my/properties/workload_properties_bigchaindb.dat -s -t\
+Command line: -db com.yahoo.ycsb.db.BigchainDBClient -P z_my/workloads/workload_1000.ini -P z_my/properties/workload_properties_bigchaindb.dat -s -t\
+YCSB Client 0.16.0-SNAPSHOT\
+\
+Loading workload...\
+Starting test.\
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".\
+SLF4J: Defaulting to no-operation (NOP) logger implementation\
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.\
+2019-01-16 16:04:24:441 0 sec: 0 operations; est completion in 0 second \
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []\
+2019-01-16 16:04:27:820 3 sec: 1000 operations; 292.4 current ops/sec; [CLEANUP AverageLatency(us)=1] [INSERT AverageLatency(us)=3026.94] \
+--------------------------------------------------\
+Finish: Record number is 1000, count is 4.\
+--------------------------------------------------\
+--------------------------------------------------\
+Start: Record number is 1000, count is 5.\
+--------------------------------------------------\
+Stopping bigchaindb_bigchaindb_1 ... \cf3 done\cf2 \
+Stopping bigchaindb_tendermint_1 ... \cf3 done\cf2 \
+Stopping bigchaindb_mongodb_1    ... \cf3 done\cf2 \
+Removing bigchaindb_bigchaindb_1 ... \cf3 done\cf2 \
+Removing bigchaindb_tendermint_1 ... \cf3 done\cf2 \
+Removing bigchaindb_mongodb_1    ... \cf3 done\cf2 \
+Removing network bigchaindb_default\
+\
+Creating network "bigchaindb_default" with the default driver\
+Creating bigchaindb_tendermint_1 ... \cf3 done\cf2 \
+Creating bigchaindb_mongodb_1    ... \cf3 done\cf2 \
+Creating bigchaindb_bigchaindb_1 ... \cf3 done\cf2 \
+./bin/ycsb run bigchaindb -P z_my/workloads/workload_1000.ini -P z_my/properties/workload_properties_bigchaindb.dat -s > z_my/results/bigchaindb_1000_5.csv\
+[WARN]  Running against a source checkout. In order to get our runtime dependencies we'll have to invoke Maven. Depending on the state of your system, this may take ~30-45 seconds\
+[DEBUG]  Running 'mvn -pl com.yahoo.ycsb:bigchaindb-binding -am package -DskipTests dependency:build-classpath -DincludeScope=compile -Dmdep.outputFilterFile=true'\
+java -cp /Users/admin/Downloads/YCSB/bigchaindb/conf:/Users/admin/Downloads/YCSB/bigchaindb/target/bigchaindb-binding-0.16.0-SNAPSHOT.jar:/Users/admin/.m2/repository/com/squareup/okio/okio/1.13.0/okio-1.13.0.jar:/Users/admin/.m2/repository/com/google/oauth-client/google-oauth-client/1.23.0/google-oauth-client-1.23.0.jar:/Users/admin/.m2/repository/org/hdrhistogram/HdrHistogram/2.1.4/HdrHistogram-2.1.4.jar:/Users/admin/.m2/repository/com/google/code/findbugs/jsr305/1.3.9/jsr305-1.3.9.jar:/Users/admin/.m2/repository/org/codehaus/jackson/jackson-core-asl/1.9.4/jackson-core-asl-1.9.4.jar:/Users/admin/.m2/repository/commons-codec/commons-codec/1.3/commons-codec-1.3.jar:/Users/admin/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.1.3/jackson-core-2.1.3.jar:/Users/admin/Downloads/YCSB/core/target/core-0.16.0-SNAPSHOT.jar:/Users/admin/.m2/repository/org/bouncycastle/bcprov-jdk15on/1.54/bcprov-jdk15on-1.54.jar:/Users/admin/.m2/repository/com/google/api-client/google-api-client/1.23.0/google-api-client-1.23.0.jar:/Users/admin/.m2/repository/com/bigchaindb/cryptoconditions/1.0/cryptoconditions-1.0.jar:/Users/admin/.m2/repository/org/codehaus/jackson/jackson-mapper-asl/1.9.4/jackson-mapper-asl-1.9.4.jar:/Users/admin/.m2/repository/com/google/code/gson/gson/2.8.2/gson-2.8.2.jar:/Users/admin/.m2/repository/org/apache/htrace/htrace-core4/4.1.0-incubating/htrace-core4-4.1.0-incubating.jar:/Users/admin/.m2/repository/com/bigchaindb/bigchaindb-driver/1.0/bigchaindb-driver-1.0.jar:/Users/admin/.m2/repository/com/squareup/okhttp3/okhttp/3.9.0/okhttp-3.9.0.jar:/Users/admin/.m2/repository/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1.jar:/Users/admin/.m2/repository/com/google/guava/guava-jdk5/17.0/guava-jdk5-17.0.jar:/Users/admin/.m2/repository/org/slf4j/slf4j-api/1.7.25/slf4j-api-1.7.25.jar:/Users/admin/.m2/repository/net/i2p/crypto/eddsa/0.2.0/eddsa-0.2.0.jar:/Users/admin/.m2/repository/org/apache/httpcomponents/httpcore/4.0.1/httpcore-4.0.1.jar:/Users/admin/.m2/repository/com/google/http-client/google-http-client/1.23.0/google-http-client-1.23.0.jar:/Users/admin/.m2/repository/org/glassfish/tyrus/bundles/tyrus-standalone-client/1.9/tyrus-standalone-client-1.9.jar:/Users/admin/.m2/repository/org/apache/httpcomponents/httpclient/4.0.1/httpclient-4.0.1.jar:/Users/admin/.m2/repository/com/google/http-client/google-http-client-jackson2/1.23.0/google-http-client-jackson2-1.23.0.jar com.yahoo.ycsb.Client -db com.yahoo.ycsb.db.BigchainDBClient -P z_my/workloads/workload_1000.ini -P z_my/properties/workload_properties_bigchaindb.dat -s -t\
+Command line: -db com.yahoo.ycsb.db.BigchainDBClient -P z_my/workloads/workload_1000.ini -P z_my/properties/workload_properties_bigchaindb.dat -s -t\
+YCSB Client 0.16.0-SNAPSHOT\
+\
+Loading workload...\
+Starting test.\
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".\
+SLF4J: Defaulting to no-operation (NOP) logger implementation\
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.\
+2019-01-16 16:05:09:687 0 sec: 0 operations; est completion in 0 second \
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []\
+2019-01-16 16:05:13:078 3 sec: 1000 operations; 291.21 current ops/sec; [CLEANUP AverageLatency(us)=1] [INSERT AverageLatency(us)=3101.49] \
+--------------------------------------------------\
+Finish: Record number is 1000, count is 5.\
+--------------------------------------------------\
+--------------------------------------------------\
+Start: Record number is 1000, count is 6.\
+--------------------------------------------------\
+Stopping bigchaindb_bigchaindb_1 ... \cf3 done\cf2 \
+Stopping bigchaindb_tendermint_1 ... \cf3 done\cf2 \
+Stopping bigchaindb_mongodb_1    ... \cf3 done\cf2 \
+Removing bigchaindb_bigchaindb_1 ... \cf3 done\cf2 \
+Removing bigchaindb_tendermint_1 ... \cf3 done\cf2 \
+Removing bigchaindb_mongodb_1    ... \cf3 done\cf2 \
+Removing network bigchaindb_default\
+\
+Creating network "bigchaindb_default" with the default driver\
+Creating bigchaindb_mongodb_1    ... \cf3 done\cf2 \
+Creating bigchaindb_tendermint_1 ... \cf3 done\cf2 \
+Creating bigchaindb_bigchaindb_1 ... \cf3 done\cf2 \
+./bin/ycsb run bigchaindb -P z_my/workloads/workload_1000.ini -P z_my/properties/workload_properties_bigchaindb.dat -s > z_my/results/bigchaindb_1000_6.csv\
+[WARN]  Running against a source checkout. In order to get our runtime dependencies we'll have to invoke Maven. Depending on the state of your system, this may take ~30-45 seconds\
+[DEBUG]  Running 'mvn -pl com.yahoo.ycsb:bigchaindb-binding -am package -DskipTests dependency:build-classpath -DincludeScope=compile -Dmdep.outputFilterFile=true'\
+java -cp /Users/admin/Downloads/YCSB/bigchaindb/conf:/Users/admin/Downloads/YCSB/bigchaindb/target/bigchaindb-binding-0.16.0-SNAPSHOT.jar:/Users/admin/.m2/repository/com/squareup/okio/okio/1.13.0/okio-1.13.0.jar:/Users/admin/.m2/repository/com/google/oauth-client/google-oauth-client/1.23.0/google-oauth-client-1.23.0.jar:/Users/admin/.m2/repository/org/hdrhistogram/HdrHistogram/2.1.4/HdrHistogram-2.1.4.jar:/Users/admin/.m2/repository/com/google/code/findbugs/jsr305/1.3.9/jsr305-1.3.9.jar:/Users/admin/.m2/repository/org/codehaus/jackson/jackson-core-asl/1.9.4/jackson-core-asl-1.9.4.jar:/Users/admin/.m2/repository/commons-codec/commons-codec/1.3/commons-codec-1.3.jar:/Users/admin/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.1.3/jackson-core-2.1.3.jar:/Users/admin/Downloads/YCSB/core/target/core-0.16.0-SNAPSHOT.jar:/Users/admin/.m2/repository/org/bouncycastle/bcprov-jdk15on/1.54/bcprov-jdk15on-1.54.jar:/Users/admin/.m2/repository/com/google/api-client/google-api-client/1.23.0/google-api-client-1.23.0.jar:/Users/admin/.m2/repository/com/bigchaindb/cryptoconditions/1.0/cryptoconditions-1.0.jar:/Users/admin/.m2/repository/org/codehaus/jackson/jackson-mapper-asl/1.9.4/jackson-mapper-asl-1.9.4.jar:/Users/admin/.m2/repository/com/google/code/gson/gson/2.8.2/gson-2.8.2.jar:/Users/admin/.m2/repository/org/apache/htrace/htrace-core4/4.1.0-incubating/htrace-core4-4.1.0-incubating.jar:/Users/admin/.m2/repository/com/bigchaindb/bigchaindb-driver/1.0/bigchaindb-driver-1.0.jar:/Users/admin/.m2/repository/com/squareup/okhttp3/okhttp/3.9.0/okhttp-3.9.0.jar:/Users/admin/.m2/repository/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1.jar:/Users/admin/.m2/repository/com/google/guava/guava-jdk5/17.0/guava-jdk5-17.0.jar:/Users/admin/.m2/repository/org/slf4j/slf4j-api/1.7.25/slf4j-api-1.7.25.jar:/Users/admin/.m2/repository/net/i2p/crypto/eddsa/0.2.0/eddsa-0.2.0.jar:/Users/admin/.m2/repository/org/apache/httpcomponents/httpcore/4.0.1/httpcore-4.0.1.jar:/Users/admin/.m2/repository/com/google/http-client/google-http-client/1.23.0/google-http-client-1.23.0.jar:/Users/admin/.m2/repository/org/glassfish/tyrus/bundles/tyrus-standalone-client/1.9/tyrus-standalone-client-1.9.jar:/Users/admin/.m2/repository/org/apache/httpcomponents/httpclient/4.0.1/httpclient-4.0.1.jar:/Users/admin/.m2/repository/com/google/http-client/google-http-client-jackson2/1.23.0/google-http-client-jackson2-1.23.0.jar com.yahoo.ycsb.Client -db com.yahoo.ycsb.db.BigchainDBClient -P z_my/workloads/workload_1000.ini -P z_my/properties/workload_properties_bigchaindb.dat -s -t\
+Command line: -db com.yahoo.ycsb.db.BigchainDBClient -P z_my/workloads/workload_1000.ini -P z_my/properties/workload_properties_bigchaindb.dat -s -t\
+YCSB Client 0.16.0-SNAPSHOT\
+\
+Loading workload...\
+Starting test.\
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".\
+SLF4J: Defaulting to no-operation (NOP) logger implementation\
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.\
+2019-01-16 16:05:54:947 0 sec: 0 operations; est completion in 0 second \
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []\
+2019-01-16 16:05:58:176 3 sec: 1000 operations; 305.72 current ops/sec; [CLEANUP AverageLatency(us)=1] [INSERT AverageLatency(us)=2953.99] \
+--------------------------------------------------\
+Finish: Record number is 1000, count is 6.\
+--------------------------------------------------\
+--------------------------------------------------\
+Start: Record number is 1000, count is 7.\
+--------------------------------------------------\
+Stopping bigchaindb_bigchaindb_1 ... \cf3 done\cf2 \
+Stopping bigchaindb_tendermint_1 ... \cf3 done\cf2 \
+Stopping bigchaindb_mongodb_1    ... \cf3 done\cf2 \
+Removing bigchaindb_bigchaindb_1 ... \cf3 done\cf2 \
+Removing bigchaindb_tendermint_1 ... \cf3 done\cf2 \
+Removing bigchaindb_mongodb_1    ... \cf3 done\cf2 \
+Removing network bigchaindb_default\
+\
+Creating network "bigchaindb_default" with the default driver\
+Creating bigchaindb_tendermint_1 ... \cf3 done\cf2 \
+Creating bigchaindb_mongodb_1    ... \cf3 done\cf2 \
+Creating bigchaindb_bigchaindb_1 ... \cf3 done\cf2 \
+./bin/ycsb run bigchaindb -P z_my/workloads/workload_1000.ini -P z_my/properties/workload_properties_bigchaindb.dat -s > z_my/results/bigchaindb_1000_7.csv\
+[WARN]  Running against a source checkout. In order to get our runtime dependencies we'll have to invoke Maven. Depending on the state of your system, this may take ~30-45 seconds\
+[DEBUG]  Running 'mvn -pl com.yahoo.ycsb:bigchaindb-binding -am package -DskipTests dependency:build-classpath -DincludeScope=compile -Dmdep.outputFilterFile=true'\
+java -cp /Users/admin/Downloads/YCSB/bigchaindb/conf:/Users/admin/Downloads/YCSB/bigchaindb/target/bigchaindb-binding-0.16.0-SNAPSHOT.jar:/Users/admin/.m2/repository/com/squareup/okio/okio/1.13.0/okio-1.13.0.jar:/Users/admin/.m2/repository/com/google/oauth-client/google-oauth-client/1.23.0/google-oauth-client-1.23.0.jar:/Users/admin/.m2/repository/org/hdrhistogram/HdrHistogram/2.1.4/HdrHistogram-2.1.4.jar:/Users/admin/.m2/repository/com/google/code/findbugs/jsr305/1.3.9/jsr305-1.3.9.jar:/Users/admin/.m2/repository/org/codehaus/jackson/jackson-core-asl/1.9.4/jackson-core-asl-1.9.4.jar:/Users/admin/.m2/repository/commons-codec/commons-codec/1.3/commons-codec-1.3.jar:/Users/admin/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.1.3/jackson-core-2.1.3.jar:/Users/admin/Downloads/YCSB/core/target/core-0.16.0-SNAPSHOT.jar:/Users/admin/.m2/repository/org/bouncycastle/bcprov-jdk15on/1.54/bcprov-jdk15on-1.54.jar:/Users/admin/.m2/repository/com/google/api-client/google-api-client/1.23.0/google-api-client-1.23.0.jar:/Users/admin/.m2/repository/com/bigchaindb/cryptoconditions/1.0/cryptoconditions-1.0.jar:/Users/admin/.m2/repository/org/codehaus/jackson/jackson-mapper-asl/1.9.4/jackson-mapper-asl-1.9.4.jar:/Users/admin/.m2/repository/com/google/code/gson/gson/2.8.2/gson-2.8.2.jar:/Users/admin/.m2/repository/org/apache/htrace/htrace-core4/4.1.0-incubating/htrace-core4-4.1.0-incubating.jar:/Users/admin/.m2/repository/com/bigchaindb/bigchaindb-driver/1.0/bigchaindb-driver-1.0.jar:/Users/admin/.m2/repository/com/squareup/okhttp3/okhttp/3.9.0/okhttp-3.9.0.jar:/Users/admin/.m2/repository/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1.jar:/Users/admin/.m2/repository/com/google/guava/guava-jdk5/17.0/guava-jdk5-17.0.jar:/Users/admin/.m2/repository/org/slf4j/slf4j-api/1.7.25/slf4j-api-1.7.25.jar:/Users/admin/.m2/repository/net/i2p/crypto/eddsa/0.2.0/eddsa-0.2.0.jar:/Users/admin/.m2/repository/org/apache/httpcomponents/httpcore/4.0.1/httpcore-4.0.1.jar:/Users/admin/.m2/repository/com/google/http-client/google-http-client/1.23.0/google-http-client-1.23.0.jar:/Users/admin/.m2/repository/org/glassfish/tyrus/bundles/tyrus-standalone-client/1.9/tyrus-standalone-client-1.9.jar:/Users/admin/.m2/repository/org/apache/httpcomponents/httpclient/4.0.1/httpclient-4.0.1.jar:/Users/admin/.m2/repository/com/google/http-client/google-http-client-jackson2/1.23.0/google-http-client-jackson2-1.23.0.jar com.yahoo.ycsb.Client -db com.yahoo.ycsb.db.BigchainDBClient -P z_my/workloads/workload_1000.ini -P z_my/properties/workload_properties_bigchaindb.dat -s -t\
+Command line: -db com.yahoo.ycsb.db.BigchainDBClient -P z_my/workloads/workload_1000.ini -P z_my/properties/workload_properties_bigchaindb.dat -s -t\
+YCSB Client 0.16.0-SNAPSHOT\
+\
+Loading workload...\
+Starting test.\
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".\
+SLF4J: Defaulting to no-operation (NOP) logger implementation\
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.\
+2019-01-16 16:06:40:180 0 sec: 0 operations; est completion in 0 second \
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []\
+2019-01-16 16:06:43:634 3 sec: 1000 operations; 286.04 current ops/sec; [CLEANUP AverageLatency(us)=1] [INSERT AverageLatency(us)=3177.48] \
+--------------------------------------------------\
+Finish: Record number is 1000, count is 7.\
+--------------------------------------------------\
+--------------------------------------------------\
+Start: Record number is 1000, count is 8.\
+--------------------------------------------------\
+Stopping bigchaindb_bigchaindb_1 ... \cf3 done\cf2 \
+Stopping bigchaindb_mongodb_1    ... \cf3 done\cf2 \
+Stopping bigchaindb_tendermint_1 ... \cf3 done\cf2 \
+Removing bigchaindb_bigchaindb_1 ... \cf3 done\cf2 \
+Removing bigchaindb_mongodb_1    ... \cf3 done\cf2 \
+Removing bigchaindb_tendermint_1 ... \cf3 done\cf2 \
+Removing network bigchaindb_default\
+\
+Creating network "bigchaindb_default" with the default driver\
+Creating bigchaindb_mongodb_1    ... \cf3 done\cf2 \
+Creating bigchaindb_tendermint_1 ... \cf3 done\cf2 \
+Creating bigchaindb_bigchaindb_1 ... \cf3 done\cf2 \
+./bin/ycsb run bigchaindb -P z_my/workloads/workload_1000.ini -P z_my/properties/workload_properties_bigchaindb.dat -s > z_my/results/bigchaindb_1000_8.csv\
+[WARN]  Running against a source checkout. In order to get our runtime dependencies we'll have to invoke Maven. Depending on the state of your system, this may take ~30-45 seconds\
+[DEBUG]  Running 'mvn -pl com.yahoo.ycsb:bigchaindb-binding -am package -DskipTests dependency:build-classpath -DincludeScope=compile -Dmdep.outputFilterFile=true'\
+java -cp /Users/admin/Downloads/YCSB/bigchaindb/conf:/Users/admin/Downloads/YCSB/bigchaindb/target/bigchaindb-binding-0.16.0-SNAPSHOT.jar:/Users/admin/.m2/repository/com/squareup/okio/okio/1.13.0/okio-1.13.0.jar:/Users/admin/.m2/repository/com/google/oauth-client/google-oauth-client/1.23.0/google-oauth-client-1.23.0.jar:/Users/admin/.m2/repository/org/hdrhistogram/HdrHistogram/2.1.4/HdrHistogram-2.1.4.jar:/Users/admin/.m2/repository/com/google/code/findbugs/jsr305/1.3.9/jsr305-1.3.9.jar:/Users/admin/.m2/repository/org/codehaus/jackson/jackson-core-asl/1.9.4/jackson-core-asl-1.9.4.jar:/Users/admin/.m2/repository/commons-codec/commons-codec/1.3/commons-codec-1.3.jar:/Users/admin/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.1.3/jackson-core-2.1.3.jar:/Users/admin/Downloads/YCSB/core/target/core-0.16.0-SNAPSHOT.jar:/Users/admin/.m2/repository/org/bouncycastle/bcprov-jdk15on/1.54/bcprov-jdk15on-1.54.jar:/Users/admin/.m2/repository/com/google/api-client/google-api-client/1.23.0/google-api-client-1.23.0.jar:/Users/admin/.m2/repository/com/bigchaindb/cryptoconditions/1.0/cryptoconditions-1.0.jar:/Users/admin/.m2/repository/org/codehaus/jackson/jackson-mapper-asl/1.9.4/jackson-mapper-asl-1.9.4.jar:/Users/admin/.m2/repository/com/google/code/gson/gson/2.8.2/gson-2.8.2.jar:/Users/admin/.m2/repository/org/apache/htrace/htrace-core4/4.1.0-incubating/htrace-core4-4.1.0-incubating.jar:/Users/admin/.m2/repository/com/bigchaindb/bigchaindb-driver/1.0/bigchaindb-driver-1.0.jar:/Users/admin/.m2/repository/com/squareup/okhttp3/okhttp/3.9.0/okhttp-3.9.0.jar:/Users/admin/.m2/repository/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1.jar:/Users/admin/.m2/repository/com/google/guava/guava-jdk5/17.0/guava-jdk5-17.0.jar:/Users/admin/.m2/repository/org/slf4j/slf4j-api/1.7.25/slf4j-api-1.7.25.jar:/Users/admin/.m2/repository/net/i2p/crypto/eddsa/0.2.0/eddsa-0.2.0.jar:/Users/admin/.m2/repository/org/apache/httpcomponents/httpcore/4.0.1/httpcore-4.0.1.jar:/Users/admin/.m2/repository/com/google/http-client/google-http-client/1.23.0/google-http-client-1.23.0.jar:/Users/admin/.m2/repository/org/glassfish/tyrus/bundles/tyrus-standalone-client/1.9/tyrus-standalone-client-1.9.jar:/Users/admin/.m2/repository/org/apache/httpcomponents/httpclient/4.0.1/httpclient-4.0.1.jar:/Users/admin/.m2/repository/com/google/http-client/google-http-client-jackson2/1.23.0/google-http-client-jackson2-1.23.0.jar com.yahoo.ycsb.Client -db com.yahoo.ycsb.db.BigchainDBClient -P z_my/workloads/workload_1000.ini -P z_my/properties/workload_properties_bigchaindb.dat -s -t\
+Command line: -db com.yahoo.ycsb.db.BigchainDBClient -P z_my/workloads/workload_1000.ini -P z_my/properties/workload_properties_bigchaindb.dat -s -t\
+YCSB Client 0.16.0-SNAPSHOT\
+\
+Loading workload...\
+Starting test.\
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".\
+SLF4J: Defaulting to no-operation (NOP) logger implementation\
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.\
+2019-01-16 16:07:26:012 0 sec: 0 operations; est completion in 0 second \
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []\
+2019-01-16 16:07:29:450 3 sec: 1000 operations; 287.27 current ops/sec; [CLEANUP AverageLatency(us)=1] [INSERT AverageLatency(us)=3148.36] \
+--------------------------------------------------\
+Finish: Record number is 1000, count is 8.\
+--------------------------------------------------\
+--------------------------------------------------\
+Start: Record number is 1000, count is 9.\
+--------------------------------------------------\
+Stopping bigchaindb_bigchaindb_1 ... \cf3 done\cf2 \
+Stopping bigchaindb_mongodb_1    ... \cf3 done\cf2 \
+Stopping bigchaindb_tendermint_1 ... \cf3 done\cf2 \
+Removing bigchaindb_bigchaindb_1 ... \cf3 done\cf2 \
+Removing bigchaindb_mongodb_1    ... \cf3 done\cf2 \
+Removing bigchaindb_tendermint_1 ... \cf3 done\cf2 \
+Removing network bigchaindb_default\
+\
+Creating network "bigchaindb_default" with the default driver\
+Creating bigchaindb_mongodb_1    ... \cf3 done\cf2 \
+Creating bigchaindb_tendermint_1 ... \cf3 done\cf2 \
+Creating bigchaindb_bigchaindb_1 ... \cf3 done\cf2 \
+./bin/ycsb run bigchaindb -P z_my/workloads/workload_1000.ini -P z_my/properties/workload_properties_bigchaindb.dat -s > z_my/results/bigchaindb_1000_9.csv\
+[WARN]  Running against a source checkout. In order to get our runtime dependencies we'll have to invoke Maven. Depending on the state of your system, this may take ~30-45 seconds\
+[DEBUG]  Running 'mvn -pl com.yahoo.ycsb:bigchaindb-binding -am package -DskipTests dependency:build-classpath -DincludeScope=compile -Dmdep.outputFilterFile=true'\
+java -cp /Users/admin/Downloads/YCSB/bigchaindb/conf:/Users/admin/Downloads/YCSB/bigchaindb/target/bigchaindb-binding-0.16.0-SNAPSHOT.jar:/Users/admin/.m2/repository/com/squareup/okio/okio/1.13.0/okio-1.13.0.jar:/Users/admin/.m2/repository/com/google/oauth-client/google-oauth-client/1.23.0/google-oauth-client-1.23.0.jar:/Users/admin/.m2/repository/org/hdrhistogram/HdrHistogram/2.1.4/HdrHistogram-2.1.4.jar:/Users/admin/.m2/repository/com/google/code/findbugs/jsr305/1.3.9/jsr305-1.3.9.jar:/Users/admin/.m2/repository/org/codehaus/jackson/jackson-core-asl/1.9.4/jackson-core-asl-1.9.4.jar:/Users/admin/.m2/repository/commons-codec/commons-codec/1.3/commons-codec-1.3.jar:/Users/admin/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.1.3/jackson-core-2.1.3.jar:/Users/admin/Downloads/YCSB/core/target/core-0.16.0-SNAPSHOT.jar:/Users/admin/.m2/repository/org/bouncycastle/bcprov-jdk15on/1.54/bcprov-jdk15on-1.54.jar:/Users/admin/.m2/repository/com/google/api-client/google-api-client/1.23.0/google-api-client-1.23.0.jar:/Users/admin/.m2/repository/com/bigchaindb/cryptoconditions/1.0/cryptoconditions-1.0.jar:/Users/admin/.m2/repository/org/codehaus/jackson/jackson-mapper-asl/1.9.4/jackson-mapper-asl-1.9.4.jar:/Users/admin/.m2/repository/com/google/code/gson/gson/2.8.2/gson-2.8.2.jar:/Users/admin/.m2/repository/org/apache/htrace/htrace-core4/4.1.0-incubating/htrace-core4-4.1.0-incubating.jar:/Users/admin/.m2/repository/com/bigchaindb/bigchaindb-driver/1.0/bigchaindb-driver-1.0.jar:/Users/admin/.m2/repository/com/squareup/okhttp3/okhttp/3.9.0/okhttp-3.9.0.jar:/Users/admin/.m2/repository/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1.jar:/Users/admin/.m2/repository/com/google/guava/guava-jdk5/17.0/guava-jdk5-17.0.jar:/Users/admin/.m2/repository/org/slf4j/slf4j-api/1.7.25/slf4j-api-1.7.25.jar:/Users/admin/.m2/repository/net/i2p/crypto/eddsa/0.2.0/eddsa-0.2.0.jar:/Users/admin/.m2/repository/org/apache/httpcomponents/httpcore/4.0.1/httpcore-4.0.1.jar:/Users/admin/.m2/repository/com/google/http-client/google-http-client/1.23.0/google-http-client-1.23.0.jar:/Users/admin/.m2/repository/org/glassfish/tyrus/bundles/tyrus-standalone-client/1.9/tyrus-standalone-client-1.9.jar:/Users/admin/.m2/repository/org/apache/httpcomponents/httpclient/4.0.1/httpclient-4.0.1.jar:/Users/admin/.m2/repository/com/google/http-client/google-http-client-jackson2/1.23.0/google-http-client-jackson2-1.23.0.jar com.yahoo.ycsb.Client -db com.yahoo.ycsb.db.BigchainDBClient -P z_my/workloads/workload_1000.ini -P z_my/properties/workload_properties_bigchaindb.dat -s -t\
+Command line: -db com.yahoo.ycsb.db.BigchainDBClient -P z_my/workloads/workload_1000.ini -P z_my/properties/workload_properties_bigchaindb.dat -s -t\
+YCSB Client 0.16.0-SNAPSHOT\
+\
+Loading workload...\
+Starting test.\
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".\
+SLF4J: Defaulting to no-operation (NOP) logger implementation\
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.\
+2019-01-16 16:08:10:677 0 sec: 0 operations; est completion in 0 second \
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []\
+2019-01-16 16:08:14:002 3 sec: 1000 operations; 297 current ops/sec; [CLEANUP AverageLatency(us)=1] [INSERT AverageLatency(us)=3032.05] \
+--------------------------------------------------\
+Finish: Record number is 1000, count is 9.\
+--------------------------------------------------\
+--------------------------------------------------\
+Start: Record number is 1000, count is 10.\
+--------------------------------------------------\
+Stopping bigchaindb_bigchaindb_1 ... \cf3 done\cf2 \
+Stopping bigchaindb_tendermint_1 ... \cf3 done\cf2 \
+Stopping bigchaindb_mongodb_1    ... \cf3 done\cf2 \
+Removing bigchaindb_bigchaindb_1 ... \cf3 done\cf2 \
+Removing bigchaindb_tendermint_1 ... \cf3 done\cf2 \
+Removing bigchaindb_mongodb_1    ... \cf3 done\cf2 \
+Removing network bigchaindb_default\
+\
+Creating network "bigchaindb_default" with the default driver\
+Creating bigchaindb_tendermint_1 ... \cf3 done\cf2 \
+Creating bigchaindb_mongodb_1    ... \cf3 done\cf2 \
+Creating bigchaindb_bigchaindb_1 ... \cf3 done\cf2 \
+./bin/ycsb run bigchaindb -P z_my/workloads/workload_1000.ini -P z_my/properties/workload_properties_bigchaindb.dat -s > z_my/results/bigchaindb_1000_10.csv\
+[WARN]  Running against a source checkout. In order to get our runtime dependencies we'll have to invoke Maven. Depending on the state of your system, this may take ~30-45 seconds\
+[DEBUG]  Running 'mvn -pl com.yahoo.ycsb:bigchaindb-binding -am package -DskipTests dependency:build-classpath -DincludeScope=compile -Dmdep.outputFilterFile=true'\
+java -cp /Users/admin/Downloads/YCSB/bigchaindb/conf:/Users/admin/Downloads/YCSB/bigchaindb/target/bigchaindb-binding-0.16.0-SNAPSHOT.jar:/Users/admin/.m2/repository/com/squareup/okio/okio/1.13.0/okio-1.13.0.jar:/Users/admin/.m2/repository/com/google/oauth-client/google-oauth-client/1.23.0/google-oauth-client-1.23.0.jar:/Users/admin/.m2/repository/org/hdrhistogram/HdrHistogram/2.1.4/HdrHistogram-2.1.4.jar:/Users/admin/.m2/repository/com/google/code/findbugs/jsr305/1.3.9/jsr305-1.3.9.jar:/Users/admin/.m2/repository/org/codehaus/jackson/jackson-core-asl/1.9.4/jackson-core-asl-1.9.4.jar:/Users/admin/.m2/repository/commons-codec/commons-codec/1.3/commons-codec-1.3.jar:/Users/admin/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.1.3/jackson-core-2.1.3.jar:/Users/admin/Downloads/YCSB/core/target/core-0.16.0-SNAPSHOT.jar:/Users/admin/.m2/repository/org/bouncycastle/bcprov-jdk15on/1.54/bcprov-jdk15on-1.54.jar:/Users/admin/.m2/repository/com/google/api-client/google-api-client/1.23.0/google-api-client-1.23.0.jar:/Users/admin/.m2/repository/com/bigchaindb/cryptoconditions/1.0/cryptoconditions-1.0.jar:/Users/admin/.m2/repository/org/codehaus/jackson/jackson-mapper-asl/1.9.4/jackson-mapper-asl-1.9.4.jar:/Users/admin/.m2/repository/com/google/code/gson/gson/2.8.2/gson-2.8.2.jar:/Users/admin/.m2/repository/org/apache/htrace/htrace-core4/4.1.0-incubating/htrace-core4-4.1.0-incubating.jar:/Users/admin/.m2/repository/com/bigchaindb/bigchaindb-driver/1.0/bigchaindb-driver-1.0.jar:/Users/admin/.m2/repository/com/squareup/okhttp3/okhttp/3.9.0/okhttp-3.9.0.jar:/Users/admin/.m2/repository/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1.jar:/Users/admin/.m2/repository/com/google/guava/guava-jdk5/17.0/guava-jdk5-17.0.jar:/Users/admin/.m2/repository/org/slf4j/slf4j-api/1.7.25/slf4j-api-1.7.25.jar:/Users/admin/.m2/repository/net/i2p/crypto/eddsa/0.2.0/eddsa-0.2.0.jar:/Users/admin/.m2/repository/org/apache/httpcomponents/httpcore/4.0.1/httpcore-4.0.1.jar:/Users/admin/.m2/repository/com/google/http-client/google-http-client/1.23.0/google-http-client-1.23.0.jar:/Users/admin/.m2/repository/org/glassfish/tyrus/bundles/tyrus-standalone-client/1.9/tyrus-standalone-client-1.9.jar:/Users/admin/.m2/repository/org/apache/httpcomponents/httpclient/4.0.1/httpclient-4.0.1.jar:/Users/admin/.m2/repository/com/google/http-client/google-http-client-jackson2/1.23.0/google-http-client-jackson2-1.23.0.jar com.yahoo.ycsb.Client -db com.yahoo.ycsb.db.BigchainDBClient -P z_my/workloads/workload_1000.ini -P z_my/properties/workload_properties_bigchaindb.dat -s -t\
+Command line: -db com.yahoo.ycsb.db.BigchainDBClient -P z_my/workloads/workload_1000.ini -P z_my/properties/workload_properties_bigchaindb.dat -s -t\
+YCSB Client 0.16.0-SNAPSHOT\
+\
+Loading workload...\
+Starting test.\
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".\
+SLF4J: Defaulting to no-operation (NOP) logger implementation\
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.\
+2019-01-16 16:08:56:103 0 sec: 0 operations; est completion in 0 second \
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []\
+2019-01-16 16:08:59:479 3 sec: 1000 operations; 292.57 current ops/sec; [CLEANUP AverageLatency(us)=1] [INSERT AverageLatency(us)=3100.11] \
+--------------------------------------------------\
+Finish: Record number is 1000, count is 10.\
+--------------------------------------------------\
+--------------------------------------------------\
+Start: Record number is 10000, count is 1.\
+--------------------------------------------------\
+Stopping bigchaindb_bigchaindb_1 ... \cf3 done\cf2 \
+Stopping bigchaindb_tendermint_1 ... \cf3 done\cf2 \
+Stopping bigchaindb_mongodb_1    ... \cf3 done\cf2 \
+Removing bigchaindb_bigchaindb_1 ... \cf3 done\cf2 \
+Removing bigchaindb_tendermint_1 ... \cf3 done\cf2 \
+Removing bigchaindb_mongodb_1    ... \cf3 done\cf2 \
+Removing network bigchaindb_default\
+\
+Creating network "bigchaindb_default" with the default driver\
+Creating bigchaindb_tendermint_1 ... \cf3 done\cf2 \
+Creating bigchaindb_mongodb_1    ... \cf3 done\cf2 \
+Creating bigchaindb_bigchaindb_1 ... \cf3 done\cf2 \
+./bin/ycsb run bigchaindb -P z_my/workloads/workload_10000.ini -P z_my/properties/workload_properties_bigchaindb.dat -s > z_my/results/bigchaindb_10000_1.csv\
+[WARN]  Running against a source checkout. In order to get our runtime dependencies we'll have to invoke Maven. Depending on the state of your system, this may take ~30-45 seconds\
+[DEBUG]  Running 'mvn -pl com.yahoo.ycsb:bigchaindb-binding -am package -DskipTests dependency:build-classpath -DincludeScope=compile -Dmdep.outputFilterFile=true'\
+java -cp /Users/admin/Downloads/YCSB/bigchaindb/conf:/Users/admin/Downloads/YCSB/bigchaindb/target/bigchaindb-binding-0.16.0-SNAPSHOT.jar:/Users/admin/.m2/repository/com/squareup/okio/okio/1.13.0/okio-1.13.0.jar:/Users/admin/.m2/repository/com/google/oauth-client/google-oauth-client/1.23.0/google-oauth-client-1.23.0.jar:/Users/admin/.m2/repository/org/hdrhistogram/HdrHistogram/2.1.4/HdrHistogram-2.1.4.jar:/Users/admin/.m2/repository/com/google/code/findbugs/jsr305/1.3.9/jsr305-1.3.9.jar:/Users/admin/.m2/repository/org/codehaus/jackson/jackson-core-asl/1.9.4/jackson-core-asl-1.9.4.jar:/Users/admin/.m2/repository/commons-codec/commons-codec/1.3/commons-codec-1.3.jar:/Users/admin/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.1.3/jackson-core-2.1.3.jar:/Users/admin/Downloads/YCSB/core/target/core-0.16.0-SNAPSHOT.jar:/Users/admin/.m2/repository/org/bouncycastle/bcprov-jdk15on/1.54/bcprov-jdk15on-1.54.jar:/Users/admin/.m2/repository/com/google/api-client/google-api-client/1.23.0/google-api-client-1.23.0.jar:/Users/admin/.m2/repository/com/bigchaindb/cryptoconditions/1.0/cryptoconditions-1.0.jar:/Users/admin/.m2/repository/org/codehaus/jackson/jackson-mapper-asl/1.9.4/jackson-mapper-asl-1.9.4.jar:/Users/admin/.m2/repository/com/google/code/gson/gson/2.8.2/gson-2.8.2.jar:/Users/admin/.m2/repository/org/apache/htrace/htrace-core4/4.1.0-incubating/htrace-core4-4.1.0-incubating.jar:/Users/admin/.m2/repository/com/bigchaindb/bigchaindb-driver/1.0/bigchaindb-driver-1.0.jar:/Users/admin/.m2/repository/com/squareup/okhttp3/okhttp/3.9.0/okhttp-3.9.0.jar:/Users/admin/.m2/repository/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1.jar:/Users/admin/.m2/repository/com/google/guava/guava-jdk5/17.0/guava-jdk5-17.0.jar:/Users/admin/.m2/repository/org/slf4j/slf4j-api/1.7.25/slf4j-api-1.7.25.jar:/Users/admin/.m2/repository/net/i2p/crypto/eddsa/0.2.0/eddsa-0.2.0.jar:/Users/admin/.m2/repository/org/apache/httpcomponents/httpcore/4.0.1/httpcore-4.0.1.jar:/Users/admin/.m2/repository/com/google/http-client/google-http-client/1.23.0/google-http-client-1.23.0.jar:/Users/admin/.m2/repository/org/glassfish/tyrus/bundles/tyrus-standalone-client/1.9/tyrus-standalone-client-1.9.jar:/Users/admin/.m2/repository/org/apache/httpcomponents/httpclient/4.0.1/httpclient-4.0.1.jar:/Users/admin/.m2/repository/com/google/http-client/google-http-client-jackson2/1.23.0/google-http-client-jackson2-1.23.0.jar com.yahoo.ycsb.Client -db com.yahoo.ycsb.db.BigchainDBClient -P z_my/workloads/workload_10000.ini -P z_my/properties/workload_properties_bigchaindb.dat -s -t\
+Command line: -db com.yahoo.ycsb.db.BigchainDBClient -P z_my/workloads/workload_10000.ini -P z_my/properties/workload_properties_bigchaindb.dat -s -t\
+YCSB Client 0.16.0-SNAPSHOT\
+\
+Loading workload...\
+Starting test.\
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".\
+SLF4J: Defaulting to no-operation (NOP) logger implementation\
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.\
+2019-01-16 16:09:40:679 0 sec: 0 operations; est completion in 0 second \
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []\
+2019-01-16 16:09:50:640 10 sec: 5480 operations; 547.78 current ops/sec; est completion in 9 second [INSERT AverageLatency(us)=1755.99] \
+2019-01-16 16:09:57:159 16 sec: 10000 operations; 693.36 current ops/sec; [CLEANUP AverageLatency(us)=1] [INSERT AverageLatency(us)=1430.87] \
+--------------------------------------------------\
+Finish: Record number is 10000, count is 1.\
+--------------------------------------------------\
+--------------------------------------------------\
+Start: Record number is 10000, count is 2.\
+--------------------------------------------------\
+Stopping bigchaindb_bigchaindb_1 ... \cf3 done\cf2 \
+Stopping bigchaindb_mongodb_1    ... \cf3 done\cf2 \
+Stopping bigchaindb_tendermint_1 ... \cf3 done\cf2 \
+Removing bigchaindb_bigchaindb_1 ... \cf3 done\cf2 \
+Removing bigchaindb_mongodb_1    ... \cf3 done\cf2 \
+Removing bigchaindb_tendermint_1 ... \cf3 done\cf2 \
+Removing network bigchaindb_default\
+\
+Creating network "bigchaindb_default" with the default driver\
+Creating bigchaindb_tendermint_1 ... \cf3 done\cf2 \
+Creating bigchaindb_mongodb_1    ... \cf3 done\cf2 \
+Creating bigchaindb_bigchaindb_1 ... \cf3 done\cf2 \
+./bin/ycsb run bigchaindb -P z_my/workloads/workload_10000.ini -P z_my/properties/workload_properties_bigchaindb.dat -s > z_my/results/bigchaindb_10000_2.csv\
+[WARN]  Running against a source checkout. In order to get our runtime dependencies we'll have to invoke Maven. Depending on the state of your system, this may take ~30-45 seconds\
+[DEBUG]  Running 'mvn -pl com.yahoo.ycsb:bigchaindb-binding -am package -DskipTests dependency:build-classpath -DincludeScope=compile -Dmdep.outputFilterFile=true'\
+java -cp /Users/admin/Downloads/YCSB/bigchaindb/conf:/Users/admin/Downloads/YCSB/bigchaindb/target/bigchaindb-binding-0.16.0-SNAPSHOT.jar:/Users/admin/.m2/repository/com/squareup/okio/okio/1.13.0/okio-1.13.0.jar:/Users/admin/.m2/repository/com/google/oauth-client/google-oauth-client/1.23.0/google-oauth-client-1.23.0.jar:/Users/admin/.m2/repository/org/hdrhistogram/HdrHistogram/2.1.4/HdrHistogram-2.1.4.jar:/Users/admin/.m2/repository/com/google/code/findbugs/jsr305/1.3.9/jsr305-1.3.9.jar:/Users/admin/.m2/repository/org/codehaus/jackson/jackson-core-asl/1.9.4/jackson-core-asl-1.9.4.jar:/Users/admin/.m2/repository/commons-codec/commons-codec/1.3/commons-codec-1.3.jar:/Users/admin/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.1.3/jackson-core-2.1.3.jar:/Users/admin/Downloads/YCSB/core/target/core-0.16.0-SNAPSHOT.jar:/Users/admin/.m2/repository/org/bouncycastle/bcprov-jdk15on/1.54/bcprov-jdk15on-1.54.jar:/Users/admin/.m2/repository/com/google/api-client/google-api-client/1.23.0/google-api-client-1.23.0.jar:/Users/admin/.m2/repository/com/bigchaindb/cryptoconditions/1.0/cryptoconditions-1.0.jar:/Users/admin/.m2/repository/org/codehaus/jackson/jackson-mapper-asl/1.9.4/jackson-mapper-asl-1.9.4.jar:/Users/admin/.m2/repository/com/google/code/gson/gson/2.8.2/gson-2.8.2.jar:/Users/admin/.m2/repository/org/apache/htrace/htrace-core4/4.1.0-incubating/htrace-core4-4.1.0-incubating.jar:/Users/admin/.m2/repository/com/bigchaindb/bigchaindb-driver/1.0/bigchaindb-driver-1.0.jar:/Users/admin/.m2/repository/com/squareup/okhttp3/okhttp/3.9.0/okhttp-3.9.0.jar:/Users/admin/.m2/repository/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1.jar:/Users/admin/.m2/repository/com/google/guava/guava-jdk5/17.0/guava-jdk5-17.0.jar:/Users/admin/.m2/repository/org/slf4j/slf4j-api/1.7.25/slf4j-api-1.7.25.jar:/Users/admin/.m2/repository/net/i2p/crypto/eddsa/0.2.0/eddsa-0.2.0.jar:/Users/admin/.m2/repository/org/apache/httpcomponents/httpcore/4.0.1/httpcore-4.0.1.jar:/Users/admin/.m2/repository/com/google/http-client/google-http-client/1.23.0/google-http-client-1.23.0.jar:/Users/admin/.m2/repository/org/glassfish/tyrus/bundles/tyrus-standalone-client/1.9/tyrus-standalone-client-1.9.jar:/Users/admin/.m2/repository/org/apache/httpcomponents/httpclient/4.0.1/httpclient-4.0.1.jar:/Users/admin/.m2/repository/com/google/http-client/google-http-client-jackson2/1.23.0/google-http-client-jackson2-1.23.0.jar com.yahoo.ycsb.Client -db com.yahoo.ycsb.db.BigchainDBClient -P z_my/workloads/workload_10000.ini -P z_my/properties/workload_properties_bigchaindb.dat -s -t\
+Command line: -db com.yahoo.ycsb.db.BigchainDBClient -P z_my/workloads/workload_10000.ini -P z_my/properties/workload_properties_bigchaindb.dat -s -t\
+YCSB Client 0.16.0-SNAPSHOT\
+\
+Loading workload...\
+Starting test.\
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".\
+SLF4J: Defaulting to no-operation (NOP) logger implementation\
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.\
+2019-01-16 16:10:39:199 0 sec: 0 operations; est completion in 0 second \
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []\
+2019-01-16 16:10:49:166 10 sec: 5337 operations; 533.22 current ops/sec; est completion in 9 second [INSERT AverageLatency(us)=1805.12] \
+2019-01-16 16:10:55:382 16 sec: 10000 operations; 750.16 current ops/sec; [CLEANUP AverageLatency(us)=1] [INSERT AverageLatency(us)=1322.59] \
+--------------------------------------------------\
+Finish: Record number is 10000, count is 2.\
+--------------------------------------------------\
+--------------------------------------------------\
+Start: Record number is 10000, count is 3.\
+--------------------------------------------------\
+Stopping bigchaindb_bigchaindb_1 ... \cf3 done\cf2 \
+Stopping bigchaindb_tendermint_1 ... \cf3 done\cf2 \
+Stopping bigchaindb_mongodb_1    ... \cf3 done\cf2 \
+Removing bigchaindb_bigchaindb_1 ... \cf3 done\cf2 \
+Removing bigchaindb_tendermint_1 ... \cf3 done\cf2 \
+Removing bigchaindb_mongodb_1    ... \cf3 done\cf2 \
+Removing network bigchaindb_default\
+\
+Creating network "bigchaindb_default" with the default driver\
+Creating bigchaindb_tendermint_1 ... \cf3 done\cf2 \
+Creating bigchaindb_mongodb_1    ... \cf3 done\cf2 \
+Creating bigchaindb_bigchaindb_1 ... \cf3 done\cf2 \
+./bin/ycsb run bigchaindb -P z_my/workloads/workload_10000.ini -P z_my/properties/workload_properties_bigchaindb.dat -s > z_my/results/bigchaindb_10000_3.csv\
+[WARN]  Running against a source checkout. In order to get our runtime dependencies we'll have to invoke Maven. Depending on the state of your system, this may take ~30-45 seconds\
+[DEBUG]  Running 'mvn -pl com.yahoo.ycsb:bigchaindb-binding -am package -DskipTests dependency:build-classpath -DincludeScope=compile -Dmdep.outputFilterFile=true'\
+java -cp /Users/admin/Downloads/YCSB/bigchaindb/conf:/Users/admin/Downloads/YCSB/bigchaindb/target/bigchaindb-binding-0.16.0-SNAPSHOT.jar:/Users/admin/.m2/repository/com/squareup/okio/okio/1.13.0/okio-1.13.0.jar:/Users/admin/.m2/repository/com/google/oauth-client/google-oauth-client/1.23.0/google-oauth-client-1.23.0.jar:/Users/admin/.m2/repository/org/hdrhistogram/HdrHistogram/2.1.4/HdrHistogram-2.1.4.jar:/Users/admin/.m2/repository/com/google/code/findbugs/jsr305/1.3.9/jsr305-1.3.9.jar:/Users/admin/.m2/repository/org/codehaus/jackson/jackson-core-asl/1.9.4/jackson-core-asl-1.9.4.jar:/Users/admin/.m2/repository/commons-codec/commons-codec/1.3/commons-codec-1.3.jar:/Users/admin/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.1.3/jackson-core-2.1.3.jar:/Users/admin/Downloads/YCSB/core/target/core-0.16.0-SNAPSHOT.jar:/Users/admin/.m2/repository/org/bouncycastle/bcprov-jdk15on/1.54/bcprov-jdk15on-1.54.jar:/Users/admin/.m2/repository/com/google/api-client/google-api-client/1.23.0/google-api-client-1.23.0.jar:/Users/admin/.m2/repository/com/bigchaindb/cryptoconditions/1.0/cryptoconditions-1.0.jar:/Users/admin/.m2/repository/org/codehaus/jackson/jackson-mapper-asl/1.9.4/jackson-mapper-asl-1.9.4.jar:/Users/admin/.m2/repository/com/google/code/gson/gson/2.8.2/gson-2.8.2.jar:/Users/admin/.m2/repository/org/apache/htrace/htrace-core4/4.1.0-incubating/htrace-core4-4.1.0-incubating.jar:/Users/admin/.m2/repository/com/bigchaindb/bigchaindb-driver/1.0/bigchaindb-driver-1.0.jar:/Users/admin/.m2/repository/com/squareup/okhttp3/okhttp/3.9.0/okhttp-3.9.0.jar:/Users/admin/.m2/repository/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1.jar:/Users/admin/.m2/repository/com/google/guava/guava-jdk5/17.0/guava-jdk5-17.0.jar:/Users/admin/.m2/repository/org/slf4j/slf4j-api/1.7.25/slf4j-api-1.7.25.jar:/Users/admin/.m2/repository/net/i2p/crypto/eddsa/0.2.0/eddsa-0.2.0.jar:/Users/admin/.m2/repository/org/apache/httpcomponents/httpcore/4.0.1/httpcore-4.0.1.jar:/Users/admin/.m2/repository/com/google/http-client/google-http-client/1.23.0/google-http-client-1.23.0.jar:/Users/admin/.m2/repository/org/glassfish/tyrus/bundles/tyrus-standalone-client/1.9/tyrus-standalone-client-1.9.jar:/Users/admin/.m2/repository/org/apache/httpcomponents/httpclient/4.0.1/httpclient-4.0.1.jar:/Users/admin/.m2/repository/com/google/http-client/google-http-client-jackson2/1.23.0/google-http-client-jackson2-1.23.0.jar com.yahoo.ycsb.Client -db com.yahoo.ycsb.db.BigchainDBClient -P z_my/workloads/workload_10000.ini -P z_my/properties/workload_properties_bigchaindb.dat -s -t\
+Command line: -db com.yahoo.ycsb.db.BigchainDBClient -P z_my/workloads/workload_10000.ini -P z_my/properties/workload_properties_bigchaindb.dat -s -t\
+YCSB Client 0.16.0-SNAPSHOT\
+\
+Loading workload...\
+Starting test.\
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".\
+SLF4J: Defaulting to no-operation (NOP) logger implementation\
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.\
+2019-01-16 16:11:36:981 0 sec: 0 operations; est completion in 0 second \
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []\
+2019-01-16 16:11:46:941 10 sec: 5136 operations; 513.45 current ops/sec; est completion in 10 seconds [INSERT AverageLatency(us)=1870.36] \
+2019-01-16 16:11:53:852 16 sec: 10000 operations; 703.81 current ops/sec; [CLEANUP AverageLatency(us)=1] [INSERT AverageLatency(us)=1410.19] \
+--------------------------------------------------\
+Finish: Record number is 10000, count is 3.\
+--------------------------------------------------\
+--------------------------------------------------\
+Start: Record number is 10000, count is 4.\
+--------------------------------------------------\
+Stopping bigchaindb_bigchaindb_1 ... \cf3 done\cf2 \
+Stopping bigchaindb_tendermint_1 ... \cf3 done\cf2 \
+Stopping bigchaindb_mongodb_1    ... \cf3 done\cf2 \
+Removing bigchaindb_bigchaindb_1 ... \cf3 done\cf2 \
+Removing bigchaindb_tendermint_1 ... \cf3 done\cf2 \
+Removing bigchaindb_mongodb_1    ... \cf3 done\cf2 \
+Removing network bigchaindb_default\
+\
+Creating network "bigchaindb_default" with the default driver\
+Creating bigchaindb_mongodb_1    ... \cf3 done\cf2 \
+Creating bigchaindb_tendermint_1 ... \cf3 done\cf2 \
+Creating bigchaindb_bigchaindb_1 ... \cf3 done\cf2 \
+./bin/ycsb run bigchaindb -P z_my/workloads/workload_10000.ini -P z_my/properties/workload_properties_bigchaindb.dat -s > z_my/results/bigchaindb_10000_4.csv\
+[WARN]  Running against a source checkout. In order to get our runtime dependencies we'll have to invoke Maven. Depending on the state of your system, this may take ~30-45 seconds\
+[DEBUG]  Running 'mvn -pl com.yahoo.ycsb:bigchaindb-binding -am package -DskipTests dependency:build-classpath -DincludeScope=compile -Dmdep.outputFilterFile=true'\
+java -cp /Users/admin/Downloads/YCSB/bigchaindb/conf:/Users/admin/Downloads/YCSB/bigchaindb/target/bigchaindb-binding-0.16.0-SNAPSHOT.jar:/Users/admin/.m2/repository/com/squareup/okio/okio/1.13.0/okio-1.13.0.jar:/Users/admin/.m2/repository/com/google/oauth-client/google-oauth-client/1.23.0/google-oauth-client-1.23.0.jar:/Users/admin/.m2/repository/org/hdrhistogram/HdrHistogram/2.1.4/HdrHistogram-2.1.4.jar:/Users/admin/.m2/repository/com/google/code/findbugs/jsr305/1.3.9/jsr305-1.3.9.jar:/Users/admin/.m2/repository/org/codehaus/jackson/jackson-core-asl/1.9.4/jackson-core-asl-1.9.4.jar:/Users/admin/.m2/repository/commons-codec/commons-codec/1.3/commons-codec-1.3.jar:/Users/admin/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.1.3/jackson-core-2.1.3.jar:/Users/admin/Downloads/YCSB/core/target/core-0.16.0-SNAPSHOT.jar:/Users/admin/.m2/repository/org/bouncycastle/bcprov-jdk15on/1.54/bcprov-jdk15on-1.54.jar:/Users/admin/.m2/repository/com/google/api-client/google-api-client/1.23.0/google-api-client-1.23.0.jar:/Users/admin/.m2/repository/com/bigchaindb/cryptoconditions/1.0/cryptoconditions-1.0.jar:/Users/admin/.m2/repository/org/codehaus/jackson/jackson-mapper-asl/1.9.4/jackson-mapper-asl-1.9.4.jar:/Users/admin/.m2/repository/com/google/code/gson/gson/2.8.2/gson-2.8.2.jar:/Users/admin/.m2/repository/org/apache/htrace/htrace-core4/4.1.0-incubating/htrace-core4-4.1.0-incubating.jar:/Users/admin/.m2/repository/com/bigchaindb/bigchaindb-driver/1.0/bigchaindb-driver-1.0.jar:/Users/admin/.m2/repository/com/squareup/okhttp3/okhttp/3.9.0/okhttp-3.9.0.jar:/Users/admin/.m2/repository/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1.jar:/Users/admin/.m2/repository/com/google/guava/guava-jdk5/17.0/guava-jdk5-17.0.jar:/Users/admin/.m2/repository/org/slf4j/slf4j-api/1.7.25/slf4j-api-1.7.25.jar:/Users/admin/.m2/repository/net/i2p/crypto/eddsa/0.2.0/eddsa-0.2.0.jar:/Users/admin/.m2/repository/org/apache/httpcomponents/httpcore/4.0.1/httpcore-4.0.1.jar:/Users/admin/.m2/repository/com/google/http-client/google-http-client/1.23.0/google-http-client-1.23.0.jar:/Users/admin/.m2/repository/org/glassfish/tyrus/bundles/tyrus-standalone-client/1.9/tyrus-standalone-client-1.9.jar:/Users/admin/.m2/repository/org/apache/httpcomponents/httpclient/4.0.1/httpclient-4.0.1.jar:/Users/admin/.m2/repository/com/google/http-client/google-http-client-jackson2/1.23.0/google-http-client-jackson2-1.23.0.jar com.yahoo.ycsb.Client -db com.yahoo.ycsb.db.BigchainDBClient -P z_my/workloads/workload_10000.ini -P z_my/properties/workload_properties_bigchaindb.dat -s -t\
+Command line: -db com.yahoo.ycsb.db.BigchainDBClient -P z_my/workloads/workload_10000.ini -P z_my/properties/workload_properties_bigchaindb.dat -s -t\
+YCSB Client 0.16.0-SNAPSHOT\
+\
+Loading workload...\
+Starting test.\
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".\
+SLF4J: Defaulting to no-operation (NOP) logger implementation\
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.\
+2019-01-16 16:12:36:189 0 sec: 0 operations; est completion in 0 second \
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []\
+2019-01-16 16:12:46:151 10 sec: 5354 operations; 535.19 current ops/sec; est completion in 9 second [INSERT AverageLatency(us)=1796.21] \
+2019-01-16 16:12:52:309 16 sec: 10000 operations; 754.47 current ops/sec; [CLEANUP AverageLatency(us)=1] [INSERT AverageLatency(us)=1315.18] \
+--------------------------------------------------\
+Finish: Record number is 10000, count is 4.\
+--------------------------------------------------\
+--------------------------------------------------\
+Start: Record number is 10000, count is 5.\
+--------------------------------------------------\
+Stopping bigchaindb_bigchaindb_1 ... \cf3 done\cf2 \
+Stopping bigchaindb_tendermint_1 ... \cf3 done\cf2 \
+Stopping bigchaindb_mongodb_1    ... \cf3 done\cf2 \
+Removing bigchaindb_bigchaindb_1 ... \cf3 done\cf2 \
+Removing bigchaindb_tendermint_1 ... \cf3 done\cf2 \
+Removing bigchaindb_mongodb_1    ... \cf3 done\cf2 \
+Removing network bigchaindb_default\
+\
+Creating network "bigchaindb_default" with the default driver\
+Creating bigchaindb_tendermint_1 ... \cf3 done\cf2 \
+Creating bigchaindb_mongodb_1    ... \cf3 done\cf2 \
+Creating bigchaindb_bigchaindb_1 ... \cf3 done\cf2 \
+./bin/ycsb run bigchaindb -P z_my/workloads/workload_10000.ini -P z_my/properties/workload_properties_bigchaindb.dat -s > z_my/results/bigchaindb_10000_5.csv\
+[WARN]  Running against a source checkout. In order to get our runtime dependencies we'll have to invoke Maven. Depending on the state of your system, this may take ~30-45 seconds\
+[DEBUG]  Running 'mvn -pl com.yahoo.ycsb:bigchaindb-binding -am package -DskipTests dependency:build-classpath -DincludeScope=compile -Dmdep.outputFilterFile=true'\
+java -cp /Users/admin/Downloads/YCSB/bigchaindb/conf:/Users/admin/Downloads/YCSB/bigchaindb/target/bigchaindb-binding-0.16.0-SNAPSHOT.jar:/Users/admin/.m2/repository/com/squareup/okio/okio/1.13.0/okio-1.13.0.jar:/Users/admin/.m2/repository/com/google/oauth-client/google-oauth-client/1.23.0/google-oauth-client-1.23.0.jar:/Users/admin/.m2/repository/org/hdrhistogram/HdrHistogram/2.1.4/HdrHistogram-2.1.4.jar:/Users/admin/.m2/repository/com/google/code/findbugs/jsr305/1.3.9/jsr305-1.3.9.jar:/Users/admin/.m2/repository/org/codehaus/jackson/jackson-core-asl/1.9.4/jackson-core-asl-1.9.4.jar:/Users/admin/.m2/repository/commons-codec/commons-codec/1.3/commons-codec-1.3.jar:/Users/admin/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.1.3/jackson-core-2.1.3.jar:/Users/admin/Downloads/YCSB/core/target/core-0.16.0-SNAPSHOT.jar:/Users/admin/.m2/repository/org/bouncycastle/bcprov-jdk15on/1.54/bcprov-jdk15on-1.54.jar:/Users/admin/.m2/repository/com/google/api-client/google-api-client/1.23.0/google-api-client-1.23.0.jar:/Users/admin/.m2/repository/com/bigchaindb/cryptoconditions/1.0/cryptoconditions-1.0.jar:/Users/admin/.m2/repository/org/codehaus/jackson/jackson-mapper-asl/1.9.4/jackson-mapper-asl-1.9.4.jar:/Users/admin/.m2/repository/com/google/code/gson/gson/2.8.2/gson-2.8.2.jar:/Users/admin/.m2/repository/org/apache/htrace/htrace-core4/4.1.0-incubating/htrace-core4-4.1.0-incubating.jar:/Users/admin/.m2/repository/com/bigchaindb/bigchaindb-driver/1.0/bigchaindb-driver-1.0.jar:/Users/admin/.m2/repository/com/squareup/okhttp3/okhttp/3.9.0/okhttp-3.9.0.jar:/Users/admin/.m2/repository/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1.jar:/Users/admin/.m2/repository/com/google/guava/guava-jdk5/17.0/guava-jdk5-17.0.jar:/Users/admin/.m2/repository/org/slf4j/slf4j-api/1.7.25/slf4j-api-1.7.25.jar:/Users/admin/.m2/repository/net/i2p/crypto/eddsa/0.2.0/eddsa-0.2.0.jar:/Users/admin/.m2/repository/org/apache/httpcomponents/httpcore/4.0.1/httpcore-4.0.1.jar:/Users/admin/.m2/repository/com/google/http-client/google-http-client/1.23.0/google-http-client-1.23.0.jar:/Users/admin/.m2/repository/org/glassfish/tyrus/bundles/tyrus-standalone-client/1.9/tyrus-standalone-client-1.9.jar:/Users/admin/.m2/repository/org/apache/httpcomponents/httpclient/4.0.1/httpclient-4.0.1.jar:/Users/admin/.m2/repository/com/google/http-client/google-http-client-jackson2/1.23.0/google-http-client-jackson2-1.23.0.jar com.yahoo.ycsb.Client -db com.yahoo.ycsb.db.BigchainDBClient -P z_my/workloads/workload_10000.ini -P z_my/properties/workload_properties_bigchaindb.dat -s -t\
+Command line: -db com.yahoo.ycsb.db.BigchainDBClient -P z_my/workloads/workload_10000.ini -P z_my/properties/workload_properties_bigchaindb.dat -s -t\
+YCSB Client 0.16.0-SNAPSHOT\
+\
+Loading workload...\
+Starting test.\
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".\
+SLF4J: Defaulting to no-operation (NOP) logger implementation\
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.\
+2019-01-16 16:13:33:707 0 sec: 0 operations; est completion in 0 second \
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []\
+2019-01-16 16:13:43:666 10 sec: 5286 operations; 528.55 current ops/sec; est completion in 9 second [INSERT AverageLatency(us)=1815.77] \
+2019-01-16 16:13:50:209 16 sec: 10000 operations; 720.46 current ops/sec; [CLEANUP AverageLatency(us)=1] [INSERT AverageLatency(us)=1375.13] \
+--------------------------------------------------\
+Finish: Record number is 10000, count is 5.\
+--------------------------------------------------\
+--------------------------------------------------\
+Start: Record number is 10000, count is 6.\
+--------------------------------------------------\
+Stopping bigchaindb_bigchaindb_1 ... \cf3 done\cf2 \
+Stopping bigchaindb_mongodb_1    ... \cf3 done\cf2 \
+Stopping bigchaindb_tendermint_1 ... \cf3 done\cf2 \
+Removing bigchaindb_bigchaindb_1 ... \cf3 done\cf2 \
+Removing bigchaindb_mongodb_1    ... \cf3 done\cf2 \
+Removing bigchaindb_tendermint_1 ... \cf3 done\cf2 \
+Removing network bigchaindb_default\
+\
+Creating network "bigchaindb_default" with the default driver\
+Creating bigchaindb_tendermint_1 ... \cf3 done\cf2 \
+Creating bigchaindb_mongodb_1    ... \cf3 done\cf2 \
+Creating bigchaindb_bigchaindb_1 ... \cf3 done\cf2 \
+./bin/ycsb run bigchaindb -P z_my/workloads/workload_10000.ini -P z_my/properties/workload_properties_bigchaindb.dat -s > z_my/results/bigchaindb_10000_6.csv\
+[WARN]  Running against a source checkout. In order to get our runtime dependencies we'll have to invoke Maven. Depending on the state of your system, this may take ~30-45 seconds\
+[DEBUG]  Running 'mvn -pl com.yahoo.ycsb:bigchaindb-binding -am package -DskipTests dependency:build-classpath -DincludeScope=compile -Dmdep.outputFilterFile=true'\
+java -cp /Users/admin/Downloads/YCSB/bigchaindb/conf:/Users/admin/Downloads/YCSB/bigchaindb/target/bigchaindb-binding-0.16.0-SNAPSHOT.jar:/Users/admin/.m2/repository/com/squareup/okio/okio/1.13.0/okio-1.13.0.jar:/Users/admin/.m2/repository/com/google/oauth-client/google-oauth-client/1.23.0/google-oauth-client-1.23.0.jar:/Users/admin/.m2/repository/org/hdrhistogram/HdrHistogram/2.1.4/HdrHistogram-2.1.4.jar:/Users/admin/.m2/repository/com/google/code/findbugs/jsr305/1.3.9/jsr305-1.3.9.jar:/Users/admin/.m2/repository/org/codehaus/jackson/jackson-core-asl/1.9.4/jackson-core-asl-1.9.4.jar:/Users/admin/.m2/repository/commons-codec/commons-codec/1.3/commons-codec-1.3.jar:/Users/admin/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.1.3/jackson-core-2.1.3.jar:/Users/admin/Downloads/YCSB/core/target/core-0.16.0-SNAPSHOT.jar:/Users/admin/.m2/repository/org/bouncycastle/bcprov-jdk15on/1.54/bcprov-jdk15on-1.54.jar:/Users/admin/.m2/repository/com/google/api-client/google-api-client/1.23.0/google-api-client-1.23.0.jar:/Users/admin/.m2/repository/com/bigchaindb/cryptoconditions/1.0/cryptoconditions-1.0.jar:/Users/admin/.m2/repository/org/codehaus/jackson/jackson-mapper-asl/1.9.4/jackson-mapper-asl-1.9.4.jar:/Users/admin/.m2/repository/com/google/code/gson/gson/2.8.2/gson-2.8.2.jar:/Users/admin/.m2/repository/org/apache/htrace/htrace-core4/4.1.0-incubating/htrace-core4-4.1.0-incubating.jar:/Users/admin/.m2/repository/com/bigchaindb/bigchaindb-driver/1.0/bigchaindb-driver-1.0.jar:/Users/admin/.m2/repository/com/squareup/okhttp3/okhttp/3.9.0/okhttp-3.9.0.jar:/Users/admin/.m2/repository/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1.jar:/Users/admin/.m2/repository/com/google/guava/guava-jdk5/17.0/guava-jdk5-17.0.jar:/Users/admin/.m2/repository/org/slf4j/slf4j-api/1.7.25/slf4j-api-1.7.25.jar:/Users/admin/.m2/repository/net/i2p/crypto/eddsa/0.2.0/eddsa-0.2.0.jar:/Users/admin/.m2/repository/org/apache/httpcomponents/httpcore/4.0.1/httpcore-4.0.1.jar:/Users/admin/.m2/repository/com/google/http-client/google-http-client/1.23.0/google-http-client-1.23.0.jar:/Users/admin/.m2/repository/org/glassfish/tyrus/bundles/tyrus-standalone-client/1.9/tyrus-standalone-client-1.9.jar:/Users/admin/.m2/repository/org/apache/httpcomponents/httpclient/4.0.1/httpclient-4.0.1.jar:/Users/admin/.m2/repository/com/google/http-client/google-http-client-jackson2/1.23.0/google-http-client-jackson2-1.23.0.jar com.yahoo.ycsb.Client -db com.yahoo.ycsb.db.BigchainDBClient -P z_my/workloads/workload_10000.ini -P z_my/properties/workload_properties_bigchaindb.dat -s -t\
+Command line: -db com.yahoo.ycsb.db.BigchainDBClient -P z_my/workloads/workload_10000.ini -P z_my/properties/workload_properties_bigchaindb.dat -s -t\
+YCSB Client 0.16.0-SNAPSHOT\
+\
+Loading workload...\
+Starting test.\
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".\
+SLF4J: Defaulting to no-operation (NOP) logger implementation\
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.\
+2019-01-16 16:14:31:856 0 sec: 0 operations; est completion in 0 second \
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []\
+2019-01-16 16:14:41:813 10 sec: 5229 operations; 522.9 current ops/sec; est completion in 10 seconds [INSERT AverageLatency(us)=1837.73] \
+2019-01-16 16:14:48:414 16 sec: 10000 operations; 722.88 current ops/sec; [CLEANUP AverageLatency(us)=1] [INSERT AverageLatency(us)=1373.04] \
+--------------------------------------------------\
+Finish: Record number is 10000, count is 6.\
+--------------------------------------------------\
+--------------------------------------------------\
+Start: Record number is 10000, count is 7.\
+--------------------------------------------------\
+Stopping bigchaindb_bigchaindb_1 ... \cf3 done\cf2 \
+Stopping bigchaindb_tendermint_1 ... \cf3 done\cf2 \
+Stopping bigchaindb_mongodb_1    ... \cf3 done\cf2 \
+Removing bigchaindb_bigchaindb_1 ... \cf3 done\cf2 \
+Removing bigchaindb_tendermint_1 ... \cf3 done\cf2 \
+Removing bigchaindb_mongodb_1    ... \cf3 done\cf2 \
+Removing network bigchaindb_default\
+\
+Creating network "bigchaindb_default" with the default driver\
+Creating bigchaindb_mongodb_1    ... \cf3 done\cf2 \
+Creating bigchaindb_tendermint_1 ... \cf3 done\cf2 \
+Creating bigchaindb_bigchaindb_1 ... \cf3 done\cf2 \
+./bin/ycsb run bigchaindb -P z_my/workloads/workload_10000.ini -P z_my/properties/workload_properties_bigchaindb.dat -s > z_my/results/bigchaindb_10000_7.csv\
+[WARN]  Running against a source checkout. In order to get our runtime dependencies we'll have to invoke Maven. Depending on the state of your system, this may take ~30-45 seconds\
+[DEBUG]  Running 'mvn -pl com.yahoo.ycsb:bigchaindb-binding -am package -DskipTests dependency:build-classpath -DincludeScope=compile -Dmdep.outputFilterFile=true'\
+java -cp /Users/admin/Downloads/YCSB/bigchaindb/conf:/Users/admin/Downloads/YCSB/bigchaindb/target/bigchaindb-binding-0.16.0-SNAPSHOT.jar:/Users/admin/.m2/repository/com/squareup/okio/okio/1.13.0/okio-1.13.0.jar:/Users/admin/.m2/repository/com/google/oauth-client/google-oauth-client/1.23.0/google-oauth-client-1.23.0.jar:/Users/admin/.m2/repository/org/hdrhistogram/HdrHistogram/2.1.4/HdrHistogram-2.1.4.jar:/Users/admin/.m2/repository/com/google/code/findbugs/jsr305/1.3.9/jsr305-1.3.9.jar:/Users/admin/.m2/repository/org/codehaus/jackson/jackson-core-asl/1.9.4/jackson-core-asl-1.9.4.jar:/Users/admin/.m2/repository/commons-codec/commons-codec/1.3/commons-codec-1.3.jar:/Users/admin/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.1.3/jackson-core-2.1.3.jar:/Users/admin/Downloads/YCSB/core/target/core-0.16.0-SNAPSHOT.jar:/Users/admin/.m2/repository/org/bouncycastle/bcprov-jdk15on/1.54/bcprov-jdk15on-1.54.jar:/Users/admin/.m2/repository/com/google/api-client/google-api-client/1.23.0/google-api-client-1.23.0.jar:/Users/admin/.m2/repository/com/bigchaindb/cryptoconditions/1.0/cryptoconditions-1.0.jar:/Users/admin/.m2/repository/org/codehaus/jackson/jackson-mapper-asl/1.9.4/jackson-mapper-asl-1.9.4.jar:/Users/admin/.m2/repository/com/google/code/gson/gson/2.8.2/gson-2.8.2.jar:/Users/admin/.m2/repository/org/apache/htrace/htrace-core4/4.1.0-incubating/htrace-core4-4.1.0-incubating.jar:/Users/admin/.m2/repository/com/bigchaindb/bigchaindb-driver/1.0/bigchaindb-driver-1.0.jar:/Users/admin/.m2/repository/com/squareup/okhttp3/okhttp/3.9.0/okhttp-3.9.0.jar:/Users/admin/.m2/repository/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1.jar:/Users/admin/.m2/repository/com/google/guava/guava-jdk5/17.0/guava-jdk5-17.0.jar:/Users/admin/.m2/repository/org/slf4j/slf4j-api/1.7.25/slf4j-api-1.7.25.jar:/Users/admin/.m2/repository/net/i2p/crypto/eddsa/0.2.0/eddsa-0.2.0.jar:/Users/admin/.m2/repository/org/apache/httpcomponents/httpcore/4.0.1/httpcore-4.0.1.jar:/Users/admin/.m2/repository/com/google/http-client/google-http-client/1.23.0/google-http-client-1.23.0.jar:/Users/admin/.m2/repository/org/glassfish/tyrus/bundles/tyrus-standalone-client/1.9/tyrus-standalone-client-1.9.jar:/Users/admin/.m2/repository/org/apache/httpcomponents/httpclient/4.0.1/httpclient-4.0.1.jar:/Users/admin/.m2/repository/com/google/http-client/google-http-client-jackson2/1.23.0/google-http-client-jackson2-1.23.0.jar com.yahoo.ycsb.Client -db com.yahoo.ycsb.db.BigchainDBClient -P z_my/workloads/workload_10000.ini -P z_my/properties/workload_properties_bigchaindb.dat -s -t\
+Command line: -db com.yahoo.ycsb.db.BigchainDBClient -P z_my/workloads/workload_10000.ini -P z_my/properties/workload_properties_bigchaindb.dat -s -t\
+YCSB Client 0.16.0-SNAPSHOT\
+\
+Loading workload...\
+Starting test.\
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".\
+SLF4J: Defaulting to no-operation (NOP) logger implementation\
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.\
+2019-01-16 16:15:30:153 0 sec: 0 operations; est completion in 0 second \
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []\
+2019-01-16 16:15:40:114 10 sec: 5475 operations; 547.5 current ops/sec; est completion in 9 second [INSERT AverageLatency(us)=1757.6] \
+2019-01-16 16:15:46:370 16 sec: 10000 operations; 723.42 current ops/sec; [CLEANUP AverageLatency(us)=1] [INSERT AverageLatency(us)=1371.44] \
+--------------------------------------------------\
+Finish: Record number is 10000, count is 7.\
+--------------------------------------------------\
+--------------------------------------------------\
+Start: Record number is 10000, count is 8.\
+--------------------------------------------------\
+Stopping bigchaindb_bigchaindb_1 ... \cf3 done\cf2 \
+Stopping bigchaindb_tendermint_1 ... \cf3 done\cf2 \
+Stopping bigchaindb_mongodb_1    ... \cf3 done\cf2 \
+Removing bigchaindb_bigchaindb_1 ... \cf3 done\cf2 \
+Removing bigchaindb_tendermint_1 ... \cf3 done\cf2 \
+Removing bigchaindb_mongodb_1    ... \cf3 done\cf2 \
+Removing network bigchaindb_default\
+\
+Creating network "bigchaindb_default" with the default driver\
+Creating bigchaindb_mongodb_1    ... \cf3 done\cf2 \
+Creating bigchaindb_tendermint_1 ... \cf3 done\cf2 \
+Creating bigchaindb_bigchaindb_1 ... \cf3 done\cf2 \
+./bin/ycsb run bigchaindb -P z_my/workloads/workload_10000.ini -P z_my/properties/workload_properties_bigchaindb.dat -s > z_my/results/bigchaindb_10000_8.csv\
+[WARN]  Running against a source checkout. In order to get our runtime dependencies we'll have to invoke Maven. Depending on the state of your system, this may take ~30-45 seconds\
+[DEBUG]  Running 'mvn -pl com.yahoo.ycsb:bigchaindb-binding -am package -DskipTests dependency:build-classpath -DincludeScope=compile -Dmdep.outputFilterFile=true'\
+java -cp /Users/admin/Downloads/YCSB/bigchaindb/conf:/Users/admin/Downloads/YCSB/bigchaindb/target/bigchaindb-binding-0.16.0-SNAPSHOT.jar:/Users/admin/.m2/repository/com/squareup/okio/okio/1.13.0/okio-1.13.0.jar:/Users/admin/.m2/repository/com/google/oauth-client/google-oauth-client/1.23.0/google-oauth-client-1.23.0.jar:/Users/admin/.m2/repository/org/hdrhistogram/HdrHistogram/2.1.4/HdrHistogram-2.1.4.jar:/Users/admin/.m2/repository/com/google/code/findbugs/jsr305/1.3.9/jsr305-1.3.9.jar:/Users/admin/.m2/repository/org/codehaus/jackson/jackson-core-asl/1.9.4/jackson-core-asl-1.9.4.jar:/Users/admin/.m2/repository/commons-codec/commons-codec/1.3/commons-codec-1.3.jar:/Users/admin/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.1.3/jackson-core-2.1.3.jar:/Users/admin/Downloads/YCSB/core/target/core-0.16.0-SNAPSHOT.jar:/Users/admin/.m2/repository/org/bouncycastle/bcprov-jdk15on/1.54/bcprov-jdk15on-1.54.jar:/Users/admin/.m2/repository/com/google/api-client/google-api-client/1.23.0/google-api-client-1.23.0.jar:/Users/admin/.m2/repository/com/bigchaindb/cryptoconditions/1.0/cryptoconditions-1.0.jar:/Users/admin/.m2/repository/org/codehaus/jackson/jackson-mapper-asl/1.9.4/jackson-mapper-asl-1.9.4.jar:/Users/admin/.m2/repository/com/google/code/gson/gson/2.8.2/gson-2.8.2.jar:/Users/admin/.m2/repository/org/apache/htrace/htrace-core4/4.1.0-incubating/htrace-core4-4.1.0-incubating.jar:/Users/admin/.m2/repository/com/bigchaindb/bigchaindb-driver/1.0/bigchaindb-driver-1.0.jar:/Users/admin/.m2/repository/com/squareup/okhttp3/okhttp/3.9.0/okhttp-3.9.0.jar:/Users/admin/.m2/repository/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1.jar:/Users/admin/.m2/repository/com/google/guava/guava-jdk5/17.0/guava-jdk5-17.0.jar:/Users/admin/.m2/repository/org/slf4j/slf4j-api/1.7.25/slf4j-api-1.7.25.jar:/Users/admin/.m2/repository/net/i2p/crypto/eddsa/0.2.0/eddsa-0.2.0.jar:/Users/admin/.m2/repository/org/apache/httpcomponents/httpcore/4.0.1/httpcore-4.0.1.jar:/Users/admin/.m2/repository/com/google/http-client/google-http-client/1.23.0/google-http-client-1.23.0.jar:/Users/admin/.m2/repository/org/glassfish/tyrus/bundles/tyrus-standalone-client/1.9/tyrus-standalone-client-1.9.jar:/Users/admin/.m2/repository/org/apache/httpcomponents/httpclient/4.0.1/httpclient-4.0.1.jar:/Users/admin/.m2/repository/com/google/http-client/google-http-client-jackson2/1.23.0/google-http-client-jackson2-1.23.0.jar com.yahoo.ycsb.Client -db com.yahoo.ycsb.db.BigchainDBClient -P z_my/workloads/workload_10000.ini -P z_my/properties/workload_properties_bigchaindb.dat -s -t\
+Command line: -db com.yahoo.ycsb.db.BigchainDBClient -P z_my/workloads/workload_10000.ini -P z_my/properties/workload_properties_bigchaindb.dat -s -t\
+YCSB Client 0.16.0-SNAPSHOT\
+\
+Loading workload...\
+Starting test.\
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".\
+SLF4J: Defaulting to no-operation (NOP) logger implementation\
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.\
+2019-01-16 16:16:28:967 0 sec: 0 operations; est completion in 0 second \
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []\
+2019-01-16 16:16:38:926 10 sec: 5182 operations; 518.2 current ops/sec; est completion in 10 seconds [INSERT AverageLatency(us)=1853.26] \
+2019-01-16 16:16:45:737 16 sec: 10000 operations; 707.39 current ops/sec; [CLEANUP AverageLatency(us)=1] [INSERT AverageLatency(us)=1399.84] \
+--------------------------------------------------\
+Finish: Record number is 10000, count is 8.\
+--------------------------------------------------\
+--------------------------------------------------\
+Start: Record number is 10000, count is 9.\
+--------------------------------------------------\
+Stopping bigchaindb_bigchaindb_1 ... \cf3 done\cf2 \
+Stopping bigchaindb_tendermint_1 ... \cf3 done\cf2 \
+Stopping bigchaindb_mongodb_1    ... \cf3 done\cf2 \
+Removing bigchaindb_bigchaindb_1 ... \cf3 done\cf2 \
+Removing bigchaindb_tendermint_1 ... \cf3 done\cf2 \
+Removing bigchaindb_mongodb_1    ... \cf3 done\cf2 \
+Removing network bigchaindb_default\
+\
+Creating network "bigchaindb_default" with the default driver\
+Creating bigchaindb_mongodb_1    ... \cf3 done\cf2 \
+Creating bigchaindb_tendermint_1 ... \cf3 done\cf2 \
+Creating bigchaindb_bigchaindb_1 ... \cf3 done\cf2 \
+./bin/ycsb run bigchaindb -P z_my/workloads/workload_10000.ini -P z_my/properties/workload_properties_bigchaindb.dat -s > z_my/results/bigchaindb_10000_9.csv\
+[WARN]  Running against a source checkout. In order to get our runtime dependencies we'll have to invoke Maven. Depending on the state of your system, this may take ~30-45 seconds\
+[DEBUG]  Running 'mvn -pl com.yahoo.ycsb:bigchaindb-binding -am package -DskipTests dependency:build-classpath -DincludeScope=compile -Dmdep.outputFilterFile=true'\
+java -cp /Users/admin/Downloads/YCSB/bigchaindb/conf:/Users/admin/Downloads/YCSB/bigchaindb/target/bigchaindb-binding-0.16.0-SNAPSHOT.jar:/Users/admin/.m2/repository/com/squareup/okio/okio/1.13.0/okio-1.13.0.jar:/Users/admin/.m2/repository/com/google/oauth-client/google-oauth-client/1.23.0/google-oauth-client-1.23.0.jar:/Users/admin/.m2/repository/org/hdrhistogram/HdrHistogram/2.1.4/HdrHistogram-2.1.4.jar:/Users/admin/.m2/repository/com/google/code/findbugs/jsr305/1.3.9/jsr305-1.3.9.jar:/Users/admin/.m2/repository/org/codehaus/jackson/jackson-core-asl/1.9.4/jackson-core-asl-1.9.4.jar:/Users/admin/.m2/repository/commons-codec/commons-codec/1.3/commons-codec-1.3.jar:/Users/admin/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.1.3/jackson-core-2.1.3.jar:/Users/admin/Downloads/YCSB/core/target/core-0.16.0-SNAPSHOT.jar:/Users/admin/.m2/repository/org/bouncycastle/bcprov-jdk15on/1.54/bcprov-jdk15on-1.54.jar:/Users/admin/.m2/repository/com/google/api-client/google-api-client/1.23.0/google-api-client-1.23.0.jar:/Users/admin/.m2/repository/com/bigchaindb/cryptoconditions/1.0/cryptoconditions-1.0.jar:/Users/admin/.m2/repository/org/codehaus/jackson/jackson-mapper-asl/1.9.4/jackson-mapper-asl-1.9.4.jar:/Users/admin/.m2/repository/com/google/code/gson/gson/2.8.2/gson-2.8.2.jar:/Users/admin/.m2/repository/org/apache/htrace/htrace-core4/4.1.0-incubating/htrace-core4-4.1.0-incubating.jar:/Users/admin/.m2/repository/com/bigchaindb/bigchaindb-driver/1.0/bigchaindb-driver-1.0.jar:/Users/admin/.m2/repository/com/squareup/okhttp3/okhttp/3.9.0/okhttp-3.9.0.jar:/Users/admin/.m2/repository/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1.jar:/Users/admin/.m2/repository/com/google/guava/guava-jdk5/17.0/guava-jdk5-17.0.jar:/Users/admin/.m2/repository/org/slf4j/slf4j-api/1.7.25/slf4j-api-1.7.25.jar:/Users/admin/.m2/repository/net/i2p/crypto/eddsa/0.2.0/eddsa-0.2.0.jar:/Users/admin/.m2/repository/org/apache/httpcomponents/httpcore/4.0.1/httpcore-4.0.1.jar:/Users/admin/.m2/repository/com/google/http-client/google-http-client/1.23.0/google-http-client-1.23.0.jar:/Users/admin/.m2/repository/org/glassfish/tyrus/bundles/tyrus-standalone-client/1.9/tyrus-standalone-client-1.9.jar:/Users/admin/.m2/repository/org/apache/httpcomponents/httpclient/4.0.1/httpclient-4.0.1.jar:/Users/admin/.m2/repository/com/google/http-client/google-http-client-jackson2/1.23.0/google-http-client-jackson2-1.23.0.jar com.yahoo.ycsb.Client -db com.yahoo.ycsb.db.BigchainDBClient -P z_my/workloads/workload_10000.ini -P z_my/properties/workload_properties_bigchaindb.dat -s -t\
+Command line: -db com.yahoo.ycsb.db.BigchainDBClient -P z_my/workloads/workload_10000.ini -P z_my/properties/workload_properties_bigchaindb.dat -s -t\
+YCSB Client 0.16.0-SNAPSHOT\
+\
+Loading workload...\
+Starting test.\
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".\
+SLF4J: Defaulting to no-operation (NOP) logger implementation\
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.\
+2019-01-16 16:17:27:102 0 sec: 0 operations; est completion in 0 second \
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []\
+2019-01-16 16:17:37:066 10 sec: 5096 operations; 509.35 current ops/sec; est completion in 10 seconds [INSERT AverageLatency(us)=1889.07] \
+2019-01-16 16:17:43:903 16 sec: 10000 operations; 717.27 current ops/sec; [CLEANUP AverageLatency(us)=1] [INSERT AverageLatency(us)=1382.93] \
+--------------------------------------------------\
+Finish: Record number is 10000, count is 9.\
+--------------------------------------------------\
+--------------------------------------------------\
+Start: Record number is 10000, count is 10.\
+--------------------------------------------------\
+Stopping bigchaindb_bigchaindb_1 ... \cf3 done\cf2 \
+Stopping bigchaindb_tendermint_1 ... \cf3 done\cf2 \
+Stopping bigchaindb_mongodb_1    ... \cf3 done\cf2 \
+Removing bigchaindb_bigchaindb_1 ... \cf3 done\cf2 \
+Removing bigchaindb_tendermint_1 ... \cf3 done\cf2 \
+Removing bigchaindb_mongodb_1    ... \cf3 done\cf2 \
+Removing network bigchaindb_default\
+\
+Creating network "bigchaindb_default" with the default driver\
+Creating bigchaindb_tendermint_1 ... \cf3 done\cf2 \
+Creating bigchaindb_mongodb_1    ... \cf3 done\cf2 \
+Creating bigchaindb_bigchaindb_1 ... \cf3 done\cf2 \
+./bin/ycsb run bigchaindb -P z_my/workloads/workload_10000.ini -P z_my/properties/workload_properties_bigchaindb.dat -s > z_my/results/bigchaindb_10000_10.csv\
+[WARN]  Running against a source checkout. In order to get our runtime dependencies we'll have to invoke Maven. Depending on the state of your system, this may take ~30-45 seconds\
+[DEBUG]  Running 'mvn -pl com.yahoo.ycsb:bigchaindb-binding -am package -DskipTests dependency:build-classpath -DincludeScope=compile -Dmdep.outputFilterFile=true'\
+java -cp /Users/admin/Downloads/YCSB/bigchaindb/conf:/Users/admin/Downloads/YCSB/bigchaindb/target/bigchaindb-binding-0.16.0-SNAPSHOT.jar:/Users/admin/.m2/repository/com/squareup/okio/okio/1.13.0/okio-1.13.0.jar:/Users/admin/.m2/repository/com/google/oauth-client/google-oauth-client/1.23.0/google-oauth-client-1.23.0.jar:/Users/admin/.m2/repository/org/hdrhistogram/HdrHistogram/2.1.4/HdrHistogram-2.1.4.jar:/Users/admin/.m2/repository/com/google/code/findbugs/jsr305/1.3.9/jsr305-1.3.9.jar:/Users/admin/.m2/repository/org/codehaus/jackson/jackson-core-asl/1.9.4/jackson-core-asl-1.9.4.jar:/Users/admin/.m2/repository/commons-codec/commons-codec/1.3/commons-codec-1.3.jar:/Users/admin/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.1.3/jackson-core-2.1.3.jar:/Users/admin/Downloads/YCSB/core/target/core-0.16.0-SNAPSHOT.jar:/Users/admin/.m2/repository/org/bouncycastle/bcprov-jdk15on/1.54/bcprov-jdk15on-1.54.jar:/Users/admin/.m2/repository/com/google/api-client/google-api-client/1.23.0/google-api-client-1.23.0.jar:/Users/admin/.m2/repository/com/bigchaindb/cryptoconditions/1.0/cryptoconditions-1.0.jar:/Users/admin/.m2/repository/org/codehaus/jackson/jackson-mapper-asl/1.9.4/jackson-mapper-asl-1.9.4.jar:/Users/admin/.m2/repository/com/google/code/gson/gson/2.8.2/gson-2.8.2.jar:/Users/admin/.m2/repository/org/apache/htrace/htrace-core4/4.1.0-incubating/htrace-core4-4.1.0-incubating.jar:/Users/admin/.m2/repository/com/bigchaindb/bigchaindb-driver/1.0/bigchaindb-driver-1.0.jar:/Users/admin/.m2/repository/com/squareup/okhttp3/okhttp/3.9.0/okhttp-3.9.0.jar:/Users/admin/.m2/repository/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1.jar:/Users/admin/.m2/repository/com/google/guava/guava-jdk5/17.0/guava-jdk5-17.0.jar:/Users/admin/.m2/repository/org/slf4j/slf4j-api/1.7.25/slf4j-api-1.7.25.jar:/Users/admin/.m2/repository/net/i2p/crypto/eddsa/0.2.0/eddsa-0.2.0.jar:/Users/admin/.m2/repository/org/apache/httpcomponents/httpcore/4.0.1/httpcore-4.0.1.jar:/Users/admin/.m2/repository/com/google/http-client/google-http-client/1.23.0/google-http-client-1.23.0.jar:/Users/admin/.m2/repository/org/glassfish/tyrus/bundles/tyrus-standalone-client/1.9/tyrus-standalone-client-1.9.jar:/Users/admin/.m2/repository/org/apache/httpcomponents/httpclient/4.0.1/httpclient-4.0.1.jar:/Users/admin/.m2/repository/com/google/http-client/google-http-client-jackson2/1.23.0/google-http-client-jackson2-1.23.0.jar com.yahoo.ycsb.Client -db com.yahoo.ycsb.db.BigchainDBClient -P z_my/workloads/workload_10000.ini -P z_my/properties/workload_properties_bigchaindb.dat -s -t\
+Command line: -db com.yahoo.ycsb.db.BigchainDBClient -P z_my/workloads/workload_10000.ini -P z_my/properties/workload_properties_bigchaindb.dat -s -t\
+YCSB Client 0.16.0-SNAPSHOT\
+\
+Loading workload...\
+Starting test.\
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".\
+SLF4J: Defaulting to no-operation (NOP) logger implementation\
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.\
+2019-01-16 16:18:29:589 0 sec: 0 operations; est completion in 0 second \
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []\
+2019-01-16 16:18:39:548 10 sec: 5040 operations; 504 current ops/sec; est completion in 10 seconds [INSERT AverageLatency(us)=1832.27] \
+2019-01-16 16:18:46:261 16 sec: 10000 operations; 738.86 current ops/sec; [CLEANUP AverageLatency(us)=1] [INSERT AverageLatency(us)=1341.15] \
+--------------------------------------------------\
+Finish: Record number is 10000, count is 10.\
+--------------------------------------------------\
+--------------------------------------------------\
+Start: Record number is 100000, count is 1.\
+--------------------------------------------------\
+Stopping bigchaindb_bigchaindb_1 ... \cf3 done\cf2 \
+Stopping bigchaindb_tendermint_1 ... \cf3 done\cf2 \
+Stopping bigchaindb_mongodb_1    ... \cf3 done\cf2 \
+Removing bigchaindb_bigchaindb_1 ... \cf3 done\cf2 \
+Removing bigchaindb_tendermint_1 ... \cf3 done\cf2 \
+Removing bigchaindb_mongodb_1    ... \cf3 done\cf2 \
+Removing network bigchaindb_default\
+\
+Creating network "bigchaindb_default" with the default driver\
+Creating bigchaindb_mongodb_1    ... \cf3 done\cf2 \
+Creating bigchaindb_tendermint_1 ... \cf3 done\cf2 \
+Creating bigchaindb_bigchaindb_1 ... \cf3 done\cf2 \
+./bin/ycsb run bigchaindb -P z_my/workloads/workload_100000.ini -P z_my/properties/workload_properties_bigchaindb.dat -s > z_my/results/bigchaindb_100000_1.csv\
+[WARN]  Running against a source checkout. In order to get our runtime dependencies we'll have to invoke Maven. Depending on the state of your system, this may take ~30-45 seconds\
+[DEBUG]  Running 'mvn -pl com.yahoo.ycsb:bigchaindb-binding -am package -DskipTests dependency:build-classpath -DincludeScope=compile -Dmdep.outputFilterFile=true'\
+java -cp /Users/admin/Downloads/YCSB/bigchaindb/conf:/Users/admin/Downloads/YCSB/bigchaindb/target/bigchaindb-binding-0.16.0-SNAPSHOT.jar:/Users/admin/.m2/repository/com/squareup/okio/okio/1.13.0/okio-1.13.0.jar:/Users/admin/.m2/repository/com/google/oauth-client/google-oauth-client/1.23.0/google-oauth-client-1.23.0.jar:/Users/admin/.m2/repository/org/hdrhistogram/HdrHistogram/2.1.4/HdrHistogram-2.1.4.jar:/Users/admin/.m2/repository/com/google/code/findbugs/jsr305/1.3.9/jsr305-1.3.9.jar:/Users/admin/.m2/repository/org/codehaus/jackson/jackson-core-asl/1.9.4/jackson-core-asl-1.9.4.jar:/Users/admin/.m2/repository/commons-codec/commons-codec/1.3/commons-codec-1.3.jar:/Users/admin/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.1.3/jackson-core-2.1.3.jar:/Users/admin/Downloads/YCSB/core/target/core-0.16.0-SNAPSHOT.jar:/Users/admin/.m2/repository/org/bouncycastle/bcprov-jdk15on/1.54/bcprov-jdk15on-1.54.jar:/Users/admin/.m2/repository/com/google/api-client/google-api-client/1.23.0/google-api-client-1.23.0.jar:/Users/admin/.m2/repository/com/bigchaindb/cryptoconditions/1.0/cryptoconditions-1.0.jar:/Users/admin/.m2/repository/org/codehaus/jackson/jackson-mapper-asl/1.9.4/jackson-mapper-asl-1.9.4.jar:/Users/admin/.m2/repository/com/google/code/gson/gson/2.8.2/gson-2.8.2.jar:/Users/admin/.m2/repository/org/apache/htrace/htrace-core4/4.1.0-incubating/htrace-core4-4.1.0-incubating.jar:/Users/admin/.m2/repository/com/bigchaindb/bigchaindb-driver/1.0/bigchaindb-driver-1.0.jar:/Users/admin/.m2/repository/com/squareup/okhttp3/okhttp/3.9.0/okhttp-3.9.0.jar:/Users/admin/.m2/repository/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1.jar:/Users/admin/.m2/repository/com/google/guava/guava-jdk5/17.0/guava-jdk5-17.0.jar:/Users/admin/.m2/repository/org/slf4j/slf4j-api/1.7.25/slf4j-api-1.7.25.jar:/Users/admin/.m2/repository/net/i2p/crypto/eddsa/0.2.0/eddsa-0.2.0.jar:/Users/admin/.m2/repository/org/apache/httpcomponents/httpcore/4.0.1/httpcore-4.0.1.jar:/Users/admin/.m2/repository/com/google/http-client/google-http-client/1.23.0/google-http-client-1.23.0.jar:/Users/admin/.m2/repository/org/glassfish/tyrus/bundles/tyrus-standalone-client/1.9/tyrus-standalone-client-1.9.jar:/Users/admin/.m2/repository/org/apache/httpcomponents/httpclient/4.0.1/httpclient-4.0.1.jar:/Users/admin/.m2/repository/com/google/http-client/google-http-client-jackson2/1.23.0/google-http-client-jackson2-1.23.0.jar com.yahoo.ycsb.Client -db com.yahoo.ycsb.db.BigchainDBClient -P z_my/workloads/workload_100000.ini -P z_my/properties/workload_properties_bigchaindb.dat -s -t\
+Command line: -db com.yahoo.ycsb.db.BigchainDBClient -P z_my/workloads/workload_100000.ini -P z_my/properties/workload_properties_bigchaindb.dat -s -t\
+YCSB Client 0.16.0-SNAPSHOT\
+\
+Loading workload...\
+Starting test.\
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".\
+SLF4J: Defaulting to no-operation (NOP) logger implementation\
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.\
+2019-01-16 16:19:28:349 0 sec: 0 operations; est completion in 0 second \
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []\
+2019-01-16 16:19:38:309 10 sec: 5316 operations; 531.6 current ops/sec; est completion in 2 minutes [INSERT AverageLatency(us)=1799.06] \
+2019-01-16 16:19:48:309 20 sec: 12762 operations; 744.6 current ops/sec; est completion in 2 minutes [INSERT AverageLatency(us)=1333.43] \
+2019-01-16 16:19:58:309 30 sec: 19868 operations; 710.6 current ops/sec; est completion in 2 minutes [INSERT AverageLatency(us)=1401.14] \
+2019-01-16 16:20:08:309 40 sec: 26833 operations; 696.5 current ops/sec; est completion in 1 minute [INSERT AverageLatency(us)=1429.39] \
+2019-01-16 16:20:18:310 50 sec: 32838 operations; 600.5 current ops/sec; est completion in 1 minute [INSERT AverageLatency(us)=1660.26] \
+2019-01-16 16:20:28:309 60 sec: 38209 operations; 537.1 current ops/sec; est completion in 1 minute [INSERT AverageLatency(us)=1855.8] \
+2019-01-16 16:20:38:310 70 sec: 43879 operations; 566.94 current ops/sec; est completion in 1 minute [INSERT AverageLatency(us)=1757.85] \
+2019-01-16 16:20:48:312 80 sec: 48908 operations; 502.8 current ops/sec; est completion in 1 minute [INSERT AverageLatency(us)=1982.9] \
+2019-01-16 16:20:58:313 90 sec: 53016 operations; 410.76 current ops/sec; est completion in 1 minute [INSERT AverageLatency(us)=2428.15] \
+2019-01-16 16:21:08:311 100 sec: 56558 operations; 354.27 current ops/sec; est completion in 1 minute [INSERT AverageLatency(us)=2814.47] \
+2019-01-16 16:21:18:315 110 sec: 61465 operations; 490.5 current ops/sec; est completion in 1 minute [INSERT AverageLatency(us)=2034.22] \
+2019-01-16 16:21:28:308 119 sec: 65295 operations; 383.27 current ops/sec; est completion in 1 minute [INSERT AverageLatency(us)=2596.81] \
+2019-01-16 16:21:38:309 130 sec: 69390 operations; 409.46 current ops/sec; est completion in 58 seconds [INSERT AverageLatency(us)=2443.6] \
+2019-01-16 16:21:48:309 140 sec: 72686 operations; 329.6 current ops/sec; est completion in 53 seconds [INSERT AverageLatency(us)=3033.15] \
+2019-01-16 16:21:58:308 149 sec: 76221 operations; 353.54 current ops/sec; est completion in 47 seconds [INSERT AverageLatency(us)=2824.63] \
+2019-01-16 16:22:08:308 159 sec: 79917 operations; 369.6 current ops/sec; est completion in 41 seconds [INSERT AverageLatency(us)=2702.07] \
+2019-01-16 16:22:18:308 169 sec: 83174 operations; 325.7 current ops/sec; est completion in 35 seconds [INSERT AverageLatency(us)=3061.47] \
+2019-01-16 16:22:28:315 180 sec: 85222 operations; 204.66 current ops/sec; est completion in 32 seconds [INSERT AverageLatency(us)=4878.68] \
+2019-01-16 16:22:38:312 190 sec: 88444 operations; 322.3 current ops/sec; est completion in 25 seconds [INSERT AverageLatency(us)=3094.81] \
+2019-01-16 16:22:48:308 199 sec: 90300 operations; 185.67 current ops/sec; est completion in 22 seconds [INSERT AverageLatency(us)=5376.37] \
+2019-01-16 16:22:58:311 210 sec: 91004 operations; 70.39 current ops/sec; est completion in 21 seconds [INSERT AverageLatency(us)=14242.28] \
+2019-01-16 16:23:08:314 220 sec: 91908 operations; 90.36 current ops/sec; est completion in 20 seconds [INSERT AverageLatency(us)=11040.47] \
+2019-01-16 16:23:18:310 230 sec: 94341 operations; 243.4 current ops/sec; est completion in 14 seconds [INSERT AverageLatency(us)=4117.45] \
+2019-01-16 16:23:28:308 239 sec: 96687 operations; 234.65 current ops/sec; est completion in 9 second [INSERT AverageLatency(us)=4247.99] \
+2019-01-16 16:23:38:316 250 sec: 99585 operations; 289.57 current ops/sec; est completion in 2 second [INSERT AverageLatency(us)=3452.15] \
+2019-01-16 16:23:41:318 253 sec: 100000 operations; 138.24 current ops/sec; [CLEANUP AverageLatency(us)=8] [INSERT AverageLatency(us)=7275.88] \
+--------------------------------------------------\
+Finish: Record number is 100000, count is 1.\
+--------------------------------------------------\
+--------------------------------------------------\
+Start: Record number is 100000, count is 2.\
+--------------------------------------------------\
+Stopping bigchaindb_bigchaindb_1 ... \cf3 done\cf2 \
+Stopping bigchaindb_mongodb_1    ... \cf3 done\cf2 \
+Stopping bigchaindb_tendermint_1 ... \cf3 done\cf2 \
+Removing bigchaindb_bigchaindb_1 ... \cf3 done\cf2 \
+Removing bigchaindb_mongodb_1    ... \cf3 done\cf2 \
+Removing bigchaindb_tendermint_1 ... \cf3 done\cf2 \
+Removing network bigchaindb_default\
+\
+Creating network "bigchaindb_default" with the default driver\
+Creating bigchaindb_mongodb_1    ... \cf3 done\cf2 \
+Creating bigchaindb_tendermint_1 ... \cf3 done\cf2 \
+Creating bigchaindb_bigchaindb_1 ... \cf3 done\cf2 \
+./bin/ycsb run bigchaindb -P z_my/workloads/workload_100000.ini -P z_my/properties/workload_properties_bigchaindb.dat -s > z_my/results/bigchaindb_100000_2.csv\
+[WARN]  Running against a source checkout. In order to get our runtime dependencies we'll have to invoke Maven. Depending on the state of your system, this may take ~30-45 seconds\
+[DEBUG]  Running 'mvn -pl com.yahoo.ycsb:bigchaindb-binding -am package -DskipTests dependency:build-classpath -DincludeScope=compile -Dmdep.outputFilterFile=true'\
+java -cp /Users/admin/Downloads/YCSB/bigchaindb/conf:/Users/admin/Downloads/YCSB/bigchaindb/target/bigchaindb-binding-0.16.0-SNAPSHOT.jar:/Users/admin/.m2/repository/com/squareup/okio/okio/1.13.0/okio-1.13.0.jar:/Users/admin/.m2/repository/com/google/oauth-client/google-oauth-client/1.23.0/google-oauth-client-1.23.0.jar:/Users/admin/.m2/repository/org/hdrhistogram/HdrHistogram/2.1.4/HdrHistogram-2.1.4.jar:/Users/admin/.m2/repository/com/google/code/findbugs/jsr305/1.3.9/jsr305-1.3.9.jar:/Users/admin/.m2/repository/org/codehaus/jackson/jackson-core-asl/1.9.4/jackson-core-asl-1.9.4.jar:/Users/admin/.m2/repository/commons-codec/commons-codec/1.3/commons-codec-1.3.jar:/Users/admin/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.1.3/jackson-core-2.1.3.jar:/Users/admin/Downloads/YCSB/core/target/core-0.16.0-SNAPSHOT.jar:/Users/admin/.m2/repository/org/bouncycastle/bcprov-jdk15on/1.54/bcprov-jdk15on-1.54.jar:/Users/admin/.m2/repository/com/google/api-client/google-api-client/1.23.0/google-api-client-1.23.0.jar:/Users/admin/.m2/repository/com/bigchaindb/cryptoconditions/1.0/cryptoconditions-1.0.jar:/Users/admin/.m2/repository/org/codehaus/jackson/jackson-mapper-asl/1.9.4/jackson-mapper-asl-1.9.4.jar:/Users/admin/.m2/repository/com/google/code/gson/gson/2.8.2/gson-2.8.2.jar:/Users/admin/.m2/repository/org/apache/htrace/htrace-core4/4.1.0-incubating/htrace-core4-4.1.0-incubating.jar:/Users/admin/.m2/repository/com/bigchaindb/bigchaindb-driver/1.0/bigchaindb-driver-1.0.jar:/Users/admin/.m2/repository/com/squareup/okhttp3/okhttp/3.9.0/okhttp-3.9.0.jar:/Users/admin/.m2/repository/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1.jar:/Users/admin/.m2/repository/com/google/guava/guava-jdk5/17.0/guava-jdk5-17.0.jar:/Users/admin/.m2/repository/org/slf4j/slf4j-api/1.7.25/slf4j-api-1.7.25.jar:/Users/admin/.m2/repository/net/i2p/crypto/eddsa/0.2.0/eddsa-0.2.0.jar:/Users/admin/.m2/repository/org/apache/httpcomponents/httpcore/4.0.1/httpcore-4.0.1.jar:/Users/admin/.m2/repository/com/google/http-client/google-http-client/1.23.0/google-http-client-1.23.0.jar:/Users/admin/.m2/repository/org/glassfish/tyrus/bundles/tyrus-standalone-client/1.9/tyrus-standalone-client-1.9.jar:/Users/admin/.m2/repository/org/apache/httpcomponents/httpclient/4.0.1/httpclient-4.0.1.jar:/Users/admin/.m2/repository/com/google/http-client/google-http-client-jackson2/1.23.0/google-http-client-jackson2-1.23.0.jar com.yahoo.ycsb.Client -db com.yahoo.ycsb.db.BigchainDBClient -P z_my/workloads/workload_100000.ini -P z_my/properties/workload_properties_bigchaindb.dat -s -t\
+Command line: -db com.yahoo.ycsb.db.BigchainDBClient -P z_my/workloads/workload_100000.ini -P z_my/properties/workload_properties_bigchaindb.dat -s -t\
+YCSB Client 0.16.0-SNAPSHOT\
+\
+Loading workload...\
+Starting test.\
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".\
+SLF4J: Defaulting to no-operation (NOP) logger implementation\
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.\
+2019-01-16 16:24:23:716 0 sec: 0 operations; est completion in 0 second \
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []\
+2019-01-16 16:24:33:674 10 sec: 5235 operations; 523.45 current ops/sec; est completion in 3 minutes [INSERT AverageLatency(us)=1812.62] \
+2019-01-16 16:24:43:677 20 sec: 12765 operations; 752.77 current ops/sec; est completion in 2 minutes [INSERT AverageLatency(us)=1319.24] \
+2019-01-16 16:24:53:679 30 sec: 20037 operations; 727.05 current ops/sec; est completion in 2 minutes [INSERT AverageLatency(us)=1369.75] \
+2019-01-16 16:25:03:679 40 sec: 26876 operations; 683.97 current ops/sec; est completion in 1 minute [INSERT AverageLatency(us)=1457.69] \
+2019-01-16 16:25:13:673 50 sec: 32829 operations; 595.6 current ops/sec; est completion in 1 minute [INSERT AverageLatency(us)=1673.56] \
+2019-01-16 16:25:23:674 60 sec: 38582 operations; 575.24 current ops/sec; est completion in 1 minute [INSERT AverageLatency(us)=1733.45] \
+2019-01-16 16:25:33:673 70 sec: 44328 operations; 574.66 current ops/sec; est completion in 1 minute [INSERT AverageLatency(us)=1734.51] \
+2019-01-16 16:25:43:673 80 sec: 49329 operations; 500.1 current ops/sec; est completion in 1 minute [INSERT AverageLatency(us)=1995.47] \
+2019-01-16 16:25:53:681 90 sec: 53195 operations; 386.29 current ops/sec; est completion in 1 minute [INSERT AverageLatency(us)=2580.6] \
+2019-01-16 16:26:03:673 100 sec: 57116 operations; 392.41 current ops/sec; est completion in 1 minute [INSERT AverageLatency(us)=2545.2] \
+2019-01-16 16:26:13:678 110 sec: 60667 operations; 354.92 current ops/sec; est completion in 1 minute [INSERT AverageLatency(us)=2812.58] \
+2019-01-16 16:26:23:673 120 sec: 64298 operations; 363.28 current ops/sec; est completion in 1 minute [INSERT AverageLatency(us)=2748.61] \
+2019-01-16 16:26:33:674 130 sec: 67962 operations; 366.36 current ops/sec; est completion in 1 minute [INSERT AverageLatency(us)=2726.2] \
+2019-01-16 16:26:43:673 140 sec: 70536 operations; 257.43 current ops/sec; est completion in 59 seconds [INSERT AverageLatency(us)=3872.65] \
+2019-01-16 16:26:53:679 150 sec: 72798 operations; 226.06 current ops/sec; est completion in 57 seconds [INSERT AverageLatency(us)=4427.25] \
+2019-01-16 16:27:03:673 160 sec: 75248 operations; 245.15 current ops/sec; est completion in 53 seconds [INSERT AverageLatency(us)=4077.08] \
+2019-01-16 16:27:13:673 170 sec: 78583 operations; 333.5 current ops/sec; est completion in 47 seconds [INSERT AverageLatency(us)=2994.55] \
+2019-01-16 16:27:23:676 180 sec: 81769 operations; 318.5 current ops/sec; est completion in 41 seconds [INSERT AverageLatency(us)=3135.92] \
+2019-01-16 16:27:33:672 189 sec: 84529 operations; 276.11 current ops/sec; est completion in 35 seconds [INSERT AverageLatency(us)=3618.13] \
+2019-01-16 16:27:43:678 200 sec: 86590 operations; 206 current ops/sec; est completion in 31 seconds [INSERT AverageLatency(us)=4846.47] \
+2019-01-16 16:27:53:680 210 sec: 89153 operations; 256.22 current ops/sec; est completion in 26 seconds [INSERT AverageLatency(us)=3890.59] \
+2019-01-16 16:28:03:673 219 sec: 91685 operations; 253.4 current ops/sec; est completion in 20 seconds [INSERT AverageLatency(us)=3896.48] \
+2019-01-16 16:28:13:672 229 sec: 93014 operations; 132.9 current ops/sec; est completion in 18 seconds [INSERT AverageLatency(us)=7609.76] \
+2019-01-16 16:28:23:672 239 sec: 95761 operations; 274.7 current ops/sec; est completion in 11 seconds [INSERT AverageLatency(us)=3647.81] \
+2019-01-16 16:28:33:673 250 sec: 98171 operations; 240.98 current ops/sec; est completion in 5 second [INSERT AverageLatency(us)=4133.77] \
+2019-01-16 16:28:43:672 259 sec: 98241 operations; 7 current ops/sec; est completion in 5 second [INSERT AverageLatency(us)=141389.93] \
+2019-01-16 16:28:46:739 263 sec: 100000 operations; 573.52 current ops/sec; [CLEANUP AverageLatency(us)=3] [INSERT AverageLatency(us)=1815.05] \
+--------------------------------------------------\
+Finish: Record number is 100000, count is 2.\
+--------------------------------------------------\
+--------------------------------------------------\
+Start: Record number is 100000, count is 3.\
+--------------------------------------------------\
+Stopping bigchaindb_bigchaindb_1 ... \cf3 done\cf2 \
+Stopping bigchaindb_tendermint_1 ... \cf3 done\cf2 \
+Stopping bigchaindb_mongodb_1    ... \cf3 done\cf2 \
+Removing bigchaindb_bigchaindb_1 ... \cf3 done\cf2 \
+Removing bigchaindb_tendermint_1 ... \cf3 done\cf2 \
+Removing bigchaindb_mongodb_1    ... \cf3 done\cf2 \
+Removing network bigchaindb_default\
+\
+Creating network "bigchaindb_default" with the default driver\
+Creating bigchaindb_tendermint_1 ... \cf3 done\cf2 \
+Creating bigchaindb_mongodb_1    ... \cf3 done\cf2 \
+Creating bigchaindb_bigchaindb_1 ... \cf3 done\cf2 \
+./bin/ycsb run bigchaindb -P z_my/workloads/workload_100000.ini -P z_my/properties/workload_properties_bigchaindb.dat -s > z_my/results/bigchaindb_100000_3.csv\
+[WARN]  Running against a source checkout. In order to get our runtime dependencies we'll have to invoke Maven. Depending on the state of your system, this may take ~30-45 seconds\
+[DEBUG]  Running 'mvn -pl com.yahoo.ycsb:bigchaindb-binding -am package -DskipTests dependency:build-classpath -DincludeScope=compile -Dmdep.outputFilterFile=true'\
+java -cp /Users/admin/Downloads/YCSB/bigchaindb/conf:/Users/admin/Downloads/YCSB/bigchaindb/target/bigchaindb-binding-0.16.0-SNAPSHOT.jar:/Users/admin/.m2/repository/com/squareup/okio/okio/1.13.0/okio-1.13.0.jar:/Users/admin/.m2/repository/com/google/oauth-client/google-oauth-client/1.23.0/google-oauth-client-1.23.0.jar:/Users/admin/.m2/repository/org/hdrhistogram/HdrHistogram/2.1.4/HdrHistogram-2.1.4.jar:/Users/admin/.m2/repository/com/google/code/findbugs/jsr305/1.3.9/jsr305-1.3.9.jar:/Users/admin/.m2/repository/org/codehaus/jackson/jackson-core-asl/1.9.4/jackson-core-asl-1.9.4.jar:/Users/admin/.m2/repository/commons-codec/commons-codec/1.3/commons-codec-1.3.jar:/Users/admin/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.1.3/jackson-core-2.1.3.jar:/Users/admin/Downloads/YCSB/core/target/core-0.16.0-SNAPSHOT.jar:/Users/admin/.m2/repository/org/bouncycastle/bcprov-jdk15on/1.54/bcprov-jdk15on-1.54.jar:/Users/admin/.m2/repository/com/google/api-client/google-api-client/1.23.0/google-api-client-1.23.0.jar:/Users/admin/.m2/repository/com/bigchaindb/cryptoconditions/1.0/cryptoconditions-1.0.jar:/Users/admin/.m2/repository/org/codehaus/jackson/jackson-mapper-asl/1.9.4/jackson-mapper-asl-1.9.4.jar:/Users/admin/.m2/repository/com/google/code/gson/gson/2.8.2/gson-2.8.2.jar:/Users/admin/.m2/repository/org/apache/htrace/htrace-core4/4.1.0-incubating/htrace-core4-4.1.0-incubating.jar:/Users/admin/.m2/repository/com/bigchaindb/bigchaindb-driver/1.0/bigchaindb-driver-1.0.jar:/Users/admin/.m2/repository/com/squareup/okhttp3/okhttp/3.9.0/okhttp-3.9.0.jar:/Users/admin/.m2/repository/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1.jar:/Users/admin/.m2/repository/com/google/guava/guava-jdk5/17.0/guava-jdk5-17.0.jar:/Users/admin/.m2/repository/org/slf4j/slf4j-api/1.7.25/slf4j-api-1.7.25.jar:/Users/admin/.m2/repository/net/i2p/crypto/eddsa/0.2.0/eddsa-0.2.0.jar:/Users/admin/.m2/repository/org/apache/httpcomponents/httpcore/4.0.1/httpcore-4.0.1.jar:/Users/admin/.m2/repository/com/google/http-client/google-http-client/1.23.0/google-http-client-1.23.0.jar:/Users/admin/.m2/repository/org/glassfish/tyrus/bundles/tyrus-standalone-client/1.9/tyrus-standalone-client-1.9.jar:/Users/admin/.m2/repository/org/apache/httpcomponents/httpclient/4.0.1/httpclient-4.0.1.jar:/Users/admin/.m2/repository/com/google/http-client/google-http-client-jackson2/1.23.0/google-http-client-jackson2-1.23.0.jar com.yahoo.ycsb.Client -db com.yahoo.ycsb.db.BigchainDBClient -P z_my/workloads/workload_100000.ini -P z_my/properties/workload_properties_bigchaindb.dat -s -t\
+Command line: -db com.yahoo.ycsb.db.BigchainDBClient -P z_my/workloads/workload_100000.ini -P z_my/properties/workload_properties_bigchaindb.dat -s -t\
+YCSB Client 0.16.0-SNAPSHOT\
+\
+Loading workload...\
+Starting test.\
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".\
+SLF4J: Defaulting to no-operation (NOP) logger implementation\
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.\
+2019-01-16 16:29:29:307 0 sec: 0 operations; est completion in 0 second \
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []\
+2019-01-16 16:29:39:268 10 sec: 5376 operations; 537.55 current ops/sec; est completion in 2 minutes [INSERT AverageLatency(us)=1789.98] \
+2019-01-16 16:29:49:267 20 sec: 12516 operations; 714.07 current ops/sec; est completion in 2 minutes [INSERT AverageLatency(us)=1388] \
+2019-01-16 16:29:59:274 30 sec: 19379 operations; 685.82 current ops/sec; est completion in 2 minutes [INSERT AverageLatency(us)=1452.03] \
+2019-01-16 16:30:09:267 40 sec: 25891 operations; 651.66 current ops/sec; est completion in 1 minute [INSERT AverageLatency(us)=1528.92] \
+2019-01-16 16:30:19:267 50 sec: 32272 operations; 638.1 current ops/sec; est completion in 1 minute [INSERT AverageLatency(us)=1562.11] \
+2019-01-16 16:30:29:268 60 sec: 38132 operations; 585.94 current ops/sec; est completion in 1 minute [INSERT AverageLatency(us)=1698.6] \
+2019-01-16 16:30:39:267 70 sec: 43683 operations; 555.16 current ops/sec; est completion in 1 minute [INSERT AverageLatency(us)=1799.23] \
+2019-01-16 16:30:49:273 80 sec: 48667 operations; 498.15 current ops/sec; est completion in 1 minute [INSERT AverageLatency(us)=1999.19] \
+2019-01-16 16:30:59:267 90 sec: 53197 operations; 453.23 current ops/sec; est completion in 1 minute [INSERT AverageLatency(us)=2204.64] \
+2019-01-16 16:31:09:267 100 sec: 57335 operations; 413.8 current ops/sec; est completion in 1 minute [INSERT AverageLatency(us)=2400.74] \
+2019-01-16 16:31:19:272 110 sec: 60625 operations; 328.84 current ops/sec; est completion in 1 minute [INSERT AverageLatency(us)=3048.2] \
+2019-01-16 16:31:29:269 120 sec: 64574 operations; 395.02 current ops/sec; est completion in 1 minute [INSERT AverageLatency(us)=2526.91] \
+2019-01-16 16:31:39:272 130 sec: 68141 operations; 356.59 current ops/sec; est completion in 1 minute [INSERT AverageLatency(us)=2800.67] \
+2019-01-16 16:31:49:267 140 sec: 71423 operations; 328.36 current ops/sec; est completion in 57 seconds [INSERT AverageLatency(us)=3038.73] \
+2019-01-16 16:31:59:270 150 sec: 73905 operations; 248.13 current ops/sec; est completion in 53 seconds [INSERT AverageLatency(us)=4031.75] \
+2019-01-16 16:32:09:267 160 sec: 77374 operations; 347 current ops/sec; est completion in 47 seconds [INSERT AverageLatency(us)=2878.4] \
+2019-01-16 16:32:19:267 170 sec: 80481 operations; 310.7 current ops/sec; est completion in 42 seconds [INSERT AverageLatency(us)=3199.87] \
+2019-01-16 16:32:29:267 180 sec: 83732 operations; 325.1 current ops/sec; est completion in 35 seconds [INSERT AverageLatency(us)=3072.6] \
+2019-01-16 16:32:39:267 190 sec: 87567 operations; 383.5 current ops/sec; est completion in 27 seconds [INSERT AverageLatency(us)=2616.5] \
+2019-01-16 16:32:49:267 200 sec: 88290 operations; 72.3 current ops/sec; est completion in 27 seconds [INSERT AverageLatency(us)=13617.39] \
+2019-01-16 16:32:59:267 210 sec: 90908 operations; 261.8 current ops/sec; est completion in 22 seconds [INSERT AverageLatency(us)=3873.59] \
+2019-01-16 16:33:09:268 220 sec: 93565 operations; 265.67 current ops/sec; est completion in 16 seconds [INSERT AverageLatency(us)=3756.16] \
+2019-01-16 16:33:19:270 230 sec: 96224 operations; 265.87 current ops/sec; est completion in 10 seconds [INSERT AverageLatency(us)=3757.91] \
+2019-01-16 16:33:29:267 239 sec: 98960 operations; 273.68 current ops/sec; est completion in 3 second [INSERT AverageLatency(us)=3652.67] \
+2019-01-16 16:33:33:800 244 sec: 100000 operations; 229.38 current ops/sec; [CLEANUP AverageLatency(us)=4] [INSERT AverageLatency(us)=4357.58] \
+--------------------------------------------------\
+Finish: Record number is 100000, count is 3.\
+--------------------------------------------------\
+--------------------------------------------------\
+Start: Record number is 100000, count is 4.\
+--------------------------------------------------\
+Stopping bigchaindb_bigchaindb_1 ... \cf3 done\cf2 \
+Stopping bigchaindb_mongodb_1    ... \cf3 done\cf2 \
+Stopping bigchaindb_tendermint_1 ... \cf3 done\cf2 \
+Removing bigchaindb_bigchaindb_1 ... \cf3 done\cf2 \
+Removing bigchaindb_mongodb_1    ... \cf3 done\cf2 \
+Removing bigchaindb_tendermint_1 ... \cf3 done\cf2 \
+Removing network bigchaindb_default\
+\
+Creating network "bigchaindb_default" with the default driver\
+Creating bigchaindb_mongodb_1    ... \cf3 done\cf2 \
+Creating bigchaindb_tendermint_1 ... \cf3 done\cf2 \
+Creating bigchaindb_bigchaindb_1 ... \cf3 done\cf2 \
+./bin/ycsb run bigchaindb -P z_my/workloads/workload_100000.ini -P z_my/properties/workload_properties_bigchaindb.dat -s > z_my/results/bigchaindb_100000_4.csv\
+[WARN]  Running against a source checkout. In order to get our runtime dependencies we'll have to invoke Maven. Depending on the state of your system, this may take ~30-45 seconds\
+[DEBUG]  Running 'mvn -pl com.yahoo.ycsb:bigchaindb-binding -am package -DskipTests dependency:build-classpath -DincludeScope=compile -Dmdep.outputFilterFile=true'\
+java -cp /Users/admin/Downloads/YCSB/bigchaindb/conf:/Users/admin/Downloads/YCSB/bigchaindb/target/bigchaindb-binding-0.16.0-SNAPSHOT.jar:/Users/admin/.m2/repository/com/squareup/okio/okio/1.13.0/okio-1.13.0.jar:/Users/admin/.m2/repository/com/google/oauth-client/google-oauth-client/1.23.0/google-oauth-client-1.23.0.jar:/Users/admin/.m2/repository/org/hdrhistogram/HdrHistogram/2.1.4/HdrHistogram-2.1.4.jar:/Users/admin/.m2/repository/com/google/code/findbugs/jsr305/1.3.9/jsr305-1.3.9.jar:/Users/admin/.m2/repository/org/codehaus/jackson/jackson-core-asl/1.9.4/jackson-core-asl-1.9.4.jar:/Users/admin/.m2/repository/commons-codec/commons-codec/1.3/commons-codec-1.3.jar:/Users/admin/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.1.3/jackson-core-2.1.3.jar:/Users/admin/Downloads/YCSB/core/target/core-0.16.0-SNAPSHOT.jar:/Users/admin/.m2/repository/org/bouncycastle/bcprov-jdk15on/1.54/bcprov-jdk15on-1.54.jar:/Users/admin/.m2/repository/com/google/api-client/google-api-client/1.23.0/google-api-client-1.23.0.jar:/Users/admin/.m2/repository/com/bigchaindb/cryptoconditions/1.0/cryptoconditions-1.0.jar:/Users/admin/.m2/repository/org/codehaus/jackson/jackson-mapper-asl/1.9.4/jackson-mapper-asl-1.9.4.jar:/Users/admin/.m2/repository/com/google/code/gson/gson/2.8.2/gson-2.8.2.jar:/Users/admin/.m2/repository/org/apache/htrace/htrace-core4/4.1.0-incubating/htrace-core4-4.1.0-incubating.jar:/Users/admin/.m2/repository/com/bigchaindb/bigchaindb-driver/1.0/bigchaindb-driver-1.0.jar:/Users/admin/.m2/repository/com/squareup/okhttp3/okhttp/3.9.0/okhttp-3.9.0.jar:/Users/admin/.m2/repository/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1.jar:/Users/admin/.m2/repository/com/google/guava/guava-jdk5/17.0/guava-jdk5-17.0.jar:/Users/admin/.m2/repository/org/slf4j/slf4j-api/1.7.25/slf4j-api-1.7.25.jar:/Users/admin/.m2/repository/net/i2p/crypto/eddsa/0.2.0/eddsa-0.2.0.jar:/Users/admin/.m2/repository/org/apache/httpcomponents/httpcore/4.0.1/httpcore-4.0.1.jar:/Users/admin/.m2/repository/com/google/http-client/google-http-client/1.23.0/google-http-client-1.23.0.jar:/Users/admin/.m2/repository/org/glassfish/tyrus/bundles/tyrus-standalone-client/1.9/tyrus-standalone-client-1.9.jar:/Users/admin/.m2/repository/org/apache/httpcomponents/httpclient/4.0.1/httpclient-4.0.1.jar:/Users/admin/.m2/repository/com/google/http-client/google-http-client-jackson2/1.23.0/google-http-client-jackson2-1.23.0.jar com.yahoo.ycsb.Client -db com.yahoo.ycsb.db.BigchainDBClient -P z_my/workloads/workload_100000.ini -P z_my/properties/workload_properties_bigchaindb.dat -s -t\
+Command line: -db com.yahoo.ycsb.db.BigchainDBClient -P z_my/workloads/workload_100000.ini -P z_my/properties/workload_properties_bigchaindb.dat -s -t\
+YCSB Client 0.16.0-SNAPSHOT\
+\
+Loading workload...\
+Starting test.\
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".\
+SLF4J: Defaulting to no-operation (NOP) logger implementation\
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.\
+2019-01-16 16:34:16:878 0 sec: 0 operations; est completion in 0 second \
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []\
+2019-01-16 16:34:26:835 10 sec: 4841 operations; 484.1 current ops/sec; est completion in 3 minutes [INSERT AverageLatency(us)=1977.83] \
+2019-01-16 16:34:36:835 20 sec: 12379 operations; 753.8 current ops/sec; est completion in 2 minutes [INSERT AverageLatency(us)=1317.61] \
+2019-01-16 16:34:46:835 30 sec: 19870 operations; 749.1 current ops/sec; est completion in 2 minutes [INSERT AverageLatency(us)=1329.4] \
+2019-01-16 16:34:56:839 40 sec: 26934 operations; 706.12 current ops/sec; est completion in 1 minute [INSERT AverageLatency(us)=1411.11] \
+2019-01-16 16:35:06:839 50 sec: 32547 operations; 561.3 current ops/sec; est completion in 1 minute [INSERT AverageLatency(us)=1775.96] \
+2019-01-16 16:35:16:838 60 sec: 37872 operations; 532.55 current ops/sec; est completion in 1 minute [INSERT AverageLatency(us)=1872] \
+2019-01-16 16:35:26:836 70 sec: 43432 operations; 556.11 current ops/sec; est completion in 1 minute [INSERT AverageLatency(us)=1792.33] \
+2019-01-16 16:35:36:838 80 sec: 48167 operations; 473.41 current ops/sec; est completion in 1 minute [INSERT AverageLatency(us)=2106.49] \
+2019-01-16 16:35:46:837 90 sec: 52812 operations; 464.55 current ops/sec; est completion in 1 minute [INSERT AverageLatency(us)=2147.12] \
+2019-01-16 16:35:56:835 100 sec: 58052 operations; 524.1 current ops/sec; est completion in 1 minute [INSERT AverageLatency(us)=1900.4] \
+2019-01-16 16:36:06:836 110 sec: 62486 operations; 443.4 current ops/sec; est completion in 1 minute [INSERT AverageLatency(us)=2253.49] \
+2019-01-16 16:36:16:836 120 sec: 66384 operations; 389.76 current ops/sec; est completion in 1 minute [INSERT AverageLatency(us)=2561.45] \
+2019-01-16 16:36:26:835 130 sec: 69686 operations; 330.23 current ops/sec; est completion in 57 seconds [INSERT AverageLatency(us)=3024.11] \
+2019-01-16 16:36:36:836 140 sec: 73777 operations; 409.06 current ops/sec; est completion in 50 seconds [INSERT AverageLatency(us)=2439.07] \
+2019-01-16 16:36:46:835 150 sec: 77364 operations; 358.74 current ops/sec; est completion in 44 seconds [INSERT AverageLatency(us)=2785.93] \
+2019-01-16 16:36:56:837 160 sec: 81465 operations; 410.02 current ops/sec; est completion in 37 seconds [INSERT AverageLatency(us)=2435.29] \
+2019-01-16 16:37:06:835 170 sec: 83831 operations; 236.65 current ops/sec; est completion in 33 seconds [INSERT AverageLatency(us)=4222.42] \
+2019-01-16 16:37:16:838 180 sec: 87030 operations; 319.8 current ops/sec; est completion in 27 seconds [INSERT AverageLatency(us)=3122.5] \
+2019-01-16 16:37:26:835 189 sec: 89108 operations; 207.88 current ops/sec; est completion in 24 seconds [INSERT AverageLatency(us)=4768.54] \
+2019-01-16 16:37:36:834 199 sec: 91196 operations; 208.8 current ops/sec; est completion in 20 seconds [INSERT AverageLatency(us)=4794.62] \
+2019-01-16 16:37:46:834 209 sec: 93582 operations; 238.6 current ops/sec; est completion in 15 seconds [INSERT AverageLatency(us)=4206.05] \
+2019-01-16 16:37:56:834 219 sec: 96262 operations; 268 current ops/sec; est completion in 9 second [INSERT AverageLatency(us)=3726.31] \
+2019-01-16 16:38:06:834 229 sec: 96453 operations; 19.1 current ops/sec; est completion in 9 second [INSERT AverageLatency(us)=51954.28] \
+2019-01-16 16:38:16:835 240 sec: 97407 operations; 95.39 current ops/sec; est completion in 7 second [INSERT AverageLatency(us)=10397.29] \
+2019-01-16 16:38:25:643 248 sec: 100000 operations; 294.39 current ops/sec; [CLEANUP AverageLatency(us)=3] [INSERT AverageLatency(us)=3458.65] \
+--------------------------------------------------\
+Finish: Record number is 100000, count is 4.\
+--------------------------------------------------\
+--------------------------------------------------\
+Start: Record number is 100000, count is 5.\
+--------------------------------------------------\
+Stopping bigchaindb_bigchaindb_1 ... \cf3 done\cf2 \
+Stopping bigchaindb_mongodb_1    ... \cf3 done\cf2 \
+Stopping bigchaindb_tendermint_1 ... \cf3 done\cf2 \
+Removing bigchaindb_bigchaindb_1 ... \cf3 done\cf2 \
+Removing bigchaindb_mongodb_1    ... \cf3 done\cf2 \
+Removing bigchaindb_tendermint_1 ... \cf3 done\cf2 \
+Removing network bigchaindb_default\
+\
+Creating network "bigchaindb_default" with the default driver\
+Creating bigchaindb_tendermint_1 ... \cf3 done\cf2 \
+Creating bigchaindb_mongodb_1    ... \cf3 done\cf2 \
+Creating bigchaindb_bigchaindb_1 ... \cf3 done\cf2 \
+./bin/ycsb run bigchaindb -P z_my/workloads/workload_100000.ini -P z_my/properties/workload_properties_bigchaindb.dat -s > z_my/results/bigchaindb_100000_5.csv\
+[WARN]  Running against a source checkout. In order to get our runtime dependencies we'll have to invoke Maven. Depending on the state of your system, this may take ~30-45 seconds\
+[DEBUG]  Running 'mvn -pl com.yahoo.ycsb:bigchaindb-binding -am package -DskipTests dependency:build-classpath -DincludeScope=compile -Dmdep.outputFilterFile=true'\
+java -cp /Users/admin/Downloads/YCSB/bigchaindb/conf:/Users/admin/Downloads/YCSB/bigchaindb/target/bigchaindb-binding-0.16.0-SNAPSHOT.jar:/Users/admin/.m2/repository/com/squareup/okio/okio/1.13.0/okio-1.13.0.jar:/Users/admin/.m2/repository/com/google/oauth-client/google-oauth-client/1.23.0/google-oauth-client-1.23.0.jar:/Users/admin/.m2/repository/org/hdrhistogram/HdrHistogram/2.1.4/HdrHistogram-2.1.4.jar:/Users/admin/.m2/repository/com/google/code/findbugs/jsr305/1.3.9/jsr305-1.3.9.jar:/Users/admin/.m2/repository/org/codehaus/jackson/jackson-core-asl/1.9.4/jackson-core-asl-1.9.4.jar:/Users/admin/.m2/repository/commons-codec/commons-codec/1.3/commons-codec-1.3.jar:/Users/admin/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.1.3/jackson-core-2.1.3.jar:/Users/admin/Downloads/YCSB/core/target/core-0.16.0-SNAPSHOT.jar:/Users/admin/.m2/repository/org/bouncycastle/bcprov-jdk15on/1.54/bcprov-jdk15on-1.54.jar:/Users/admin/.m2/repository/com/google/api-client/google-api-client/1.23.0/google-api-client-1.23.0.jar:/Users/admin/.m2/repository/com/bigchaindb/cryptoconditions/1.0/cryptoconditions-1.0.jar:/Users/admin/.m2/repository/org/codehaus/jackson/jackson-mapper-asl/1.9.4/jackson-mapper-asl-1.9.4.jar:/Users/admin/.m2/repository/com/google/code/gson/gson/2.8.2/gson-2.8.2.jar:/Users/admin/.m2/repository/org/apache/htrace/htrace-core4/4.1.0-incubating/htrace-core4-4.1.0-incubating.jar:/Users/admin/.m2/repository/com/bigchaindb/bigchaindb-driver/1.0/bigchaindb-driver-1.0.jar:/Users/admin/.m2/repository/com/squareup/okhttp3/okhttp/3.9.0/okhttp-3.9.0.jar:/Users/admin/.m2/repository/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1.jar:/Users/admin/.m2/repository/com/google/guava/guava-jdk5/17.0/guava-jdk5-17.0.jar:/Users/admin/.m2/repository/org/slf4j/slf4j-api/1.7.25/slf4j-api-1.7.25.jar:/Users/admin/.m2/repository/net/i2p/crypto/eddsa/0.2.0/eddsa-0.2.0.jar:/Users/admin/.m2/repository/org/apache/httpcomponents/httpcore/4.0.1/httpcore-4.0.1.jar:/Users/admin/.m2/repository/com/google/http-client/google-http-client/1.23.0/google-http-client-1.23.0.jar:/Users/admin/.m2/repository/org/glassfish/tyrus/bundles/tyrus-standalone-client/1.9/tyrus-standalone-client-1.9.jar:/Users/admin/.m2/repository/org/apache/httpcomponents/httpclient/4.0.1/httpclient-4.0.1.jar:/Users/admin/.m2/repository/com/google/http-client/google-http-client-jackson2/1.23.0/google-http-client-jackson2-1.23.0.jar com.yahoo.ycsb.Client -db com.yahoo.ycsb.db.BigchainDBClient -P z_my/workloads/workload_100000.ini -P z_my/properties/workload_properties_bigchaindb.dat -s -t\
+Command line: -db com.yahoo.ycsb.db.BigchainDBClient -P z_my/workloads/workload_100000.ini -P z_my/properties/workload_properties_bigchaindb.dat -s -t\
+YCSB Client 0.16.0-SNAPSHOT\
+\
+Loading workload...\
+Starting test.\
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".\
+SLF4J: Defaulting to no-operation (NOP) logger implementation\
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.\
+2019-01-16 16:39:08:982 0 sec: 0 operations; est completion in 0 second \
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []\
+2019-01-16 16:39:18:939 10 sec: 5375 operations; 537.5 current ops/sec; est completion in 2 minutes [INSERT AverageLatency(us)=1782.66] \
+2019-01-16 16:39:28:942 20 sec: 12824 operations; 744.68 current ops/sec; est completion in 2 minutes [INSERT AverageLatency(us)=1333.65] \
+2019-01-16 16:39:38:939 30 sec: 20379 operations; 755.73 current ops/sec; est completion in 1 minute [INSERT AverageLatency(us)=1318.05] \
+2019-01-16 16:39:48:939 40 sec: 27203 operations; 682.4 current ops/sec; est completion in 1 minute [INSERT AverageLatency(us)=1459.83] \
+2019-01-16 16:39:58:939 50 sec: 33279 operations; 607.6 current ops/sec; est completion in 1 minute [INSERT AverageLatency(us)=1638.22] \
+2019-01-16 16:40:08:940 60 sec: 39109 operations; 582.94 current ops/sec; est completion in 1 minute [INSERT AverageLatency(us)=1712.17] \
+2019-01-16 16:40:18:939 70 sec: 44674 operations; 556.56 current ops/sec; est completion in 1 minute [INSERT AverageLatency(us)=1791.65] \
+2019-01-16 16:40:28:943 80 sec: 49655 operations; 497.9 current ops/sec; est completion in 1 minute [INSERT AverageLatency(us)=2002.38] \
+2019-01-16 16:40:38:940 90 sec: 53823 operations; 416.93 current ops/sec; est completion in 1 minute [INSERT AverageLatency(us)=2390.25] \
+2019-01-16 16:40:48:941 100 sec: 58257 operations; 443.36 current ops/sec; est completion in 1 minute [INSERT AverageLatency(us)=2247.89] \
+2019-01-16 16:40:58:945 110 sec: 62031 operations; 377.25 current ops/sec; est completion in 1 minute [INSERT AverageLatency(us)=2652.09] \
+2019-01-16 16:41:08:939 120 sec: 65614 operations; 358.52 current ops/sec; est completion in 1 minute [INSERT AverageLatency(us)=2767.3] \
+2019-01-16 16:41:18:939 130 sec: 68165 operations; 255.1 current ops/sec; est completion in 1 minute [INSERT AverageLatency(us)=3936.11] \
+2019-01-16 16:41:28:940 140 sec: 70254 operations; 208.88 current ops/sec; est completion in 1 minute [INSERT AverageLatency(us)=4792.09] \
+2019-01-16 16:41:38:944 150 sec: 73031 operations; 277.59 current ops/sec; est completion in 56 seconds [INSERT AverageLatency(us)=3595.27] \
+2019-01-16 16:41:48:947 160 sec: 75035 operations; 200.34 current ops/sec; est completion in 54 seconds [INSERT AverageLatency(us)=4985.75] \
+2019-01-16 16:41:58:939 170 sec: 76707 operations; 167.33 current ops/sec; est completion in 52 seconds [INSERT AverageLatency(us)=5909.58] \
+2019-01-16 16:42:08:939 180 sec: 78254 operations; 154.7 current ops/sec; est completion in 51 seconds [INSERT AverageLatency(us)=6520.29] \
+2019-01-16 16:42:18:940 190 sec: 81136 operations; 288.17 current ops/sec; est completion in 45 seconds [INSERT AverageLatency(us)=3474.96] \
+2019-01-16 16:42:28:945 200 sec: 83029 operations; 189.21 current ops/sec; est completion in 41 seconds [INSERT AverageLatency(us)=5249.89] \
+2019-01-16 16:42:38:942 210 sec: 84635 operations; 160.65 current ops/sec; est completion in 39 seconds [INSERT AverageLatency(us)=6228.88] \
+2019-01-16 16:42:48:938 219 sec: 86216 operations; 158.16 current ops/sec; est completion in 36 seconds [INSERT AverageLatency(us)=6348.8] \
+2019-01-16 16:42:58:941 230 sec: 88830 operations; 261.32 current ops/sec; est completion in 29 seconds [INSERT AverageLatency(us)=3806.02] \
+2019-01-16 16:43:08:938 239 sec: 89939 operations; 110.93 current ops/sec; est completion in 27 seconds [INSERT AverageLatency(us)=9050.01] \
+2019-01-16 16:43:18:943 250 sec: 92689 operations; 274.86 current ops/sec; est completion in 20 seconds [INSERT AverageLatency(us)=3633.34] \
+2019-01-16 16:43:28:938 259 sec: 94435 operations; 174.69 current ops/sec; est completion in 16 seconds [INSERT AverageLatency(us)=5723.9] \
+2019-01-16 16:43:38:938 269 sec: 96002 operations; 156.7 current ops/sec; est completion in 12 seconds [INSERT AverageLatency(us)=6365.22] \
+2019-01-16 16:43:48:938 279 sec: 97467 operations; 146.5 current ops/sec; est completion in 8 second [INSERT AverageLatency(us)=6796.39] \
+2019-01-16 16:43:58:946 290 sec: 99409 operations; 194.04 current ops/sec; est completion in 2 second [INSERT AverageLatency(us)=5179.56] \
+2019-01-16 16:44:01:255 292 sec: 100000 operations; 255.95 current ops/sec; [CLEANUP AverageLatency(us)=4] [INSERT AverageLatency(us)=3903.92] \
+--------------------------------------------------\
+Finish: Record number is 100000, count is 5.\
+--------------------------------------------------\
+--------------------------------------------------\
+Start: Record number is 100000, count is 6.\
+--------------------------------------------------\
+Stopping bigchaindb_bigchaindb_1 ... \cf3 done\cf2 \
+Stopping bigchaindb_tendermint_1 ... \cf3 done\cf2 \
+Stopping bigchaindb_mongodb_1    ... \cf3 done\cf2 \
+Removing bigchaindb_bigchaindb_1 ... \cf3 done\cf2 \
+Removing bigchaindb_tendermint_1 ... \cf3 done\cf2 \
+Removing bigchaindb_mongodb_1    ... \cf3 done\cf2 \
+Removing network bigchaindb_default\
+\
+Creating network "bigchaindb_default" with the default driver\
+Creating bigchaindb_tendermint_1 ... \cf3 done\cf2 \
+Creating bigchaindb_mongodb_1    ... \cf3 done\cf2 \
+Creating bigchaindb_bigchaindb_1 ... \cf3 done\cf2 \
+./bin/ycsb run bigchaindb -P z_my/workloads/workload_100000.ini -P z_my/properties/workload_properties_bigchaindb.dat -s > z_my/results/bigchaindb_100000_6.csv\
+[WARN]  Running against a source checkout. In order to get our runtime dependencies we'll have to invoke Maven. Depending on the state of your system, this may take ~30-45 seconds\
+[DEBUG]  Running 'mvn -pl com.yahoo.ycsb:bigchaindb-binding -am package -DskipTests dependency:build-classpath -DincludeScope=compile -Dmdep.outputFilterFile=true'\
+java -cp /Users/admin/Downloads/YCSB/bigchaindb/conf:/Users/admin/Downloads/YCSB/bigchaindb/target/bigchaindb-binding-0.16.0-SNAPSHOT.jar:/Users/admin/.m2/repository/com/squareup/okio/okio/1.13.0/okio-1.13.0.jar:/Users/admin/.m2/repository/com/google/oauth-client/google-oauth-client/1.23.0/google-oauth-client-1.23.0.jar:/Users/admin/.m2/repository/org/hdrhistogram/HdrHistogram/2.1.4/HdrHistogram-2.1.4.jar:/Users/admin/.m2/repository/com/google/code/findbugs/jsr305/1.3.9/jsr305-1.3.9.jar:/Users/admin/.m2/repository/org/codehaus/jackson/jackson-core-asl/1.9.4/jackson-core-asl-1.9.4.jar:/Users/admin/.m2/repository/commons-codec/commons-codec/1.3/commons-codec-1.3.jar:/Users/admin/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.1.3/jackson-core-2.1.3.jar:/Users/admin/Downloads/YCSB/core/target/core-0.16.0-SNAPSHOT.jar:/Users/admin/.m2/repository/org/bouncycastle/bcprov-jdk15on/1.54/bcprov-jdk15on-1.54.jar:/Users/admin/.m2/repository/com/google/api-client/google-api-client/1.23.0/google-api-client-1.23.0.jar:/Users/admin/.m2/repository/com/bigchaindb/cryptoconditions/1.0/cryptoconditions-1.0.jar:/Users/admin/.m2/repository/org/codehaus/jackson/jackson-mapper-asl/1.9.4/jackson-mapper-asl-1.9.4.jar:/Users/admin/.m2/repository/com/google/code/gson/gson/2.8.2/gson-2.8.2.jar:/Users/admin/.m2/repository/org/apache/htrace/htrace-core4/4.1.0-incubating/htrace-core4-4.1.0-incubating.jar:/Users/admin/.m2/repository/com/bigchaindb/bigchaindb-driver/1.0/bigchaindb-driver-1.0.jar:/Users/admin/.m2/repository/com/squareup/okhttp3/okhttp/3.9.0/okhttp-3.9.0.jar:/Users/admin/.m2/repository/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1.jar:/Users/admin/.m2/repository/com/google/guava/guava-jdk5/17.0/guava-jdk5-17.0.jar:/Users/admin/.m2/repository/org/slf4j/slf4j-api/1.7.25/slf4j-api-1.7.25.jar:/Users/admin/.m2/repository/net/i2p/crypto/eddsa/0.2.0/eddsa-0.2.0.jar:/Users/admin/.m2/repository/org/apache/httpcomponents/httpcore/4.0.1/httpcore-4.0.1.jar:/Users/admin/.m2/repository/com/google/http-client/google-http-client/1.23.0/google-http-client-1.23.0.jar:/Users/admin/.m2/repository/org/glassfish/tyrus/bundles/tyrus-standalone-client/1.9/tyrus-standalone-client-1.9.jar:/Users/admin/.m2/repository/org/apache/httpcomponents/httpclient/4.0.1/httpclient-4.0.1.jar:/Users/admin/.m2/repository/com/google/http-client/google-http-client-jackson2/1.23.0/google-http-client-jackson2-1.23.0.jar com.yahoo.ycsb.Client -db com.yahoo.ycsb.db.BigchainDBClient -P z_my/workloads/workload_100000.ini -P z_my/properties/workload_properties_bigchaindb.dat -s -t\
+Command line: -db com.yahoo.ycsb.db.BigchainDBClient -P z_my/workloads/workload_100000.ini -P z_my/properties/workload_properties_bigchaindb.dat -s -t\
+YCSB Client 0.16.0-SNAPSHOT\
+\
+Loading workload...\
+Starting test.\
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".\
+SLF4J: Defaulting to no-operation (NOP) logger implementation\
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.\
+2019-01-16 16:44:44:509 0 sec: 0 operations; est completion in 0 second \
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []\
+2019-01-16 16:44:54:468 10 sec: 5421 operations; 542.1 current ops/sec; est completion in 2 minutes [INSERT AverageLatency(us)=1774.76] \
+2019-01-16 16:45:04:468 20 sec: 12647 operations; 722.6 current ops/sec; est completion in 2 minutes [INSERT AverageLatency(us)=1373.66] \
+2019-01-16 16:45:14:468 30 sec: 19706 operations; 705.9 current ops/sec; est completion in 2 minutes [INSERT AverageLatency(us)=1410.66] \
+2019-01-16 16:45:24:468 40 sec: 26717 operations; 701.1 current ops/sec; est completion in 1 minute [INSERT AverageLatency(us)=1420.95] \
+2019-01-16 16:45:34:468 50 sec: 33032 operations; 631.5 current ops/sec; est completion in 1 minute [INSERT AverageLatency(us)=1578.7] \
+2019-01-16 16:45:44:473 60 sec: 38735 operations; 570.01 current ops/sec; est completion in 1 minute [INSERT AverageLatency(us)=1748.94] \
+2019-01-16 16:45:54:471 70 sec: 44598 operations; 586.42 current ops/sec; est completion in 1 minute [INSERT AverageLatency(us)=1699.11] \
+2019-01-16 16:46:04:468 80 sec: 49970 operations; 537.36 current ops/sec; est completion in 1 minute [INSERT AverageLatency(us)=1856.39] \
+2019-01-16 16:46:14:468 90 sec: 54066 operations; 409.6 current ops/sec; est completion in 1 minute [INSERT AverageLatency(us)=2433.18] \
+2019-01-16 16:46:24:473 100 sec: 58661 operations; 459.27 current ops/sec; est completion in 1 minute [INSERT AverageLatency(us)=2174.51] \
+2019-01-16 16:46:34:474 110 sec: 62621 operations; 395.96 current ops/sec; est completion in 1 minute [INSERT AverageLatency(us)=2521.05] \
+2019-01-16 16:46:44:469 120 sec: 66515 operations; 389.59 current ops/sec; est completion in 1 minute [INSERT AverageLatency(us)=2562.88] \
+2019-01-16 16:46:54:475 130 sec: 69721 operations; 320.41 current ops/sec; est completion in 57 seconds [INSERT AverageLatency(us)=3115.22] \
+2019-01-16 16:47:04:468 140 sec: 73358 operations; 363.95 current ops/sec; est completion in 51 seconds [INSERT AverageLatency(us)=2741.22] \
+2019-01-16 16:47:14:469 150 sec: 75869 operations; 251.07 current ops/sec; est completion in 48 seconds [INSERT AverageLatency(us)=3987.29] \
+2019-01-16 16:47:24:470 160 sec: 79459 operations; 358.96 current ops/sec; est completion in 42 seconds [INSERT AverageLatency(us)=2782.35] \
+2019-01-16 16:47:34:468 169 sec: 81047 operations; 158.85 current ops/sec; est completion in 40 seconds [INSERT AverageLatency(us)=6283.23] \
+2019-01-16 16:47:44:467 179 sec: 83844 operations; 279.7 current ops/sec; est completion in 35 seconds [INSERT AverageLatency(us)=3561.53] \
+2019-01-16 16:47:54:469 190 sec: 85983 operations; 213.86 current ops/sec; est completion in 31 seconds [INSERT AverageLatency(us)=4689.88] \
+2019-01-16 16:48:04:467 199 sec: 88940 operations; 295.76 current ops/sec; est completion in 25 seconds [INSERT AverageLatency(us)=3377.67] \
+2019-01-16 16:48:14:468 210 sec: 90933 operations; 199.28 current ops/sec; est completion in 21 seconds [INSERT AverageLatency(us)=5013.9] \
+2019-01-16 16:48:24:467 219 sec: 93123 operations; 219.02 current ops/sec; est completion in 17 seconds [INSERT AverageLatency(us)=4562.46] \
+2019-01-16 16:48:34:467 229 sec: 94568 operations; 144.5 current ops/sec; est completion in 14 seconds [INSERT AverageLatency(us)=6906.99] \
+2019-01-16 16:48:44:468 240 sec: 97069 operations; 250.07 current ops/sec; est completion in 8 second [INSERT AverageLatency(us)=3996.67] \
+2019-01-16 16:48:54:473 250 sec: 99284 operations; 221.39 current ops/sec; est completion in 2 second [INSERT AverageLatency(us)=4507.32] \
+2019-01-16 16:48:59:023 254 sec: 100000 operations; 157.36 current ops/sec; [CLEANUP AverageLatency(us)=3] [INSERT AverageLatency(us)=6384.23] \
+--------------------------------------------------\
+Finish: Record number is 100000, count is 6.\
+--------------------------------------------------\
+--------------------------------------------------\
+Start: Record number is 100000, count is 7.\
+--------------------------------------------------\
+Stopping bigchaindb_bigchaindb_1 ... \cf3 done\cf2 \
+Stopping bigchaindb_tendermint_1 ... \cf3 done\cf2 \
+Stopping bigchaindb_mongodb_1    ... \cf3 done\cf2 \
+Removing bigchaindb_bigchaindb_1 ... \cf3 done\cf2 \
+Removing bigchaindb_tendermint_1 ... \cf3 done\cf2 \
+Removing bigchaindb_mongodb_1    ... \cf3 done\cf2 \
+Removing network bigchaindb_default\
+\
+Creating network "bigchaindb_default" with the default driver\
+Creating bigchaindb_tendermint_1 ... \cf3 done\cf2 \
+Creating bigchaindb_mongodb_1    ... \cf3 done\cf2 \
+Creating bigchaindb_bigchaindb_1 ... \cf3 done\cf2 \
+./bin/ycsb run bigchaindb -P z_my/workloads/workload_100000.ini -P z_my/properties/workload_properties_bigchaindb.dat -s > z_my/results/bigchaindb_100000_7.csv\
+[WARN]  Running against a source checkout. In order to get our runtime dependencies we'll have to invoke Maven. Depending on the state of your system, this may take ~30-45 seconds\
+[DEBUG]  Running 'mvn -pl com.yahoo.ycsb:bigchaindb-binding -am package -DskipTests dependency:build-classpath -DincludeScope=compile -Dmdep.outputFilterFile=true'\
+java -cp /Users/admin/Downloads/YCSB/bigchaindb/conf:/Users/admin/Downloads/YCSB/bigchaindb/target/bigchaindb-binding-0.16.0-SNAPSHOT.jar:/Users/admin/.m2/repository/com/squareup/okio/okio/1.13.0/okio-1.13.0.jar:/Users/admin/.m2/repository/com/google/oauth-client/google-oauth-client/1.23.0/google-oauth-client-1.23.0.jar:/Users/admin/.m2/repository/org/hdrhistogram/HdrHistogram/2.1.4/HdrHistogram-2.1.4.jar:/Users/admin/.m2/repository/com/google/code/findbugs/jsr305/1.3.9/jsr305-1.3.9.jar:/Users/admin/.m2/repository/org/codehaus/jackson/jackson-core-asl/1.9.4/jackson-core-asl-1.9.4.jar:/Users/admin/.m2/repository/commons-codec/commons-codec/1.3/commons-codec-1.3.jar:/Users/admin/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.1.3/jackson-core-2.1.3.jar:/Users/admin/Downloads/YCSB/core/target/core-0.16.0-SNAPSHOT.jar:/Users/admin/.m2/repository/org/bouncycastle/bcprov-jdk15on/1.54/bcprov-jdk15on-1.54.jar:/Users/admin/.m2/repository/com/google/api-client/google-api-client/1.23.0/google-api-client-1.23.0.jar:/Users/admin/.m2/repository/com/bigchaindb/cryptoconditions/1.0/cryptoconditions-1.0.jar:/Users/admin/.m2/repository/org/codehaus/jackson/jackson-mapper-asl/1.9.4/jackson-mapper-asl-1.9.4.jar:/Users/admin/.m2/repository/com/google/code/gson/gson/2.8.2/gson-2.8.2.jar:/Users/admin/.m2/repository/org/apache/htrace/htrace-core4/4.1.0-incubating/htrace-core4-4.1.0-incubating.jar:/Users/admin/.m2/repository/com/bigchaindb/bigchaindb-driver/1.0/bigchaindb-driver-1.0.jar:/Users/admin/.m2/repository/com/squareup/okhttp3/okhttp/3.9.0/okhttp-3.9.0.jar:/Users/admin/.m2/repository/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1.jar:/Users/admin/.m2/repository/com/google/guava/guava-jdk5/17.0/guava-jdk5-17.0.jar:/Users/admin/.m2/repository/org/slf4j/slf4j-api/1.7.25/slf4j-api-1.7.25.jar:/Users/admin/.m2/repository/net/i2p/crypto/eddsa/0.2.0/eddsa-0.2.0.jar:/Users/admin/.m2/repository/org/apache/httpcomponents/httpcore/4.0.1/httpcore-4.0.1.jar:/Users/admin/.m2/repository/com/google/http-client/google-http-client/1.23.0/google-http-client-1.23.0.jar:/Users/admin/.m2/repository/org/glassfish/tyrus/bundles/tyrus-standalone-client/1.9/tyrus-standalone-client-1.9.jar:/Users/admin/.m2/repository/org/apache/httpcomponents/httpclient/4.0.1/httpclient-4.0.1.jar:/Users/admin/.m2/repository/com/google/http-client/google-http-client-jackson2/1.23.0/google-http-client-jackson2-1.23.0.jar com.yahoo.ycsb.Client -db com.yahoo.ycsb.db.BigchainDBClient -P z_my/workloads/workload_100000.ini -P z_my/properties/workload_properties_bigchaindb.dat -s -t\
+Command line: -db com.yahoo.ycsb.db.BigchainDBClient -P z_my/workloads/workload_100000.ini -P z_my/properties/workload_properties_bigchaindb.dat -s -t\
+YCSB Client 0.16.0-SNAPSHOT\
+\
+Loading workload...\
+Starting test.\
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".\
+SLF4J: Defaulting to no-operation (NOP) logger implementation\
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.\
+2019-01-16 16:49:41:688 0 sec: 0 operations; est completion in 0 second \
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []\
+2019-01-16 16:49:51:648 10 sec: 5115 operations; 511.35 current ops/sec; est completion in 3 minutes [INSERT AverageLatency(us)=1865.08] \
+2019-01-16 16:50:01:649 20 sec: 12262 operations; 714.77 current ops/sec; est completion in 2 minutes [INSERT AverageLatency(us)=1387.06] \
+2019-01-16 16:50:11:649 30 sec: 19478 operations; 721.46 current ops/sec; est completion in 2 minutes [INSERT AverageLatency(us)=1380.46] \
+2019-01-16 16:50:21:653 40 sec: 26331 operations; 685.09 current ops/sec; est completion in 1 minute [INSERT AverageLatency(us)=1454.22] \
+2019-01-16 16:50:31:647 50 sec: 32963 operations; 663.53 current ops/sec; est completion in 1 minute [INSERT AverageLatency(us)=1501.94] \
+2019-01-16 16:50:41:651 60 sec: 38673 operations; 570.77 current ops/sec; est completion in 1 minute [INSERT AverageLatency(us)=1746.78] \
+2019-01-16 16:50:51:647 70 sec: 43737 operations; 506.6 current ops/sec; est completion in 1 minute [INSERT AverageLatency(us)=1968.08] \
+2019-01-16 16:51:01:648 80 sec: 48961 operations; 522.35 current ops/sec; est completion in 1 minute [INSERT AverageLatency(us)=1909.11] \
+2019-01-16 16:51:11:647 90 sec: 54254 operations; 529.35 current ops/sec; est completion in 1 minute [INSERT AverageLatency(us)=1878.03] \
+2019-01-16 16:51:21:648 100 sec: 58799 operations; 454.5 current ops/sec; est completion in 1 minute [INSERT AverageLatency(us)=2196.4] \
+2019-01-16 16:51:31:649 110 sec: 61737 operations; 293.74 current ops/sec; est completion in 1 minute [INSERT AverageLatency(us)=3389.05] \
+2019-01-16 16:51:41:648 120 sec: 65885 operations; 414.84 current ops/sec; est completion in 1 minute [INSERT AverageLatency(us)=2418.09] \
+2019-01-16 16:51:51:647 130 sec: 69857 operations; 397.24 current ops/sec; est completion in 57 seconds [INSERT AverageLatency(us)=2507.16] \
+2019-01-16 16:52:01:649 140 sec: 73463 operations; 360.53 current ops/sec; est completion in 51 seconds [INSERT AverageLatency(us)=2759.57] \
+2019-01-16 16:52:11:650 150 sec: 75990 operations; 252.67 current ops/sec; est completion in 48 seconds [INSERT AverageLatency(us)=3965.46] \
+2019-01-16 16:52:21:644 159 sec: 78618 operations; 262.96 current ops/sec; est completion in 44 seconds [INSERT AverageLatency(us)=3809.38] \
+2019-01-16 16:52:31:644 169 sec: 82171 operations; 355.3 current ops/sec; est completion in 37 seconds [INSERT AverageLatency(us)=2805.38] \
+2019-01-16 16:52:41:644 179 sec: 84739 operations; 256.8 current ops/sec; est completion in 33 seconds [INSERT AverageLatency(us)=3897.15] \
+2019-01-16 16:52:51:649 190 sec: 93212 operations; 846.88 current ops/sec; est completion in 14 seconds [INSERT AverageLatency(us)=1176.58] \
+2019-01-16 16:53:01:645 199 sec: 98213 operations; 500.35 current ops/sec; est completion in 4 second [INSERT AverageLatency(us)=1972.67] \
+2019-01-16 16:53:11:648 210 sec: 98300 operations; 8.7 current ops/sec; est completion in 4 second [INSERT AverageLatency(us)=116199.53] \
+2019-01-16 16:53:16:869 215 sec: 100000 operations; 325.61 current ops/sec; [CLEANUP AverageLatency(us)=3] [INSERT AverageLatency(us)=3070.19] \
+--------------------------------------------------\
+Finish: Record number is 100000, count is 7.\
+--------------------------------------------------\
+--------------------------------------------------\
+Start: Record number is 100000, count is 8.\
+--------------------------------------------------\
+Stopping bigchaindb_bigchaindb_1 ... \cf3 done\cf2 \
+Stopping bigchaindb_mongodb_1    ... \cf3 done\cf2 \
+Stopping bigchaindb_tendermint_1 ... \cf3 done\cf2 \
+Removing bigchaindb_bigchaindb_1 ... \cf3 done\cf2 \
+Removing bigchaindb_mongodb_1    ... \cf3 done\cf2 \
+Removing bigchaindb_tendermint_1 ... \cf3 done\cf2 \
+Removing network bigchaindb_default\
+\
+Creating network "bigchaindb_default" with the default driver\
+Creating bigchaindb_tendermint_1 ... \cf3 done\cf2 \
+Creating bigchaindb_mongodb_1    ... \cf3 done\cf2 \
+Creating bigchaindb_bigchaindb_1 ... \cf3 done\cf2 \
+./bin/ycsb run bigchaindb -P z_my/workloads/workload_100000.ini -P z_my/properties/workload_properties_bigchaindb.dat -s > z_my/results/bigchaindb_100000_8.csv\
+[WARN]  Running against a source checkout. In order to get our runtime dependencies we'll have to invoke Maven. Depending on the state of your system, this may take ~30-45 seconds\
+[DEBUG]  Running 'mvn -pl com.yahoo.ycsb:bigchaindb-binding -am package -DskipTests dependency:build-classpath -DincludeScope=compile -Dmdep.outputFilterFile=true'\
+java -cp /Users/admin/Downloads/YCSB/bigchaindb/conf:/Users/admin/Downloads/YCSB/bigchaindb/target/bigchaindb-binding-0.16.0-SNAPSHOT.jar:/Users/admin/.m2/repository/com/squareup/okio/okio/1.13.0/okio-1.13.0.jar:/Users/admin/.m2/repository/com/google/oauth-client/google-oauth-client/1.23.0/google-oauth-client-1.23.0.jar:/Users/admin/.m2/repository/org/hdrhistogram/HdrHistogram/2.1.4/HdrHistogram-2.1.4.jar:/Users/admin/.m2/repository/com/google/code/findbugs/jsr305/1.3.9/jsr305-1.3.9.jar:/Users/admin/.m2/repository/org/codehaus/jackson/jackson-core-asl/1.9.4/jackson-core-asl-1.9.4.jar:/Users/admin/.m2/repository/commons-codec/commons-codec/1.3/commons-codec-1.3.jar:/Users/admin/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.1.3/jackson-core-2.1.3.jar:/Users/admin/Downloads/YCSB/core/target/core-0.16.0-SNAPSHOT.jar:/Users/admin/.m2/repository/org/bouncycastle/bcprov-jdk15on/1.54/bcprov-jdk15on-1.54.jar:/Users/admin/.m2/repository/com/google/api-client/google-api-client/1.23.0/google-api-client-1.23.0.jar:/Users/admin/.m2/repository/com/bigchaindb/cryptoconditions/1.0/cryptoconditions-1.0.jar:/Users/admin/.m2/repository/org/codehaus/jackson/jackson-mapper-asl/1.9.4/jackson-mapper-asl-1.9.4.jar:/Users/admin/.m2/repository/com/google/code/gson/gson/2.8.2/gson-2.8.2.jar:/Users/admin/.m2/repository/org/apache/htrace/htrace-core4/4.1.0-incubating/htrace-core4-4.1.0-incubating.jar:/Users/admin/.m2/repository/com/bigchaindb/bigchaindb-driver/1.0/bigchaindb-driver-1.0.jar:/Users/admin/.m2/repository/com/squareup/okhttp3/okhttp/3.9.0/okhttp-3.9.0.jar:/Users/admin/.m2/repository/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1.jar:/Users/admin/.m2/repository/com/google/guava/guava-jdk5/17.0/guava-jdk5-17.0.jar:/Users/admin/.m2/repository/org/slf4j/slf4j-api/1.7.25/slf4j-api-1.7.25.jar:/Users/admin/.m2/repository/net/i2p/crypto/eddsa/0.2.0/eddsa-0.2.0.jar:/Users/admin/.m2/repository/org/apache/httpcomponents/httpcore/4.0.1/httpcore-4.0.1.jar:/Users/admin/.m2/repository/com/google/http-client/google-http-client/1.23.0/google-http-client-1.23.0.jar:/Users/admin/.m2/repository/org/glassfish/tyrus/bundles/tyrus-standalone-client/1.9/tyrus-standalone-client-1.9.jar:/Users/admin/.m2/repository/org/apache/httpcomponents/httpclient/4.0.1/httpclient-4.0.1.jar:/Users/admin/.m2/repository/com/google/http-client/google-http-client-jackson2/1.23.0/google-http-client-jackson2-1.23.0.jar com.yahoo.ycsb.Client -db com.yahoo.ycsb.db.BigchainDBClient -P z_my/workloads/workload_100000.ini -P z_my/properties/workload_properties_bigchaindb.dat -s -t\
+Command line: -db com.yahoo.ycsb.db.BigchainDBClient -P z_my/workloads/workload_100000.ini -P z_my/properties/workload_properties_bigchaindb.dat -s -t\
+YCSB Client 0.16.0-SNAPSHOT\
+\
+Loading workload...\
+Starting test.\
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".\
+SLF4J: Defaulting to no-operation (NOP) logger implementation\
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.\
+2019-01-16 16:53:51:887 0 sec: 0 operations; est completion in 0 second \
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []\
+2019-01-16 16:54:01:855 10 sec: 5404 operations; 540.02 current ops/sec; est completion in 2 minutes [INSERT AverageLatency(us)=1774.37] \
+2019-01-16 16:54:11:848 20 sec: 12645 operations; 724.61 current ops/sec; est completion in 2 minutes [INSERT AverageLatency(us)=1369.77] \
+2019-01-16 16:54:21:848 30 sec: 20062 operations; 741.7 current ops/sec; est completion in 2 minutes [INSERT AverageLatency(us)=1343.28] \
+2019-01-16 16:54:31:849 40 sec: 26748 operations; 668.53 current ops/sec; est completion in 1 minute [INSERT AverageLatency(us)=1490.54] \
+2019-01-16 16:54:41:848 50 sec: 32979 operations; 623.16 current ops/sec; est completion in 1 minute [INSERT AverageLatency(us)=1599.45] \
+2019-01-16 16:54:51:852 60 sec: 38511 operations; 552.98 current ops/sec; est completion in 1 minute [INSERT AverageLatency(us)=1803.01] \
+2019-01-16 16:55:01:848 70 sec: 43808 operations; 529.91 current ops/sec; est completion in 1 minute [INSERT AverageLatency(us)=1881.39] \
+2019-01-16 16:55:11:848 80 sec: 49298 operations; 549 current ops/sec; est completion in 1 minute [INSERT AverageLatency(us)=1812] \
+2019-01-16 16:55:21:855 90 sec: 53568 operations; 426.7 current ops/sec; est completion in 1 minute [INSERT AverageLatency(us)=2339.74] \
+2019-01-16 16:55:31:848 100 sec: 58242 operations; 467.73 current ops/sec; est completion in 1 minute [INSERT AverageLatency(us)=2130.06] \
+2019-01-16 16:55:41:851 110 sec: 62500 operations; 425.67 current ops/sec; est completion in 1 minute [INSERT AverageLatency(us)=2345.94] \
+2019-01-16 16:55:51:848 120 sec: 63475 operations; 97.53 current ops/sec; est completion in 1 minute [INSERT AverageLatency(us)=10209.34] \
+2019-01-16 16:56:01:855 130 sec: 71660 operations; 817.93 current ops/sec; est completion in 52 seconds [INSERT AverageLatency(us)=1223.51] \
+2019-01-16 16:56:11:856 140 sec: 75583 operations; 392.26 current ops/sec; est completion in 46 seconds [INSERT AverageLatency(us)=2544.66] \
+2019-01-16 16:56:21:853 150 sec: 78073 operations; 249.07 current ops/sec; est completion in 43 seconds [INSERT AverageLatency(us)=4010.99] \
+2019-01-16 16:56:31:850 160 sec: 86982 operations; 891.17 current ops/sec; est completion in 24 seconds [INSERT AverageLatency(us)=1118.36] \
+2019-01-16 16:56:41:858 170 sec: 95995 operations; 900.58 current ops/sec; est completion in 8 second [INSERT AverageLatency(us)=1106.87] \
+2019-01-16 16:56:46:244 174 sec: 100000 operations; 913.13 current ops/sec; [CLEANUP AverageLatency(us)=3] [INSERT AverageLatency(us)=1092.53] \
+--------------------------------------------------\
+Finish: Record number is 100000, count is 8.\
+--------------------------------------------------\
+--------------------------------------------------\
+Start: Record number is 100000, count is 9.\
+--------------------------------------------------\
+Stopping bigchaindb_bigchaindb_1 ... \cf3 done\cf2 \
+Stopping bigchaindb_tendermint_1 ... \cf3 done\cf2 \
+Stopping bigchaindb_mongodb_1    ... \cf3 done\cf2 \
+Removing bigchaindb_bigchaindb_1 ... \cf3 done\cf2 \
+Removing bigchaindb_tendermint_1 ... \cf3 done\cf2 \
+Removing bigchaindb_mongodb_1    ... \cf3 done\cf2 \
+Removing network bigchaindb_default\
+\
+Creating network "bigchaindb_default" with the default driver\
+Creating bigchaindb_mongodb_1    ... \cf3 done\cf2 \
+Creating bigchaindb_tendermint_1 ... \cf3 done\cf2 \
+Creating bigchaindb_bigchaindb_1 ... \cf3 done\cf2 \
+./bin/ycsb run bigchaindb -P z_my/workloads/workload_100000.ini -P z_my/properties/workload_properties_bigchaindb.dat -s > z_my/results/bigchaindb_100000_9.csv\
+[WARN]  Running against a source checkout. In order to get our runtime dependencies we'll have to invoke Maven. Depending on the state of your system, this may take ~30-45 seconds\
+[DEBUG]  Running 'mvn -pl com.yahoo.ycsb:bigchaindb-binding -am package -DskipTests dependency:build-classpath -DincludeScope=compile -Dmdep.outputFilterFile=true'\
+java -cp /Users/admin/Downloads/YCSB/bigchaindb/conf:/Users/admin/Downloads/YCSB/bigchaindb/target/bigchaindb-binding-0.16.0-SNAPSHOT.jar:/Users/admin/.m2/repository/com/squareup/okio/okio/1.13.0/okio-1.13.0.jar:/Users/admin/.m2/repository/com/google/oauth-client/google-oauth-client/1.23.0/google-oauth-client-1.23.0.jar:/Users/admin/.m2/repository/org/hdrhistogram/HdrHistogram/2.1.4/HdrHistogram-2.1.4.jar:/Users/admin/.m2/repository/com/google/code/findbugs/jsr305/1.3.9/jsr305-1.3.9.jar:/Users/admin/.m2/repository/org/codehaus/jackson/jackson-core-asl/1.9.4/jackson-core-asl-1.9.4.jar:/Users/admin/.m2/repository/commons-codec/commons-codec/1.3/commons-codec-1.3.jar:/Users/admin/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.1.3/jackson-core-2.1.3.jar:/Users/admin/Downloads/YCSB/core/target/core-0.16.0-SNAPSHOT.jar:/Users/admin/.m2/repository/org/bouncycastle/bcprov-jdk15on/1.54/bcprov-jdk15on-1.54.jar:/Users/admin/.m2/repository/com/google/api-client/google-api-client/1.23.0/google-api-client-1.23.0.jar:/Users/admin/.m2/repository/com/bigchaindb/cryptoconditions/1.0/cryptoconditions-1.0.jar:/Users/admin/.m2/repository/org/codehaus/jackson/jackson-mapper-asl/1.9.4/jackson-mapper-asl-1.9.4.jar:/Users/admin/.m2/repository/com/google/code/gson/gson/2.8.2/gson-2.8.2.jar:/Users/admin/.m2/repository/org/apache/htrace/htrace-core4/4.1.0-incubating/htrace-core4-4.1.0-incubating.jar:/Users/admin/.m2/repository/com/bigchaindb/bigchaindb-driver/1.0/bigchaindb-driver-1.0.jar:/Users/admin/.m2/repository/com/squareup/okhttp3/okhttp/3.9.0/okhttp-3.9.0.jar:/Users/admin/.m2/repository/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1.jar:/Users/admin/.m2/repository/com/google/guava/guava-jdk5/17.0/guava-jdk5-17.0.jar:/Users/admin/.m2/repository/org/slf4j/slf4j-api/1.7.25/slf4j-api-1.7.25.jar:/Users/admin/.m2/repository/net/i2p/crypto/eddsa/0.2.0/eddsa-0.2.0.jar:/Users/admin/.m2/repository/org/apache/httpcomponents/httpcore/4.0.1/httpcore-4.0.1.jar:/Users/admin/.m2/repository/com/google/http-client/google-http-client/1.23.0/google-http-client-1.23.0.jar:/Users/admin/.m2/repository/org/glassfish/tyrus/bundles/tyrus-standalone-client/1.9/tyrus-standalone-client-1.9.jar:/Users/admin/.m2/repository/org/apache/httpcomponents/httpclient/4.0.1/httpclient-4.0.1.jar:/Users/admin/.m2/repository/com/google/http-client/google-http-client-jackson2/1.23.0/google-http-client-jackson2-1.23.0.jar com.yahoo.ycsb.Client -db com.yahoo.ycsb.db.BigchainDBClient -P z_my/workloads/workload_100000.ini -P z_my/properties/workload_properties_bigchaindb.dat -s -t\
+Command line: -db com.yahoo.ycsb.db.BigchainDBClient -P z_my/workloads/workload_100000.ini -P z_my/properties/workload_properties_bigchaindb.dat -s -t\
+YCSB Client 0.16.0-SNAPSHOT\
+\
+Loading workload...\
+Starting test.\
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".\
+SLF4J: Defaulting to no-operation (NOP) logger implementation\
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.\
+2019-01-16 16:57:19:853 0 sec: 0 operations; est completion in 0 second \
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []\
+2019-01-16 16:57:29:818 10 sec: 5343 operations; 533.98 current ops/sec; est completion in 2 minutes [INSERT AverageLatency(us)=1787.55] \
+2019-01-16 16:57:39:812 20 sec: 12845 operations; 750.65 current ops/sec; est completion in 2 minutes [INSERT AverageLatency(us)=1322.51] \
+2019-01-16 16:57:49:812 30 sec: 20104 operations; 725.9 current ops/sec; est completion in 2 minutes [INSERT AverageLatency(us)=1372.2] \
+2019-01-16 16:57:59:811 39 sec: 27010 operations; 690.67 current ops/sec; est completion in 1 minute [INSERT AverageLatency(us)=1442.43] \
+2019-01-16 16:58:09:812 49 sec: 33426 operations; 641.6 current ops/sec; est completion in 1 minute [INSERT AverageLatency(us)=1553.33] \
+2019-01-16 16:58:19:812 60 sec: 38777 operations; 535.05 current ops/sec; est completion in 1 minute [INSERT AverageLatency(us)=1860.68] \
+2019-01-16 16:58:29:812 69 sec: 43963 operations; 518.65 current ops/sec; est completion in 1 minute [INSERT AverageLatency(us)=1924.59] \
+2019-01-16 16:58:39:818 80 sec: 48692 operations; 472.57 current ops/sec; est completion in 1 minute [INSERT AverageLatency(us)=2111.83] \
+2019-01-16 16:58:49:812 90 sec: 53477 operations; 478.79 current ops/sec; est completion in 1 minute [INSERT AverageLatency(us)=2083.18] \
+2019-01-16 16:58:59:819 100 sec: 58879 operations; 539.82 current ops/sec; est completion in 1 minute [INSERT AverageLatency(us)=1844.06] \
+2019-01-16 16:59:09:815 110 sec: 63747 operations; 486.99 current ops/sec; est completion in 1 minute [INSERT AverageLatency(us)=2048.24] \
+2019-01-16 16:59:19:818 120 sec: 67740 operations; 399.18 current ops/sec; est completion in 58 seconds [INSERT AverageLatency(us)=2505.9] \
+2019-01-16 16:59:29:817 130 sec: 70760 operations; 302.03 current ops/sec; est completion in 54 seconds [INSERT AverageLatency(us)=3297.87] \
+2019-01-16 16:59:39:818 140 sec: 73483 operations; 272.27 current ops/sec; est completion in 51 seconds [INSERT AverageLatency(us)=3661.45] \
+2019-01-16 16:59:49:811 149 sec: 75348 operations; 186.63 current ops/sec; est completion in 50 seconds [INSERT AverageLatency(us)=5376.58] \
+2019-01-16 16:59:59:814 160 sec: 76997 operations; 164.85 current ops/sec; est completion in 48 seconds [INSERT AverageLatency(us)=6040.1] \
+2019-01-16 17:00:09:817 170 sec: 79194 operations; 219.63 current ops/sec; est completion in 45 seconds [INSERT AverageLatency(us)=4566.44] \
+2019-01-16 17:00:19:817 180 sec: 81420 operations; 222.6 current ops/sec; est completion in 42 seconds [INSERT AverageLatency(us)=4482.76] \
+2019-01-16 17:00:29:813 190 sec: 83702 operations; 228.29 current ops/sec; est completion in 37 seconds [INSERT AverageLatency(us)=4385.01] \
+2019-01-16 17:00:39:812 200 sec: 86980 operations; 327.83 current ops/sec; est completion in 30 seconds [INSERT AverageLatency(us)=3039] \
+2019-01-16 17:00:49:815 210 sec: 88474 operations; 149.36 current ops/sec; est completion in 28 seconds [INSERT AverageLatency(us)=6595.82] \
+2019-01-16 17:00:59:816 220 sec: 88574 operations; 10 current ops/sec; est completion in 29 seconds [INSERT AverageLatency(us)=101100.95] \
+2019-01-16 17:01:09:819 230 sec: 89641 operations; 106.67 current ops/sec; est completion in 27 seconds [INSERT AverageLatency(us)=9420.31] \
+2019-01-16 17:01:19:819 240 sec: 92287 operations; 264.63 current ops/sec; est completion in 21 seconds [INSERT AverageLatency(us)=3772.43] \
+2019-01-16 17:01:29:817 250 sec: 95705 operations; 341.83 current ops/sec; est completion in 12 seconds [INSERT AverageLatency(us)=2925.65] \
+2019-01-16 17:01:39:818 260 sec: 96928 operations; 122.29 current ops/sec; est completion in 9 second [INSERT AverageLatency(us)=8163.73] \
+2019-01-16 17:01:49:819 270 sec: 98841 operations; 191.28 current ops/sec; est completion in 4 second [INSERT AverageLatency(us)=5198.8] \
+2019-01-16 17:01:59:819 280 sec: 99115 operations; 27.4 current ops/sec; est completion in 3 second [INSERT AverageLatency(us)=36525.57] \
+2019-01-16 17:02:04:850 285 sec: 100000 operations; 175.91 current ops/sec; [CLEANUP AverageLatency(us)=4] [INSERT AverageLatency(us)=5737.81] \
+--------------------------------------------------\
+Finish: Record number is 100000, count is 9.\
+--------------------------------------------------\
+--------------------------------------------------\
+Start: Record number is 100000, count is 10.\
+--------------------------------------------------\
+Stopping bigchaindb_bigchaindb_1 ... \cf3 done\cf2 \
+Stopping bigchaindb_mongodb_1    ... \cf3 done\cf2 \
+Stopping bigchaindb_tendermint_1 ... \cf3 done\cf2 \
+Removing bigchaindb_bigchaindb_1 ... \cf3 done\cf2 \
+Removing bigchaindb_mongodb_1    ... \cf3 done\cf2 \
+Removing bigchaindb_tendermint_1 ... \cf3 done\cf2 \
+Removing network bigchaindb_default\
+\
+Creating network "bigchaindb_default" with the default driver\
+Creating bigchaindb_mongodb_1    ... \cf3 done\cf2 \
+Creating bigchaindb_tendermint_1 ... \cf3 done\cf2 \
+Creating bigchaindb_bigchaindb_1 ... \cf3 done\cf2 \
+./bin/ycsb run bigchaindb -P z_my/workloads/workload_100000.ini -P z_my/properties/workload_properties_bigchaindb.dat -s > z_my/results/bigchaindb_100000_10.csv\
+[WARN]  Running against a source checkout. In order to get our runtime dependencies we'll have to invoke Maven. Depending on the state of your system, this may take ~30-45 seconds\
+[DEBUG]  Running 'mvn -pl com.yahoo.ycsb:bigchaindb-binding -am package -DskipTests dependency:build-classpath -DincludeScope=compile -Dmdep.outputFilterFile=true'\
+java -cp /Users/admin/Downloads/YCSB/bigchaindb/conf:/Users/admin/Downloads/YCSB/bigchaindb/target/bigchaindb-binding-0.16.0-SNAPSHOT.jar:/Users/admin/.m2/repository/com/squareup/okio/okio/1.13.0/okio-1.13.0.jar:/Users/admin/.m2/repository/com/google/oauth-client/google-oauth-client/1.23.0/google-oauth-client-1.23.0.jar:/Users/admin/.m2/repository/org/hdrhistogram/HdrHistogram/2.1.4/HdrHistogram-2.1.4.jar:/Users/admin/.m2/repository/com/google/code/findbugs/jsr305/1.3.9/jsr305-1.3.9.jar:/Users/admin/.m2/repository/org/codehaus/jackson/jackson-core-asl/1.9.4/jackson-core-asl-1.9.4.jar:/Users/admin/.m2/repository/commons-codec/commons-codec/1.3/commons-codec-1.3.jar:/Users/admin/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.1.3/jackson-core-2.1.3.jar:/Users/admin/Downloads/YCSB/core/target/core-0.16.0-SNAPSHOT.jar:/Users/admin/.m2/repository/org/bouncycastle/bcprov-jdk15on/1.54/bcprov-jdk15on-1.54.jar:/Users/admin/.m2/repository/com/google/api-client/google-api-client/1.23.0/google-api-client-1.23.0.jar:/Users/admin/.m2/repository/com/bigchaindb/cryptoconditions/1.0/cryptoconditions-1.0.jar:/Users/admin/.m2/repository/org/codehaus/jackson/jackson-mapper-asl/1.9.4/jackson-mapper-asl-1.9.4.jar:/Users/admin/.m2/repository/com/google/code/gson/gson/2.8.2/gson-2.8.2.jar:/Users/admin/.m2/repository/org/apache/htrace/htrace-core4/4.1.0-incubating/htrace-core4-4.1.0-incubating.jar:/Users/admin/.m2/repository/com/bigchaindb/bigchaindb-driver/1.0/bigchaindb-driver-1.0.jar:/Users/admin/.m2/repository/com/squareup/okhttp3/okhttp/3.9.0/okhttp-3.9.0.jar:/Users/admin/.m2/repository/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1.jar:/Users/admin/.m2/repository/com/google/guava/guava-jdk5/17.0/guava-jdk5-17.0.jar:/Users/admin/.m2/repository/org/slf4j/slf4j-api/1.7.25/slf4j-api-1.7.25.jar:/Users/admin/.m2/repository/net/i2p/crypto/eddsa/0.2.0/eddsa-0.2.0.jar:/Users/admin/.m2/repository/org/apache/httpcomponents/httpcore/4.0.1/httpcore-4.0.1.jar:/Users/admin/.m2/repository/com/google/http-client/google-http-client/1.23.0/google-http-client-1.23.0.jar:/Users/admin/.m2/repository/org/glassfish/tyrus/bundles/tyrus-standalone-client/1.9/tyrus-standalone-client-1.9.jar:/Users/admin/.m2/repository/org/apache/httpcomponents/httpclient/4.0.1/httpclient-4.0.1.jar:/Users/admin/.m2/repository/com/google/http-client/google-http-client-jackson2/1.23.0/google-http-client-jackson2-1.23.0.jar com.yahoo.ycsb.Client -db com.yahoo.ycsb.db.BigchainDBClient -P z_my/workloads/workload_100000.ini -P z_my/properties/workload_properties_bigchaindb.dat -s -t\
+Command line: -db com.yahoo.ycsb.db.BigchainDBClient -P z_my/workloads/workload_100000.ini -P z_my/properties/workload_properties_bigchaindb.dat -s -t\
+YCSB Client 0.16.0-SNAPSHOT\
+\
+Loading workload...\
+Starting test.\
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".\
+SLF4J: Defaulting to no-operation (NOP) logger implementation\
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.\
+2019-01-16 17:02:47:547 0 sec: 0 operations; est completion in 0 second \
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []\
+2019-01-16 17:02:57:512 10 sec: 5266 operations; 526.39 current ops/sec; est completion in 3 minutes [INSERT AverageLatency(us)=1811.46] \
+2019-01-16 17:03:07:509 20 sec: 12838 operations; 757.35 current ops/sec; est completion in 2 minutes [INSERT AverageLatency(us)=1310.24] \
+2019-01-16 17:03:17:508 30 sec: 19727 operations; 689.04 current ops/sec; est completion in 2 minutes [INSERT AverageLatency(us)=1445.05] \
+2019-01-16 17:03:27:512 40 sec: 26827 operations; 709.65 current ops/sec; est completion in 1 minute [INSERT AverageLatency(us)=1404.09] \
+2019-01-16 17:03:37:515 50 sec: 32781 operations; 595.22 current ops/sec; est completion in 1 minute [INSERT AverageLatency(us)=1674.9] \
+2019-01-16 17:03:47:507 60 sec: 38959 operations; 618.29 current ops/sec; est completion in 1 minute [INSERT AverageLatency(us)=1612.36] \
+2019-01-16 17:03:57:508 70 sec: 44128 operations; 516.85 current ops/sec; est completion in 1 minute [INSERT AverageLatency(us)=1929.03] \
+2019-01-16 17:04:07:507 80 sec: 48539 operations; 441.14 current ops/sec; est completion in 1 minute [INSERT AverageLatency(us)=2261.9] \
+2019-01-16 17:04:17:507 90 sec: 53228 operations; 468.9 current ops/sec; est completion in 1 minute [INSERT AverageLatency(us)=2124.73] \
+2019-01-16 17:04:27:507 100 sec: 57138 operations; 391 current ops/sec; est completion in 1 minute [INSERT AverageLatency(us)=2555.18] \
+2019-01-16 17:04:37:507 110 sec: 60870 operations; 373.2 current ops/sec; est completion in 1 minute [INSERT AverageLatency(us)=2671.4] \
+2019-01-16 17:04:47:507 120 sec: 64815 operations; 394.5 current ops/sec; est completion in 1 minute [INSERT AverageLatency(us)=2533.3] \
+2019-01-16 17:04:57:508 130 sec: 67744 operations; 292.87 current ops/sec; est completion in 1 minute [INSERT AverageLatency(us)=3409.99] \
+2019-01-16 17:05:07:507 140 sec: 71489 operations; 374.54 current ops/sec; est completion in 56 seconds [INSERT AverageLatency(us)=2665.92] \
+2019-01-16 17:05:17:510 150 sec: 75068 operations; 357.79 current ops/sec; est completion in 50 seconds [INSERT AverageLatency(us)=2792.69] \
+2019-01-16 17:05:27:508 160 sec: 77721 operations; 265.35 current ops/sec; est completion in 46 seconds [INSERT AverageLatency(us)=3761.43] \
+2019-01-16 17:05:37:510 170 sec: 81136 operations; 341.43 current ops/sec; est completion in 40 seconds [INSERT AverageLatency(us)=2917.89] \
+2019-01-16 17:05:47:507 180 sec: 83461 operations; 232.57 current ops/sec; est completion in 36 seconds [INSERT AverageLatency(us)=4303.34] \
+2019-01-16 17:05:57:507 190 sec: 85506 operations; 204.5 current ops/sec; est completion in 33 seconds [INSERT AverageLatency(us)=4885.77] \
+2019-01-16 17:06:07:514 200 sec: 89207 operations; 369.84 current ops/sec; est completion in 25 seconds [INSERT AverageLatency(us)=2693.89] \
+2019-01-16 17:06:17:507 210 sec: 90745 operations; 153.91 current ops/sec; est completion in 22 seconds [INSERT AverageLatency(us)=6483.29] \
+2019-01-16 17:06:27:508 220 sec: 92281 operations; 153.58 current ops/sec; est completion in 19 seconds [INSERT AverageLatency(us)=6502.95] \
+2019-01-16 17:06:37:514 230 sec: 93415 operations; 113.33 current ops/sec; est completion in 17 seconds [INSERT AverageLatency(us)=8862.66] \
+2019-01-16 17:06:45:957 238 sec: 100000 operations; 779.94 current ops/sec; [CLEANUP AverageLatency(us)=5] [INSERT AverageLatency(us)=1281.5] \
+--------------------------------------------------\
+Finish: Record number is 100000, count is 10.\
+--------------------------------------------------\
+}
